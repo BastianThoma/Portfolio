@@ -1,0 +1,59 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 98px;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0) 13.56%,
+    rgba(0, 0, 0, 0.6) 84.01%
+  );
+}
+.navbarContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1440px;
+  height: 98px;
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+
+  .menu {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+    .menuLink {
+      a {
+        text-decoration: none;
+        color: #ffffff;
+      }
+    }
+
+    .languageSwitch {
+      width: 84px;
+      height: 28px;
+      border-radius: 100px;
+      border: 1px solid #3dcfb6;
+      display: flex;
+
+      button {
+        height: 28px;
+        width: 44px;
+        border-radius: 100px;
+        border: 0;
+        background-color: transparent;
+        color: #3dcfb680;
+      }
+
+      .selected {
+        background-color: #3dcfb6;
+        color: #ffffff;
+      }
+    }
+  }
+}
