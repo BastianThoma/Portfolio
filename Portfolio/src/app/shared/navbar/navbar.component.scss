@@ -1,3 +1,7 @@
+.hidden {
+  visibility: hidden;
+}
+
 .navbar {
   position: fixed;
   top: 0;
@@ -14,7 +18,8 @@
 }
 .navbarContent {
   display: flex;
-  justify-content: space-between;
+  // justify-content: space-between;
+  justify-content: center;
   align-items: center;
   width: 1440px;
   height: 98px;
@@ -31,6 +36,18 @@
       a {
         text-decoration: none;
         color: #ffffff;
+        &:active +.hidden {
+          color: #3DCFB6;
+          visibility: visible;
+        }
+        &:hover + .hidden {
+          visibility: visible;
+        }
+      }
+      .radioButton {
+        position: relative;
+        top: 14px;
+        right: 50%;
       }
     }
 
