@@ -3,6 +3,11 @@ body {
   scroll-behavior: smooth;
 }
 
+.hidden {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
 // FONTS
 .fontFiraCode {
   font-family: "Fira Code";

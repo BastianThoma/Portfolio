@@ -1,7 +1,3 @@
-.hidden {
-  visibility: hidden;
-}
-
 .navbar {
   position: fixed;
   top: 0;
@@ -38,12 +34,11 @@
         font-weight: 400;
         text-decoration: none;
         color: #ffffff;
-        &:active +.hidden {
-          color: #3DCFB6;
-          visibility: visible;
+        &:hover {
+          color: #3dcfb680;
         }
         &:hover + .hidden {
-          visibility: visible;
+          opacity: 1;
         }
       }
       .radioButton {
@@ -61,7 +56,6 @@
       border-radius: 100px;
       border: 2px solid #3dcfb6;
       display: flex;
-
       button {
         height: 28px;
         width: 44px;
@@ -69,6 +63,7 @@
         border: 0;
         background-color: transparent;
         color: #3dcfb680;
+        cursor: pointer;
       }
 
       .selected {
@@ -77,17 +72,18 @@
         color: #ffffff;
       }
     }
-
   }
   .logo {
     width: 140px;
     height: 48px;
-    background-image: url('/assets/img/LogoNeuFullColorCutted.png');
+    background-image: url("/assets/img/LogoNeuFullColorCutted.png");
     background-repeat: no-repeat;
     background-size: contain;
+    transition: all 0.2s ease-in-out;
     &:hover {
       cursor: pointer;
-      background-image: url('/assets/img/LogoNeuFullOutlineCutted.png');
+      background-image: url("/assets/img/LogoNeuFullOutlineCutted.png");
+      transform: scale(0.95);
     }
   }
 }

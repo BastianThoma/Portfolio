@@ -1,5 +1,186 @@
-.landingPageContent {
+.landingPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(55.22deg, #1c1c1c 36.26%, #08463b 93.28%);
+  .landingPageCatcher {
+    width: 1440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  h2 {
+    margin: 0;
+    font-size: 40px;
+    font-weight: 400;
+    color: #d9d9d9;
+  }
+  .titleContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+
+    h1 {
+      margin: 0;
+      font-size: 128px;
+      font-weight: 700;
+      color: #d9d9d9;
+    }
+    div {
+      display: flex;
+      justify-content: center;
+      width: 363px;
+      height: 48px;
+      gap: 48px;
+      button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        padding: 0 24px;
+        border: solid 2px #ffffff;
+        border-radius: 100px;
+        background-color: transparent;
+        color: #ffffff;
+        font-size: 18px;
+        overflow: hidden;
+
+        span {
+          display: inline-block;
+          white-space: nowrap;
+          transform: translateX(0);
+          opacity: 1;
+          transition: none;
+        }
+
+        &:hover {
+          border: solid 2px #3dcfb680;
+          color: #3dcfb680;
+          cursor: pointer;
+
+          span {
+            animation: slide-text 4s ease-in-out infinite;
+          }
+        }
+      }
+    }
+  }
+  .lateralContainer {
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 0 40px;
+    bottom: 0;
     width: 100%;
-    height: 100vh;
-    background: linear-gradient(55.22deg, #1C1C1C 36.26%, #08463B 93.28%);
+    max-width: 1440px;
+    pointer-events: none;
+    .scrollDownHelper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+      pointer-events: auto;
+      .arrowBox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 48px;
+        border-radius: 32px;
+        border: solid 2px #3dcfb6;
+        cursor: pointer;
+      }
+      .pixelLineLeft {
+        width: 0px;
+        height: 240px;
+        border: solid 1px #3dcfb6;
+      }
+    }
+    .heroQuickLinks {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+      pointer-events: auto;
+      .radioButtonMask {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .radioButton {
+          position: relative;
+          left: 8px;
+        }
+      }
+      a {
+        text-decoration: none;
+        &:active + .hidden {
+          opacity: 1;
+        }
+        &:hover + .hidden {
+          opacity: 1;
+        }
+      }
+      .heroMailLink {
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+        font-size: 18px;
+        color: #ffffff;
+        &:hover {
+          color: #3dcfb680;
+        }
+      }
+      .pixelLineRight {
+        width: 0px;
+        height: 180px;
+        border: solid 1px #3dcfb6;
+      }
+    }
+  }
+  .infoBanner {
+    position: absolute;
+    bottom: 60px;
+    background-color: #FFFFFF1F;
+    width: 100%;
+    max-width: 1510px;
+    height: 62px;
+    backdrop-filter: blur(5.3px);
+    transform: rotate(-3deg);
+    border-radius: 16px;
+    box-shadow: inset -10px 0 10px rgba(0, 0, 0, 0.499), inset 10px 0 10px rgba(0, 0, 0, 0.499);    
+  }
+}
+
+@keyframes slide-text {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  25% {
+    transform: translateX(-150%);
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(150%);
+    opacity: 0;
+  }
+  65% {
+    opacity: 1;
+  }
+  75% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }

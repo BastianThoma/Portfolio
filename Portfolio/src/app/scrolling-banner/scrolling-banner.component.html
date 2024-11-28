@@ -1,0 +1,13 @@
+<div class="banner-container">
+    <div class="scrolling-content">
+      <span *ngFor="let item of bannerItems">
+        <ng-container *ngIf="item.type === 'text'">
+          {{ item.content }}
+        </ng-container>
+        <ng-container *ngIf="item.type === 'image'">
+          <img [src]="item.content" alt="Banner Image" />
+        </ng-container>
+      </span>
+    </div>
+  </div>
+  
