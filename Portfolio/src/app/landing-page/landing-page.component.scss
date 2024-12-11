@@ -145,14 +145,27 @@
   .infoBanner {
     position: absolute;
     bottom: 60px;
-    background-color: #FFFFFF1F;
+    background-color: #FFFFFF1F; /* Semi-transparenter Hintergrund für das Banner */
     width: 100%;
     max-width: 1510px;
     height: 62px;
-    backdrop-filter: blur(5.3px);
+    backdrop-filter: blur(5.3px); /* Weichzeichnungsfilter für den Hintergrund */
     transform: rotate(-3deg);
     border-radius: 16px;
     box-shadow: inset -10px 0 10px rgba(0, 0, 0, 0.499), inset 10px 0 10px rgba(0, 0, 0, 0.499);    
+  
+    /* Pseudo-Element für den Hintergrund */
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 150%;
+      filter: blur(5px); /* Unschärfeeffekt auf das Pseudo-Element anwenden */
+      z-index: -1; /* Das Pseudo-Element liegt hinter dem eigentlichen Inhalt */
+      border-radius: 16px; /* Gleicher Border-Radius wie das Banner, damit der Hintergrund zum Banner passt */
+    }
   }
 }
 
