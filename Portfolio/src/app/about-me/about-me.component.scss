@@ -40,46 +40,19 @@
         }
       }
     }
-    .aboutMeBox {
-      width: 568px;
-      height: 568px;
-      display: flex;
-      flex-direction: column;
-      h2 {
-        color: #3dcfb6;
-        font-size: 24px;
-        font-weight: 500;
-      }
-      .aboutMeText {
-        width: 100%;
-        height: 100%;
-        background-color: #3dcfb61a;
-        backdrop-filter: blur(4);
-        border: solid 2px #3dcfb6;
-        border-radius: 30px;
-        position: relative;
-        padding: 32px;
-        box-sizing: border-box;
-        h1 {
-          color: #3dcfb6;
-          font-size: 64px;
-          font-weight: 700;
-          letter-spacing: -3%;
-          margin: 0;
-        }
-        .highlights {
-          display: flex;
-          gap: 16px;
-          padding: 8px 0;
-          font-weight: 400;
-          font-size: 18px;
-          img {
-            width: 32px;
-            height: 32px;
-          }
-        }
-      }
-    }
+  }
+}
+
+.highlights {
+  display: flex;
+  color: #ffffff;
+  gap: 16px;
+  padding: 8px 0;
+  font-weight: 400;
+  font-size: 18px;
+  img {
+    width: 32px;
+    height: 32px;
   }
 }
 
