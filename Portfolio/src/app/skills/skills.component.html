@@ -7,28 +7,32 @@
         'My journey has involved working on diverse projects, employing a range of frontend technologies and concepts. I am open to embracing new technologies and methodologies to Continously enhance my skills and stay ahead in the ever-evolving landscape of web development.'
       "
     >
-    <div class="skillsetBoxContent">
-      <span class="highlightQuestion fontFiraCode">
-        <span class="whiteText">You need </span>
-        <span class="mintText">another skill?</span>
-      </span>
-      <span class="reachOutText whiteText fontKarla">Feel free to contact me. I look forward to <br> expanding on my previous
-        knowledge.</span
-      >
-    </div>
-    <button class="letsTalkButton fontKarla"><span>Let's Talk</span></button>
-  </app-section-card>
-  <div class="skillsetIconBox">
-    <div *ngFor="let skill of skills" class="skillItem">
-      <img
-        [src]="skill.hovered ? skill.coloredIcon : skill.icon"
+      <div class="skillsetBoxContent">
+        <span class="highlightQuestion fontFiraCode">
+          <span class="whiteText">You need </span>
+          <span class="mintText">another skill?</span>
+        </span>
+        <span class="reachOutText whiteText fontKarla"
+          >Feel free to contact me. I look forward to <br />
+          expanding on my previous knowledge.</span
+        >
+      </div>
+      <button class="letsTalkButton fontKarla"><span>Let's Talk</span></button>
+    </app-section-card>
+    <div class="skillsetIconBox">
+      <div
+        *ngFor="let skill of skills"
         (mouseenter)="skill.hovered = true"
         (mouseleave)="skill.hovered = false"
-        alt="{{ skill.label }}-Icon"
-        class="skillIcon"
-      />
-      <p>{{ skill.label }}</p>
+        class="skillItem"
+      >
+        <img
+          [src]="skill.hovered ? skill.coloredIcon : skill.icon"
+          alt="{{ skill.label }}-Icon"
+          class="skillIcon"
+        />
+        <p>{{ skill.label }}</p>
+      </div>
     </div>
-  </div>
   </div>
 </div>
