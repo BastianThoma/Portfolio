@@ -18,6 +18,11 @@
     </div>
     <button class="letsTalkButton fontKarla"><span>Let's Talk</span></button>
   </app-section-card>
-    <div class="skillsetIconBox"></div>
+    <div class="skillsetIconBox">
+      <div *ngFor="let skill of skills" class="skillItem">
+        <img [src]="skill.icon" alt="{{skill.label}}-Icon" class="skillIcon" />
+        <p>{{ skill.label }}</p>
+      </div>
+    </div>
   </div>
 </div>
