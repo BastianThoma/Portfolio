@@ -11,16 +11,18 @@ import { SectionCardComponent } from '../section-card/section-card.component';
 })
 export class SkillsComponent {
   skills = [
-    { icon: '/assets/img/html.png', label: 'HTML' },
-    { icon: '/assets/img/css.png', label: 'CSS' },
-    { icon: '/assets/img/javascript.png', label: 'JavaScript' },
-    { icon: '/assets/img/typescript.png', label: 'TypeScript' },
-    { icon: '/assets/img/angular.png', label: 'Angular' },
-    { icon: '/assets/img/firebase.png', label: 'Firebase' },
-    { icon: '/assets/img/material_design.png', label: 'Material Design' },
-    { icon: '/assets/img/git.png', label: 'Git' },
-    { icon: '/assets/img/api.png', label: 'API' },
-    { icon: '/assets/img/python.png', label: 'Python' },
-    { icon: '/assets/img/scrum.png', label: 'Scrum' },
+    { icon: '/assets/img/white-icons/html.png', coloredIcon: '/assets/img/colored-icons/html-colored.png', label: 'HTML', hovered: false  },
+    { icon: '/assets/img/white-icons/css.png', coloredIcon: '/assets/img/colored-icons/css-colored.png', label: 'CSS', hovered: false  },
+    { icon: '/assets/img/white-icons/javascript.png', coloredIcon: '/assets/img/colored-icons/js-colored.png', label: 'JavaScript', hovered: false  },
+    { icon: '/assets/img/white-icons/typescript.png', coloredIcon: '/assets/img/colored-icons/ts-colored.png', label: 'TypeScript', hovered: false  },
+    { icon: '/assets/img/white-icons/angular.png', coloredIcon: '/assets/img/colored-icons/angular-colored.png', label: 'Angular', hovered: false  },
+    { icon: '/assets/img/white-icons/firebase.png', coloredIcon: '/assets/img/colored-icons/firebase-colored.png', label: 'Firebase', hovered: false  },
+    { icon: '/assets/img/white-icons/material_design.png', coloredIcon: '/assets/img/colored-icons/md-colored.png', label: 'Material Design', hovered: false  },
+    { icon: '/assets/img/white-icons/git.png', coloredIcon: '/assets/img/colored-icons/git-colored.png', label: 'Git', hovered: false  },
+    { icon: '/assets/img/white-icons/api.png', coloredIcon: '/assets/img/colored-icons/api-colored.png', label: 'API', hovered: false  },
+    { icon: '/assets/img/white-icons/python.png', coloredIcon: '/assets/img/colored-icons/python-colored.png', label: 'Python', hovered: false  },
+    { icon: '/assets/img/white-icons/scrum.png', coloredIcon: '/assets/img/colored-icons/scrum-colored.png', label: 'Scrum', hovered: false  },
   ];
+
+  hoveredSkill: string | null = null; // Aktuelles Icon
 }
