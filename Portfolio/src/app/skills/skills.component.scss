@@ -9,21 +9,25 @@
       transparent 16%
     ),
     #1c1c1c;
+
   .skillsContent {
     width: 1440px;
     height: 700px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+
     .skillsetBoxContent {
       display: flex;
       flex-direction: column;
       gap: 32px;
+
       .highlightQuestion {
         margin-top: 32px;
         font-size: 24px;
         font-weight: 700;
       }
+
       .reachOutText {
         font-size: 16px;
         font-weight: 400;
@@ -47,6 +51,7 @@
   font-size: 18px;
   font-weight: 400;
   overflow: hidden;
+
   span {
     display: inline-block;
     white-space: nowrap;
@@ -76,6 +81,7 @@
   height: 430px;
   gap: 72px;
   top: 66px;
+
   .skillItem {
     display: flex;
     flex-direction: column;
@@ -83,13 +89,106 @@
     max-width: 64px;
     text-align: center;
     cursor: pointer;
-    &:hover img{
+    position: relative;
+    transition: transform 0.3s ease;
+
+    &:hover img {
       animation: bounce 0.6s ease infinite;
     }
+
+    &:hover p {
+      color: #3dcfb6;
+    }
+
     img {
       width: 60px;
       height: 60px;
       transition: 0.3s ease;
+    }
+
+    &.special-skill {
+      img {
+        transition: none;
+      }
+
+      p {
+        color: white;
+        transition: color 0.3s ease;
+      }
+
+      &:hover {
+        img {
+          animation: none;
+          transform: scale(1.15);
+        }
+        p {
+          color: #3dcfb6;
+        }
+
+        .speech-bubble {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+
+      .speech-bubble {
+        position: absolute;
+        top: -130px;
+        left: 100px;
+        transform: translateX(-50%);
+        width: 180px;
+        height: auto;
+        padding: 0 12px;
+        background-color: #ffffff;
+        border-radius: 16px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, visibility 0s 0.3s;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: -12px;
+          left: 10px;
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 24px 24px 0 24px;
+          border-color: #fff transparent transparent transparent;
+        }
+
+        .speech-text {
+          font-size: 16px;
+          font-weight: 400;
+          color: #3dcfb6;
+          word-wrap: break-word;
+        }
+
+        .special-skills {
+          display: flex;
+          justify-content: center;
+          gap: 16px;
+
+          .special-skill-icon {
+            text-align: center;
+
+            img {
+              width: 32px;
+              height: 32px;
+            }
+
+            p {
+              font-size: 12px;
+              font-weight: 700;
+              color: #3dcfb6;
+            }
+          }
+        }
+      }
     }
   }
 }
@@ -103,42 +202,43 @@
 }
 
 @keyframes slide-text {
-    0% {
-      transform: translateX(0);
-      opacity: 1;
-    }
-    25% {
-      transform: translateX(-150%);
-      opacity: 1;
-    }
-    30% {
-      opacity: 0;
-    }
-    50% {
-      transform: translateX(150%);
-      opacity: 0;
-    }
-    65% {
-      opacity: 1;
-    }
-    75% {
-      transform: translateX(0);
-      opacity: 1;
-    }
-    100% {
-      transform: translateX(0);
-      opacity: 1;
-    }
+  0% {
+    transform: translateX(0);
+    opacity: 1;
   }
+  25% {
+    transform: translateX(-150%);
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(150%);
+    opacity: 0;
+  }
+  65% {
+    opacity: 1;
+  }
+  75% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 
-  @keyframes bounce {
-    0%, 100% {
-      transform: scale(1); // Ausgangsgröße
-    }
-    50% {
-      transform: scale(1.1); // Leichte Vergrößerung
-    }
-    75% {
-      transform: scale(0.9); // Kleiner Rücksprung
-    }
+@keyframes bounce {
+  0%,
+  100% {
+    transform: scale(1);
   }
+  50% {
+    transform: scale(1.1);
+  }
+  75% {
+    transform: scale(0.9);
+  }
+}

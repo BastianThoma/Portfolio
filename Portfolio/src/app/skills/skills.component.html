@@ -19,12 +19,14 @@
       </div>
       <button class="letsTalkButton fontKarla"><span>Let's Talk</span></button>
     </app-section-card>
+
     <div class="skillsetIconBox">
       <div
-        *ngFor="let skill of skills"
-        (mouseenter)="skill.hovered = true"
-        (mouseleave)="skill.hovered = false"
+        *ngFor="let skill of skills; let i = index"
         class="skillItem"
+        [ngClass]="{ 'special-skill': skill.label === 'Growth Mindset' }"
+        (mouseenter)="onHover(skill, true)"
+        (mouseleave)="onHover(skill, false)"
       >
         <img
           [src]="skill.hovered ? skill.coloredIcon : skill.icon"
@@ -32,6 +34,29 @@
           class="skillIcon"
         />
         <p>{{ skill.label }}</p>
+
+        <div
+          *ngIf="skill.label === 'Growth Mindset' && skill.hovered"
+          class="speech-bubble"
+        >
+          <p class="speech-text">I have a special interest in learning</p>
+          <div class="special-skills">
+            <div class="special-skill-icon">
+              <img
+                src="/assets/img/colored-icons/linux-colored.png"
+                alt="Linux Icon"
+              />
+              <p>Linux</p>
+            </div>
+            <div class="special-skill-icon">
+              <img
+                src="/assets/img/colored-icons/sql-colored.png"
+                alt="SQL Icon"
+              />
+              <p>SQL</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
