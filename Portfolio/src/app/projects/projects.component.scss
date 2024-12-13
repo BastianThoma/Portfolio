@@ -1,0 +1,124 @@
+.projectsSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1c1c1c;
+  color: #3dcfb6;
+  .projetcsContent {
+    display: flex;
+    width: 1440px;
+    height: 620px;
+    .projectsBox {
+      width: 75%;
+      h2 {
+        font-size: 24px;
+        font-weight: 700;
+      }
+      h1 {
+        font-size: 64px;
+        font-weight: 700;
+      }
+      span {
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: 400;
+      }
+      .projectCard {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+        &:hover {
+          background-color: #26524b;
+          .cardTitleBox img {
+            visibility: visible;
+          }
+        }
+
+        .cardTitleBox {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          gap: 16px;
+          img {
+            visibility: hidden;
+            width: 14px;
+            height: 14px;
+          }
+          h3 {
+            font-size: 24px;
+            font-weight: 700;
+            color: #ffffff;
+          }
+        }
+        span {
+          font-size: 18px;
+          font-weight: 400;
+          color: #ffffff;
+          word-spacing: 8px;
+        }
+
+        .projectPreviewHoverBox {
+          position: absolute;
+          left: calc(
+            100% + 70px
+          ); /* Positioniere rechts von der `projectCard` mit 30px Abstand */
+          transform: translateY(-50%); /* Verschiebung zur Mitte */
+          display: flex;
+          flex-direction: column; /* Bilder untereinander */
+          gap: 0; /* Kein Abstand zwischen den Bildern */
+          opacity: 0;
+          visibility: hidden;
+          transition: opacity 0.3s ease, visibility 0.3s ease;
+          &.top100 {
+            top: 100%;
+          }
+          &.top50 {
+            top: 50%;
+          }
+          &.top0 {
+            top: 0%;
+          }
+
+          img:first-child {
+            /* Vordergrundbild */
+            position: relative;
+            z-index: 2; /* Im Vordergrund */
+            width: 300px;
+            height: 200px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 16px;
+          }
+
+          img:last-child {
+            /* Hintergrundbild */
+            position: absolute;
+            top: 10px; /* Verschiebung nach unten */
+            left: 10px; /* Verschiebung nach rechts */
+            z-index: 1; /* Hinter dem Vordergrundbild */
+            width: 300px;
+            height: 200px;
+            opacity: 1; /* Optional: Transparenz für den Effekt */
+            border-radius: 16px;
+          }
+        }
+
+        &:hover .projectPreviewHoverBox {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+  }
+}
+.borderTop {
+  border-top: 2px solid #3dcfb6;
+}
+.borderBot {
+  border-bottom: 2px solid #3dcfb6;
+}
+.marginTop {
+  margin-top: 32px;
+}
+
