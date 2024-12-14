@@ -18,7 +18,7 @@
           <img src="/assets/img/Capa_1.png" alt="Preview Image Background-Effect" />
         </div>
       </div>
-      <div class="projectCard borderTop borderBot">
+      <div class="projectCard borderTop borderBot" (click)="popup.showPopup()">
         <div class="cardTitleBox">
           <h3 class="fontFiraCode">Join</h3>
           <img src="/assets/img/arrow_outward.png" alt="Arrow Top Right" />
@@ -29,6 +29,7 @@
           <img src="/assets/img/Capa_1.png" alt="Preview Image Background-Effect" />
         </div>
       </div>
+      <app-popup #popup></app-popup>
       <div class="projectCard borderBot">
         <div class="cardTitleBox">
           <h3 class="fontFiraCode">El Pollo Loco</h3>

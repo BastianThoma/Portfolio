@@ -1,0 +1,21 @@
+.feedbackSection {
+    background-color: #1c1c1c;
+    display: flex;
+    justify-content: center;
+    .feedbackSectionContent {
+        display: flex;
+        flex-direction: column;
+        width: 1440px;
+        height: 450px;
+
+        padding: 240px 0;
+        h1 {
+            font-size: 32px;
+            font-weight: 700;
+            color: #3DCFB6;
+        }
+        
+    }
+}
+
+
