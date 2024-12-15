@@ -1,8 +1,49 @@
-<div class="feedbackSection">
-    <div class="feedbackSectionContent">
-        <h1>What my colleagues say about me</h1>
-        
+<section class="feedbackSlider">
+  <div class="headerTitle">
+    <h2>What my colleagues say about me</h2>    
+  </div>
 
-
+  <div class="sliderContainer" #sliderContainer>
+    <div
+      class="slider"
+      (touchstart)="onTouchStart($event)"
+      (touchend)="onTouchEnd($event)"
+      (pointerdown)="onPointerDown($event)"
+      (pointermove)="onPointerMove($event)"
+      (pointerup)="onPointerUp()"
+    >
+      <div
+        *ngFor="let feedback of feedbacks; let i = index"
+        class="slide"
+        [ngClass]="{
+          active: isActive(i),
+          prev: isPrev(i),
+          next: isNext(i)
+        }"
+      >
+        <div class="feedbackText">
+          <p>{{ feedback.text }}</p>
+        </div>
+        <div class="feedbackAuthor">
+          {{ feedback.author }} - {{ feedback.role }}
+        </div>
+      </div>
     </div>
-</div>
+  </div>
+  <div class="dots">
+    <button class="arrow leftArrow" (click)="prevSlide()">
+      <img src="/assets/img/arrow_back.png" alt="Back Arrow" />
+    </button>
+
+    <span
+      *ngFor="let feedback of feedbacks; let i = index"
+      class="dot"
+      [ngClass]="{ active: currentSlide === i }"
+      (click)="goToSlide(i)"
+    ></span>
+
+    <button class="arrow rightArrow" (click)="nextSlide()">
+      <img src="/assets/img/arrow_forward.png" alt="Forward Arrow" />
+    </button>
+  </div>
+</section>
