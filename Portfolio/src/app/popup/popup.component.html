@@ -1,66 +1,37 @@
 <div class="popup-overlay" *ngIf="isPopupVisible" (click)="closePopup()">
   <div class="popup-content" (click)="$event.stopPropagation()">
+    <!-- Beschreibung des Projekts -->
     <div class="descriptionBox">
-      <h1 class="fontKarla">01</h1>
-      <h2 class="fontFiraCode">Join</h2>
-      <h3 class="fontFiraCode">What is this project about?</h3>
-      <p class="fontKarla">
-        Task manager inspired by the Kanban System. Create and organize tasks
-        using drag and drop functions, assign users and categories.
-      </p>
+      <h1 class="fontKarla">{{ currentProject.projectNumber }}</h1>
+      <h2 class="fontFiraCode">{{ currentProject.projectTitle }}</h2>
+      <h3 class="fontFiraCode">{{ currentProject.projectDescriptionTitle }}</h3>
+      <p class="fontKarla">{{ currentProject.projectDescription }}</p>
+
+      <!-- Technologiestack, mit *ngFor iteriert über die techStack-Array -->
       <div class="tech-stack">
-        <div>
-          <img src="/assets/img/colored-icons/css-colored.png" alt="" /><span
-            >CSS</span
-          >
-        </div>
-        |
-        <div>
-          <img src="/assets/img/colored-icons/html-colored.png" alt="" /><span
-            >HTML</span
-          >
-        </div>
-        |
-        <div>
-          <img
-            src="/assets/img/colored-icons/firebase-colored.png"
-            alt=""
-          /><span>Firebase</span>
-        </div>
-        |
-        <div>
-          <img
-            src="/assets/img/colored-icons/angular-colored.png"
-            alt=""
-          /><span>Angular</span>
-        </div>
-        |
-        <div>
-          <img src="/assets/img/colored-icons/ts-colored.png" alt="" /><span
-            >TypeScript</span
-          >
+        <div *ngFor="let tech of currentProject.techStack">
+          <img [src]="tech.icon" [alt]="tech.name" />
+          <span>{{ tech.name }}</span>
         </div>
       </div>
+
+      <!-- Buttons für GitHub und Live Test -->
       <div class="popup-buttons">
-        <button (click)="openLink('https://github.com')">
-          <span>GitHub</span
-          ><img
-            src="/assets/img/arrow_outward_mint.png"
-            alt="Arrow Top Right"
-          />
+        <button (click)="openLink(currentProject.githubLink)">
+          <span>GitHub</span>
+          <img src="/assets/img/arrow_outward_mint.png" alt="Arrow Top Right" />
         </button>
-        <button (click)="openLink('https://example.com')">
-          <span>Live Test</span
-          ><img
-            src="/assets/img/arrow_outward_mint.png"
-            alt="Arrow Top Right"
-          />
+        <button (click)="openLink(currentProject.liveTestLink)">
+          <span>Live Test</span>
+          <img src="/assets/img/arrow_outward_mint.png" alt="Arrow Top Right" />
         </button>
       </div>
     </div>
+
+    <!-- Bild des Projekts -->
     <div class="imageBox">
       <div class="closeButton" (click)="closePopup()"></div>
-      <img src="/assets/img/portrait.jpg" alt="Project Preview Image" />
+      <img [src]="currentProject.projectImage" alt="Project Preview Image" />
       <div class="nextButtonBox">
         <span>Next Project</span>
         <img src="/assets/img/arrow_forward.png" alt="Next Project Button" />
