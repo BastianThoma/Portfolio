@@ -95,6 +95,9 @@
         border-radius: 32px;
         border: solid 2px #3dcfb6;
         cursor: pointer;
+        img {
+          animation: bounceArrow 2s infinite ease-in-out; // Animation anwenden
+        }
       }
       .pixelLineLeft {
         width: 0px;
@@ -195,5 +198,23 @@
   100% {
     transform: translateX(0);
     opacity: 1;
+  }
+}
+
+@keyframes bounceArrow {
+  0% {
+    transform: translateY(0); // Startposition
+  }
+  30% {
+    transform: translateY(-6px); // Nach oben springen
+  }
+  50% {
+    transform: translateY(0); // Zur Ausgangsposition
+  }
+  70% {
+    transform: translateY(-3px); // Mini-Bounce
+  }
+  100% {
+    transform: translateY(0); // Endposition
   }
 }
