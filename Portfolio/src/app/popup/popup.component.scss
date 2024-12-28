@@ -44,6 +44,7 @@
       margin: 0 0 40px 0;
       line-height: 50px;
       letter-spacing: -3%;
+      white-space: nowrap;
     }
 
     h3 {
@@ -137,7 +138,7 @@
       left: 480px;
       width: 18px;
       height: 18px;
-      background-image: url('/assets/img/close_small.png');
+      background-image: url("/assets/img/close_small.png");
       background-size: contain;
       background-position: center;
       transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
@@ -145,7 +146,7 @@
       &:hover {
         width: 26px;
         height: 26px;
-        background-image: url('/assets/img/close.png');
+        background-image: url("/assets/img/close.png");
         transform: translate(-4px, -4px);
       }
     }

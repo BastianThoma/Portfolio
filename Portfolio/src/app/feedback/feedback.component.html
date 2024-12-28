@@ -1,6 +1,7 @@
-<section class="feedbackSlider">
+<div class="feedbackSlider">
   <div class="headerTitle">
-    <h2>What my colleagues say about me</h2>    
+    <h2>What my colleagues say about me</h2>
+    <img class="qoutes" src="/assets/img/quotes.png" alt="Quotes Icon" />
   </div>
 
   <div class="sliderContainer" #sliderContainer>
@@ -24,8 +25,11 @@
         <div class="feedbackText">
           <p>{{ feedback.text }}</p>
         </div>
-        <div class="feedbackAuthor">
-          {{ feedback.author }} - {{ feedback.role }}
+        <div class="feedbackAuthorBox">
+          <div class="borderOnePixel"></div>
+          <div class="feedbackAuthor">
+            {{ feedback.author }} - {{ feedback.role }}
+          </div>
         </div>
       </div>
     </div>
@@ -46,4 +50,4 @@
       <img src="/assets/img/arrow_forward.png" alt="Forward Arrow" />
     </button>
   </div>
-</section>
+</div>

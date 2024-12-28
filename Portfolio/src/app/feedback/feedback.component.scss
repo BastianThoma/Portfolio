@@ -21,7 +21,7 @@ body {
   align-items: center;
   justify-content: center;
   padding: 50px;
-  height: 520px;
+  height: 680px;
   overflow: hidden;
   position: relative;
   padding-left: 96px;
@@ -31,18 +31,24 @@ body {
 
 .headerTitle {
   margin-bottom: 40px;
+  position: relative;
   h2 {
     font-size: 32px;
     font-family: "Karla", monospace;
     font-weight: 700;
     color: #3dcfb6;
   }
+  .qoutes {
+    position: absolute;
+    z-index: 50;
+    right: 100%;
+  }
 }
 
 .sliderContainer {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 55%;
   max-width: 1440px;
   overflow: hidden;
   -webkit-mask-image: linear-gradient(
@@ -82,8 +88,6 @@ body {
   transition: all 0.5s ease-in-out;
   z-index: 1;
   padding: 30px;
-  background-color: #2b2b2b;
-  border: 1px solid #3dcfb6;
   border-radius: 15px;
   text-align: left;
   display: flex;
@@ -128,6 +132,8 @@ body {
 }
 
 .slide.active {
+  background-color: #2f5b54;
+  border: 2px solid #3dcfb6;
   opacity: 1;
   z-index: 3;
   transform: translateX(-50%) scale(1);
@@ -135,6 +141,8 @@ body {
 }
 
 .slide.prev {
+  background-color: #2b2b2b;
+  border: 1px solid #3dcfb6;
   opacity: 0.6;
   z-index: 2;
   transform: translateX(-150%) scale(0.85);
@@ -142,6 +150,8 @@ body {
 }
 
 .slide.next {
+  background-color: #2b2b2b;
+  border: 1px solid #3dcfb6;
   opacity: 0.6;
   z-index: 2;
   transform: translateX(50%) scale(0.85);
@@ -156,6 +166,18 @@ body {
   text-align: justify;
 }
 
+.feedbackAuthorBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  .borderOnePixel {
+    border: solid 1px #3dcfb6;
+    height: 1px;
+    width: 50%;
+  }
+}
+
 .feedbackAuthor {
   font-size: 18px;
   font-family: "Karla";
@@ -163,9 +185,9 @@ body {
 }
 
 .dots {
-  margin-top: 30px;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .dot {
@@ -187,10 +209,10 @@ body {
   border: none;
   color: #3dcfb6;
   font-size: 32px;
+  padding: 0 8px;
   cursor: pointer;
   position: relative;
   transition: transform 0.2s ease;
-  margin-top: -15px;
 }
 
 .arrow:hover {
@@ -203,4 +225,10 @@ body {
 
 .arrow.rightArrow:hover {
   transform: translateX(5px);
+}
+
+@media screen and (max-width: 1650px) {
+  .qoutes {
+display: none;
+  }
 }

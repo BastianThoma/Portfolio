@@ -1,0 +1,227 @@
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  width: 670px;
+}
+
+#privacyContainer {
+  height: 70px;
+}
+
+.labelContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.inputBox {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+  gap: 16px;
+  background-color: transparent;
+  margin: 0;
+  color: #3dcfb6;
+  font-size: 24px;
+  font-weight: 500;
+  cursor: pointer;
+  span {
+    padding-left: 32px;
+  }
+  input {
+    padding-left: 32px;
+    border: none;
+    outline: none;
+    color: #3dcfb6;
+    background-color: transparent;
+    font-size: 18px;
+    font-weight: 400;
+    &::placeholder {
+      font-family: "Karla", sans-serif;
+      color: #ffffffcc;
+    }
+  }
+
+  input::placeholder {
+    color: #ffffffcc;
+  }
+
+  input:invalid:focus::placeholder {
+    color: #ffffffcc;
+  }
+
+  input:invalid:not(:focus):placeholder-shown {
+    color: #ec7b7b;
+  }
+
+  input:invalid {
+    border-color: #ec7b7b;
+  }
+
+  input:valid {
+    border-color: green;
+  }
+
+  input.ng-touched.ng-invalid::placeholder {
+    color: #ec7b7b;
+  }
+}
+
+.messageBox {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+  gap: 16px;
+  background-color: transparent;
+  margin: 0;
+  color: #3dcfb6;
+  font-size: 24px;
+  font-weight: 500;
+  cursor: pointer;
+  span {
+    padding-left: 32px;
+  }
+  input {
+    padding-left: 32px;
+    border: none;
+    outline: none;
+    color: #3dcfb6;
+    background-color: transparent;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+    &::placeholder {
+      font-family: "Karla", sans-serif;
+      color: #ffffffcc;
+    }
+  }
+
+  input::placeholder {
+    color: #ffffffcc;
+  }
+
+  input:invalid:focus::placeholder {
+    color: #ffffffcc;
+  }
+  input:invalid:not(:focus):placeholder-shown {
+    color: #ec7b7b;
+  }
+
+  input:invalid {
+    border-color: #ec7b7b;
+  }
+
+  input:valid {
+    border-color: green;
+  }
+
+  input.ng-touched.ng-invalid::placeholder {
+    color: #ec7b7b;
+  }
+}
+
+button {
+  margin-top: 40px;
+  width: 140px;
+  height: 48px;
+  border: solid 2px #ffffff;
+  background-color: transparent;
+  border-radius: 100px;
+  padding: 0 24px;
+  gap: 10px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  white-space: nowrap;
+  cursor: pointer;
+  &:hover {
+    border: solid 2px #3dcfb680;
+    color: #3dcfb680;
+  }
+}
+
+button:disabled {
+  border: solid 2px #ffffff80;
+  color: #ffffff80;
+  &:hover {
+    cursor: context-menu;
+  }
+}
+
+.custom-checkbox {
+  margin: 24px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  input[type="checkbox"] {
+    appearance: none;
+    width: 24px;
+    height: 24px;
+    border: 2px solid #3dcfb6;
+    border-radius: 8px;
+    background-color: transparent;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    &:checked {
+      border-color: #3dcfb6;
+      background-color: #3dcfb740;
+    }
+    &:checked::before {
+      content: "✓";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 16px;
+      color: #ffffff;
+      font-weight: bold;
+    }
+  }
+
+  .checkmark {
+    margin-left: 8px;
+    font-size: 14px;
+    color: #000;
+  }
+
+  .checkBoxText {
+    color: #ffffff;
+  }
+
+  a {
+    color: #3dcfb6;
+    text-decoration: none;
+  }
+}
+
+.error-message {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  height: 30px;
+  color: #ec7b7b;
+  font-size: 18px;
+  margin-top: 4px;
+  small {
+    margin: 0;
+    position: absolute;
+    top: -20px;
+    z-index: 2;
+  }
+}
+
+.borderTopTwoPixel {
+  border-top: solid 2px #3dcfb680;
+}
+
+.borderBotTwoPixel {
+  border-bottom: solid 2px #3dcfb680;
+}

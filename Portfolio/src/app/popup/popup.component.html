@@ -32,7 +32,7 @@
     <div class="imageBox">
       <div class="closeButton" (click)="closePopup()"></div>
       <img [src]="currentProject.projectImage" alt="Project Preview Image" />
-      <div class="nextButtonBox">
+      <div class="nextButtonBox" (click)="nextProject()">
         <span>Next Project</span>
         <img src="/assets/img/arrow_forward.png" alt="Next Project Button" />
       </div>
