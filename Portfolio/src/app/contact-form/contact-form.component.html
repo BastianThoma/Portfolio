@@ -1,76 +1,81 @@
-  <form (ngSubmit)="onSubmit()" #contactForm="ngForm">
-    <div class="labelContainer">
-      <label class="inputBox fontFiraCode borderTopTwoPixel" for="name">
-        <span>What´s your name?</span>
-        <input
-          id="name"
-          class="form-control"
-          type="text"
-          name="name"
-          [(ngModel)]="contactData.name"
-          #nameInput="ngModel"
-          [placeholder]="
-            nameInput.invalid && nameInput.touched
-              ? 'Oops! it seems your name is missing'
-              : 'Your name goes here'
-          "
-          required pattern="^[a-zA-Z\s]+$"
-        />
-      </label>
-    </div>
+<form (ngSubmit)="onSubmit()" #contactForm="ngForm">
+  <div class="labelContainer">
+    <label class="inputBox fontFiraCode borderTopTwoPixel" for="name">
+      <span>What´s your name?</span>
+      <input
+        id="name"
+        class="form-control"
+        type="text"
+        name="name"
+        [(ngModel)]="contactData.name"
+        #nameInput="ngModel"
+        [placeholder]="
+          nameInput.invalid && nameInput.touched
+            ? 'Oops! it seems your name is missing'
+            : 'Your name goes here'
+        "
+        required
+        pattern="^[a-zA-Z\s]+$"
+      />
+    </label>
+  </div>
 
-    <div class="labelContainer">
-      <label class="inputBox fontFiraCode borderTopTwoPixel borderBotTwoPixel" for="email">
-        <span>What´s your email?</span>
-        <input
-          id="email"
-          class="form-control"
-          type="email"
-          name="email"
-          [(ngModel)]="contactData.email"
-          #emailInput="ngModel"
-          [placeholder]="
-            emailInput.invalid && emailInput.touched
-              ? 'Hoppla! your email is required'
-              : 'youremail@email.com'
-          "
-          required pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
-        />
-      </label>
-    </div>
-    <div class="labelContainer">
-      <label class="messageBox fontFiraCode borderBotTwoPixel" for="message">
-        <span>How can I help you?</span>
-        <input
-          id="message"
-          class="form-control"
-          name="message"
-          [(ngModel)]="contactData.message"
-          #messageInput="ngModel"
-          [placeholder]="
-            messageInput.invalid && messageInput.touched
-              ? 'What do you need to develop?'
-              : 'Hello Bastian, I am interested in...'
-          "
-          required
-        />
-      </label>
-    </div>
-    <div id="privacyContainer" class="labelContainer">
-      <label class="custom-checkbox">
-        <input
-          type="checkbox"
-          [checked]="contactData.privacyAccepted"
-          (change)="onPrivacyChange($event)"
-          required
-        />
-        <span class="checkmark"></span>
-        <span class="checkBoxText fontKarla">
-          I've read the <a href="#" class="fontFiraCode">privacy policy</a> and
-          agree to the processing of my data as outlined.
-        </span>
-      </label>
-      <div
+  <div class="labelContainer">
+    <label
+      class="inputBox fontFiraCode borderTopTwoPixel borderBotTwoPixel"
+      for="email"
+    >
+      <span>What´s your email?</span>
+      <input
+        id="email"
+        class="form-control"
+        type="email"
+        name="email"
+        [(ngModel)]="contactData.email"
+        #emailInput="ngModel"
+        [placeholder]="
+          emailInput.invalid && emailInput.touched
+            ? 'Hoppla! your email is required'
+            : 'youremail@email.com'
+        "
+        required
+        pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+      />
+    </label>
+  </div>
+  <div class="labelContainer">
+    <label class="messageBox fontFiraCode borderBotTwoPixel" for="message">
+      <span>How can I help you?</span>
+      <input
+        id="message"
+        class="form-control"
+        name="message"
+        [(ngModel)]="contactData.message"
+        #messageInput="ngModel"
+        [placeholder]="
+          messageInput.invalid && messageInput.touched
+            ? 'What do you need to develop?'
+            : 'Hello Bastian, I am interested in...'
+        "
+        required
+      />
+    </label>
+  </div>
+  <div id="privacyContainer" class="labelContainer">
+    <label class="custom-checkbox">
+      <input
+        type="checkbox"
+        [checked]="contactData.privacyAccepted"
+        (change)="onPrivacyChange($event)"
+        required
+      />
+      <span class="checkmark"></span>
+      <span class="checkBoxText fontKarla">
+        I've read the <a href="#" class="fontFiraCode">privacy policy</a> and
+        agree to the processing of my data as outlined.
+      </span>
+    </label>
+    <div
       *ngIf="
         !contactData.privacyAccepted &&
         contactForm.form.touched &&
@@ -82,13 +87,13 @@
     >
       <small>Please accept the privacy policy.</small>
     </div>
-    </div>
+  </div>
 
-    <button
-      class="btn btn-primary"
-      type="submit"
-      [disabled]="!contactForm.form.valid || !contactData.privacyAccepted"
-    >
-      Say Hello ;)
-    </button>
-  </form>
+  <button
+    class="btn btn-primary"
+    type="submit"
+    [disabled]="!contactForm.form.valid || !contactData.privacyAccepted"
+  >
+    Say Hello ;)
+  </button>
+</form>

@@ -148,18 +148,21 @@
   .infoBanner {
     position: absolute;
     bottom: 60px;
-    background-color: #FFFFFF1F; /* Semi-transparenter Hintergrund für das Banner */
+    background-color: #ffffff1f; /* Semi-transparenter Hintergrund für das Banner */
     width: 100%;
     max-width: 1510px;
     height: 62px;
-    backdrop-filter: blur(5.3px); /* Weichzeichnungsfilter für den Hintergrund */
+    backdrop-filter: blur(
+      5.3px
+    ); /* Weichzeichnungsfilter für den Hintergrund */
     transform: rotate(-3deg);
     border-radius: 16px;
-    box-shadow: inset -10px 0 10px rgba(0, 0, 0, 0.499), inset 10px 0 10px rgba(0, 0, 0, 0.499);    
-  
+    box-shadow: inset -10px 0 10px rgba(0, 0, 0, 0.499),
+      inset 10px 0 10px rgba(0, 0, 0, 0.499);
+
     /* Pseudo-Element für den Hintergrund */
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       top: 0;
       left: 0;
@@ -169,52 +172,5 @@
       z-index: -1; /* Das Pseudo-Element liegt hinter dem eigentlichen Inhalt */
       border-radius: 16px; /* Gleicher Border-Radius wie das Banner, damit der Hintergrund zum Banner passt */
     }
-  }
-}
-
-@keyframes slide-text {
-  0% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-  25% {
-    transform: translateX(-150%);
-    opacity: 1;
-  }
-  30% {
-    opacity: 0;
-  }
-  50% {
-    transform: translateX(150%);
-    opacity: 0;
-  }
-  65% {
-    opacity: 1;
-  }
-  75% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-@keyframes bounceArrow {
-  0% {
-    transform: translateY(0); // Startposition
-  }
-  30% {
-    transform: translateY(-6px); // Nach oben springen
-  }
-  50% {
-    transform: translateY(0); // Zur Ausgangsposition
-  }
-  70% {
-    transform: translateY(-3px); // Mini-Bounce
-  }
-  100% {
-    transform: translateY(0); // Endposition
   }
 }

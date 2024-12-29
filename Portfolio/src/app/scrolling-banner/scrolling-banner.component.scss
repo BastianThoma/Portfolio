@@ -4,32 +4,20 @@
   overflow: hidden;
   display: flex;
   align-items: center;
-}
-
-.scrolling-content {
-  display: flex;
-  white-space: nowrap;
-  animation: scroll-left 40s linear infinite;
-}
-
-.scrolling-content span {
-  font-family: "Karla";
-  font-size: 32px;
-  color: #3dcfb6;
-  display: inline-block;
-  margin-right: 80px;
-}
-
-.scrolling-content img {
-  height: 8px;
-  vertical-align: middle;
-}
-
-@keyframes scroll-left {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-50%);
+  .scrolling-content {
+    display: flex;
+    white-space: nowrap;
+    animation: scroll-left 40s linear infinite;
+    span {
+      font-family: "Karla";
+      font-size: 32px;
+      color: #3dcfb6;
+      display: inline-block;
+      margin-right: 80px;
+    }
+    img {
+      height: 8px;
+      vertical-align: middle;
+    }
   }
 }

@@ -12,78 +12,78 @@
     rgba(0, 0, 0, 0) 13.56%,
     rgba(0, 0, 0, 0.6) 84.01%
   );
-}
-.navbarContent {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 1440px;
-  height: 98px;
-  position: fixed;
-  top: 0;
-  overflow: hidden;
-
-  .menu {
+  .navbarContent {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 24px;
+    width: 1440px;
+    height: 98px;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
 
-    .menuLink {
-      a {
-        font-size: 20px;
-        font-weight: 400;
-        text-decoration: none;
-        color: #ffffff;
-        &:hover {
-          color: #3dcfb680;
-        }
-        &:hover + .hidden {
-          opacity: 1;
-        }
-      }
-      .radioButton {
-        position: relative;
-        top: 14px;
-        right: 50%;
-      }
-    }
-
-    .languageSwitch {
-      font-size: 16px;
-      font-weight: 400;
-      width: 84px;
-      height: 28px;
-      border-radius: 100px;
-      border: 2px solid #3dcfb6;
+    .menu {
       display: flex;
-      button {
-        height: 28px;
-        width: 44px;
-        border-radius: 100px;
-        border: 0;
-        background-color: transparent;
-        color: #3dcfb680;
-        cursor: pointer;
+      align-items: center;
+      gap: 24px;
+
+      .menuLink {
+        a {
+          font-size: 20px;
+          font-weight: 400;
+          text-decoration: none;
+          color: #ffffff;
+          &:hover {
+            color: #3dcfb680;
+          }
+          &:hover + .hidden {
+            opacity: 1;
+          }
+        }
+        .radioButton {
+          position: relative;
+          top: 14px;
+          right: 50%;
+        }
       }
 
-      .selected {
-        font-weight: 700;
-        background-color: #3dcfb6;
-        color: #ffffff;
+      .languageSwitch {
+        font-size: 16px;
+        font-weight: 400;
+        width: 84px;
+        height: 28px;
+        border-radius: 100px;
+        border: 2px solid #3dcfb6;
+        display: flex;
+        button {
+          height: 28px;
+          width: 44px;
+          border-radius: 100px;
+          border: 0;
+          background-color: transparent;
+          color: #3dcfb680;
+          cursor: pointer;
+        }
+
+        .selected {
+          font-weight: 700;
+          background-color: #3dcfb6;
+          color: #ffffff;
+        }
       }
     }
-  }
-  .logo {
-    width: 140px;
-    height: 48px;
-    background-image: url("/assets/img/LogoNeuFullColorCutted.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    transition: all 0.2s ease-in-out;
-    &:hover {
-      cursor: pointer;
-      background-image: url("/assets/img/LogoNeuFullOutlineCutted.png");
-      transform: scale(0.95);
+    .logo {
+      width: 140px;
+      height: 48px;
+      background-image: url("/assets/img/LogoNeuFullColorCutted.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      transition: all 0.2s ease-in-out;
+      &:hover {
+        cursor: pointer;
+        background-image: url("/assets/img/LogoNeuFullOutlineCutted.png");
+        transform: scale(0.95);
+      }
     }
   }
 }

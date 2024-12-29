@@ -97,8 +97,6 @@ body {
   max-height: 300px;
   min-width: 260px;
   overflow-y: auto;
-  // scrollbar-width: thin; /* Für Firefox */
-  // scrollbar-color: #3DCFB6 transparent; /* Für Firefox, nur Thumb sichtbar */
 }
 
 .slide::-webkit-scrollbar {
@@ -229,6 +227,6 @@ body {
 
 @media screen and (max-width: 1650px) {
   .qoutes {
-display: none;
+    display: none;
   }
 }
