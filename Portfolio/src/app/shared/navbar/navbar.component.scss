@@ -16,17 +16,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1440px;
+    width: 100%;
+    max-width: 1440px;
     height: 98px;
     position: fixed;
     top: 0;
-    overflow: hidden;
 
     .menu {
       display: flex;
       align-items: center;
       gap: 24px;
-
       .menuLink {
         a {
           font-size: 20px;
@@ -85,5 +84,135 @@
         transform: scale(0.95);
       }
     }
+    .burgerMenu {
+      display: none; /* Standardmäßig ausgeblendet */
+      background-image: url("/assets/img/burger_menu.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute; /* Absolute Positionierung */
+      width: 24px;
+      height: 24px;
+      right: 0%; /* Abstand von rechts */
+      top: 50%; /* Vertikale Positionierung */
+      transform: translateY(-50%); /* Zentriert in der Höhe */
+      cursor: pointer; /* Zeigt, dass es klickbar ist */
+      &.menuOpen {
+        background-image: url("/assets/img/burger_menu_colored.png");
+      }
+    }
+  }
+}
+
+.overlay {
+  position: fixed; /* Über den gesamten Bildschirm */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); /* Halbtransparentes Schwarz */
+  z-index: 99; /* Unter dem Popup, über der Navbar */
+}
+
+.popup {
+  position: fixed; /* Popup über dem Overlay */
+  top: 180px;
+  right: -32px;
+  transform: translate(-50%, -50%); /* Zentrierung */
+  z-index: 100; /* Über dem Overlay */
+  width: 300px; /* Breite des Popups */
+  background: linear-gradient(45deg, #1c1c1c 50%, #08463b 100%);
+  border-radius: 16px; /* Abgerundete Ecken */
+  border: solid 1.5px #3dcfb6;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Leichter Schatten */
+  padding: 40px 0px; /* Innenabstand */
+  display: flex;
+  flex-direction: column; /* Inhalte vertikal anordnen */
+  align-items: center;
+  gap: 16px; /* Abstand zwischen Elementen */
+  text-align: center; /* Zentrierter Text */
+  .popupMenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    .popupMenuLink {
+      a {
+        font-size: 20px;
+        font-weight: 400;
+        text-decoration: none;
+        color: #ffffff;
+        &:hover {
+          color: #3dcfb680;
+        }
+        &:hover + .hidden {
+          opacity: 1;
+        }
+      }
+      .radioButton {
+        position: relative;
+        top: 14px;
+        right: 50%;
+      }
+    }
+  }
+  .popupLanguageSwitch {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 16px;
+    width: 84px;
+    height: 28px;
+    border-radius: 100px;
+    border: 2px solid #3dcfb6;
+    display: flex;
+    .popupButton {
+      height: 28px;
+      width: 44px;
+      border-radius: 100px;
+      border: 0;
+      background-color: transparent;
+      color: #3dcfb680;
+      cursor: pointer;
+      &.selected {
+        font-weight: 700;
+        background-color: #3dcfb6;
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+.menu .logo {
+  flex: 1;
+}
+
+@media (max-width: 1650px) {
+  .navbarContent {
+    width: 70% !important;
+  }
+}
+
+@media (max-width: 950px) {
+  .menu {
+    display: none !important;
+  }
+  .navbarContent {
+    flex-direction: row-reverse !important;
+    justify-content: flex-end !important;
+  }
+  .burgerMenu {
+    display: block !important;
+  }
+  .logo {
+    background-image: url("/assets/img/LogoFullColor.png") !important;
+  }
+  .logo:hover {
+    background-image: url("/assets/img/LogoFullOutline.png") !important;
+  }
+  .popup {
+    top: 15%;
+    right: 50%;
+    left: 50%;
+    width: 250px;
   }
 }

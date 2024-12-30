@@ -7,17 +7,80 @@
       </div>
       <div class="menuLink fontFiraCode">
         <a href="#aboutMeSection">About me</a>
-        <img class="radioButton hidden" src="/assets/img/radio_button_unchecked.svg" width="8px" height="8px" alt="">
+        <img
+          class="radioButton hidden"
+          src="/assets/img/radio_button_unchecked.svg"
+          width="8px"
+          height="8px"
+          alt=""
+        />
       </div>
       <div class="menuLink fontFiraCode">
         <a href="#skillsSection">Skills</a>
-        <img class="radioButton hidden" src="/assets/img/radio_button_unchecked.svg" width="8px" height="8px" alt="">
+        <img
+          class="radioButton hidden"
+          src="/assets/img/radio_button_unchecked.svg"
+          width="8px"
+          height="8px"
+          alt=""
+        />
       </div>
       <div class="menuLink fontFiraCode">
         <a href="#projectsSection">Projects</a>
-        <img class="radioButton hidden" src="/assets/img/radio_button_unchecked.svg" width="8px" height="8px" alt="">
+        <img
+          class="radioButton hidden"
+          src="/assets/img/radio_button_unchecked.svg"
+          width="8px"
+          height="8px"
+          alt=""
+        />
       </div>
     </div>
     <div class="logo"></div>
+    <div
+      class="burgerMenu"
+      [ngClass]="{ 'menuOpen': isMenuOpen }"
+      (click)="togglePopup()"
+    ></div>
+  </div>
+
+  <div class="overlay" *ngIf="isPopupVisible" (click)="closePopup()"></div>
+  <div class="popup" *ngIf="isPopupVisible" (click)="$event.stopPropagation()">
+    <div class="popupMenu">
+      <div class="popupMenuLink">
+        <a href="#aboutMeSection" (click)="closePopup()">About me</a>
+        <img
+        class="radioButton hidden"
+        src="/assets/img/radio_button_unchecked.svg"
+        width="8px"
+        height="8px"
+        alt=""
+      />
+      </div>
+      <div class="popupMenuLink" (click)="closePopup()">
+        <a href="#skillsSection">Skills</a>
+        <img
+        class="radioButton hidden"
+        src="/assets/img/radio_button_unchecked.svg"
+        width="8px"
+        height="8px"
+        alt=""
+      />
+      </div>
+      <div class="popupMenuLink" (click)="closePopup()">
+        <a href="#projectsSection">Projects</a>
+        <img
+        class="radioButton hidden"
+        src="/assets/img/radio_button_unchecked.svg"
+        width="8px"
+        height="8px"
+        alt=""
+      />
+      </div>
+    </div>
+    <div class="popupLanguageSwitch">
+      <button class="popupButton fontFiraCode selected">EN</button>
+      <button class="popupButton fontFiraCode">DE</button>
+    </div>
   </div>
 </div>
