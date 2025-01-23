@@ -1,0 +1,87 @@
+{
+    "MENU": {
+      "ABOUT_ME": "About Me",
+      "SKILLS": "Skills",
+      "PROJECTS": "Projects"
+    },
+    "LANDING_PAGE": {
+      "FRONTEND_DEVELOPER": "Frontend Developer",
+      "BASTIAN_THOMA": "Bastian Thoma",
+      "CHECK_MY_WORK": "Check My Work",
+      "CONTACT_ME": "Contact Me"
+    },
+    "ABOUT_ME": {
+      "WHO_I_AM": "Who I am",
+      "ABOUT_ME": "About me",
+      "MAIN_TEXT": "Hi, I’m a German-speaking Frontend Developer based in Bispingen. Motivated by the limitless opportunities within IT, I am excited about crafting visually captivating and intuitive websites and applications.",
+      "FLEXIBLE_WORK": "Flexible in terms of working environments, I can work effectively both on-site in Bispingen and remotely.",
+      "OPEN_MINDED": "I am open-minded and always looking for personal challenges to constantly improve my knowledge and skills.",
+      "PROBLEM_SOLVING": "In my profession, programming isn't just about writing code; it's a creative form of problem-solving. I take pride in my ability to distill complex technical challenges into simple, user-friendly solutions. This way, I help you achieve your goals and bring your visions to life."
+    },
+    "SKILLS": {
+      "TECHNOLOGIES": "Technologies",
+      "SKILL_SET": "Skill Set",
+      "MAIN_TEXT": "My journey has involved working on diverse projects, employing a range of frontend technologies and concepts. I am open to embracing new technologies and methodologies to Continously enhance my skills and stay ahead in the ever-evolving landscape of web development.",
+      "YOU_NEED": "You need",
+      "ANOTHER_SKILL": " another skill?",
+      "REACHOUT_TEXT": "Feel free to contact me. I look forward to expanding on my previous knowledge.",
+      "LETS_TALK": "Let's Talk",
+      "SPECIAL_INTEREST": "I have a special interest in learning"
+    },
+    "PROJECTS": {
+      "PORTFOLIO": "Portfolio",
+      "FEATURED_PROJECTS": "Featured Projects",
+      "EXPLORE_TEXT": "Explore a selection of my work here - Interact with projects to see my skills in action."
+    },
+    "FEEDBACK": {
+      "HEADER_TITLE": "What my colleagues say about me",
+      "TEXT1": "You excel at solving complex programming problems quickly and integrating new technologies like the recent API implementation.",
+      "TEXT2": "Your attention to detail ensures clean, maintainable code, and your clear communication simplifies teamwork.",
+      "TEXT3": "I admire your structured approach to tasks and how patiently you explain complex topics to others."
+    },
+    "CONTACT": {
+      "TITLE": "Contact me",
+      "HEADER": "Let´s work together",
+      "SUBHEADER": "Got a problem to solve?",
+      "TEXT": "Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to your projects with my work.",
+      "NEED_DEV": "Need a Frontend developer?",
+      "TALK": "Let's talk!"
+    },
+    "CONTACT_FORM": {
+      "NAME_LABEL": "What´s your name?",
+      "NAME_PLACEHOLDER": "Your name goes here",
+      "NAME_ERROR": "Oops! it seems your name is missing",
+      "NAME_ERROR_TITLE": "Name must only contain letters and spaces",
+      "EMAIL_LABEL": "What´s your email?",
+      "EMAIL_PLACEHOLDER": "youremail@email.com",
+      "EMAIL_ERROR": "Hoppla! your email is required",
+      "EMAIL_ERROR_TITLE": "Enter a valid email address (e.g. name@example.com)",
+      "MESSAGE_LABEL": "How can I help you?",
+      "MESSAGE_PLACEHOLDER": "Hello Bastian, I am interested in...",
+      "MESSAGE_ERROR": "What do you need to develop?",
+      "MESSAGE_ERROR_TITLE": "Message cannot be empty. Please provide some details",
+      "PRIVACY_POLICY_TEXT1": "I've read the",
+      "PRIVACY_POLICY_LINK": "privacy policy",
+      "PRIVACY_POLICY_TEXT2": " and agree to the processing of my data as outlined.",
+      "PRIVACY_ERROR": "Please accept the privacy policy.",
+      "SUBMIT_BUTTON": "Say Hello ;)"
+    },
+    "FOOTER": {
+      "WEB_DEVELOPER": "Web Developer",
+      "LOCATION": "Bispingen Germany",
+      "LEGAL_NOTICE": "Legal Notice"
+    },
+    "POPUP": {
+      "DESCRIPTION_TITLE": "What is this project about?",
+      "DESCRIPTION1": "An interactive Pokedex inspired by the Pokémon universe. Search, explore, and view details about Pokémon using data from the PokéAPI. The app features smooth navigation, detailed Pokémon stats, and visuals, providing a seamless experience for Pokémon enthusiasts.",
+      "DESCRIPTION2": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
+      "DESCRIPTION3": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.",
+      "NEXT_PROJECT": "Next Project"
+  },
+    "SCROLLING_BANNER": {
+      "FRONTEND_DEVELOPER": "Frontend Developer",
+      "BASED_IN": "Based in Bispingen",
+      "AVAILABILITY": "Available for remote work",
+      "OPEN_TO_WORK": "Open to work"
+    }
+  }

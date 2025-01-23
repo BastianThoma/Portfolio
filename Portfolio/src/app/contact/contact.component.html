@@ -1,14 +1,12 @@
 <div class="contactContainer">
   <div class="contactContent">
     <div class="contactMeBox">
-      <h3 class="fontKarla">Contact me</h3>
-      <h1 class="fontFiraCode">Let´s work together</h1>
-      <h2 class="fontFiraCode">Got a problem to solve?</h2>
-      <span class="fontKarla"
-        >Contact me through this form, I am interested in hearing from you,
-        knowing your ideas and contributing to your projects with my work.<br>
-        <br>
-        Need a Frontend developer? <a href="#">Let’s talk!</a>
+      <h3 class="fontKarla">{{ 'CONTACT.TITLE' | translate }}</h3>
+      <h1 class="fontFiraCode">{{ 'CONTACT.HEADER' | translate }}</h1>
+      <h2 class="fontFiraCode">{{ 'CONTACT.SUBHEADER' | translate }}</h2>
+      <span class="fontKarla">
+        {{ 'CONTACT.TEXT' | translate }}<br><br>
+        {{ 'CONTACT.NEED_DEV' | translate }} <a href="#">{{ 'CONTACT.TALK' | translate }}</a>
       </span>
     </div>
     <app-contact-form></app-contact-form>

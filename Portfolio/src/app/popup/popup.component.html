@@ -4,8 +4,8 @@
     <div class="descriptionBox">
       <h1 class="fontKarla">{{ currentProject.projectNumber }}</h1>
       <h2 class="fontFiraCode">{{ currentProject.projectTitle }}</h2>
-      <h3 class="fontFiraCode">{{ currentProject.projectDescriptionTitle }}</h3>
-      <p class="fontKarla">{{ currentProject.projectDescription }}</p>
+      <h3 class="fontFiraCode">{{ currentProject.projectDescriptionTitle | translate }}</h3>
+      <p class="fontKarla">{{ currentProject.projectDescription | translate }}</p>
 
       <!-- Technologiestack, mit *ngFor iteriert über die techStack-Array -->
       <div class="tech-stack">
@@ -31,9 +31,9 @@
     <!-- Bild des Projekts -->
     <div class="imageBox">
       <div class="closeButton" (click)="closePopup()"></div>
-      <img [src]="currentProject.projectImage" alt="Project Preview Image" />
+      <img class="projectPreviewImg" [src]="currentProject.projectImage" alt="Project Preview Image" />
       <div class="nextButtonBox" (click)="nextProject()">
-        <span>Next Project</span>
+        <span>{{ 'POPUP.NEXT_PROJECT' | translate }}</span>
         <img src="/assets/img/arrow_forward.png" alt="Next Project Button" />
       </div>
     </div>

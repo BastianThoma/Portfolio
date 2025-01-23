@@ -1,0 +1,87 @@
+{
+    "MENU": {
+      "ABOUT_ME": "Über mich",
+      "SKILLS": "Fähigkeiten",
+      "PROJECTS": "Projekte"
+    },
+    "LANDING_PAGE": {
+      "FRONTEND_DEVELOPER": "Frontend-Entwickler",
+      "BASTIAN_THOMA": "Bastian Thoma",
+      "CHECK_MY_WORK": "Meine Arbeiten ansehen",
+      "CONTACT_ME": "Kontaktieren Sie mich"
+    },
+    "ABOUT_ME": {
+      "WHO_I_AM": "Wer ich bin",
+      "ABOUT_ME": "Über mich",
+      "MAIN_TEXT": "Hallo, ich bin ein deutschsprachiger Frontend-Entwickler aus Bispingen. Motiviert von den grenzenlosen Möglichkeiten in der IT freue ich mich darauf, visuell ansprechende und intuitive Websites und Anwendungen zu erstellen.",
+      "FLEXIBLE_WORK": "Flexibel in Bezug auf Arbeitsumgebungen kann ich sowohl vor Ort in Bispingen als auch remote effektiv arbeiten.",
+      "OPEN_MINDED": "Ich bin aufgeschlossen und stets auf der Suche nach persönlichen Herausforderungen, um mein Wissen und meine Fähigkeiten kontinuierlich zu verbessern.",
+      "PROBLEM_SOLVING": "In meinem Beruf geht es beim Programmieren nicht nur um das Schreiben von Code; es ist eine kreative Form der Problemlösung. Ich bin stolz darauf, komplexe technische Herausforderungen in einfache, benutzerfreundliche Lösungen zu übersetzen. So helfe ich Ihnen, Ihre Ziele zu erreichen und Ihre Visionen zum Leben zu erwecken."
+    },
+    "SKILLS": {
+      "TECHNOLOGIES": "Technologien",
+      "SKILL_SET": "Fähigkeiten",
+      "MAIN_TEXT": "Meine Reise hat mich dazu gebracht, an verschiedenen Projekten zu arbeiten und eine Vielzahl von Frontend-Technologien und Konzepten einzusetzen. Ich bin offen dafür, neue Technologien und Methoden zu erlernen, um meine Fähigkeiten kontinuierlich zu verbessern und in der sich ständig weiterentwickelnden Welt der Webentwicklung auf dem neuesten Stand zu bleiben.",
+      "YOU_NEED": "Sie benötigen",
+      "ANOTHER_SKILL": " eine andere Fähigkeit?",
+      "REACHOUT_TEXT": "Zögern Sie nicht, mich zu kontaktieren. Ich freue mich darauf, mein Wissen zu erweitern.",
+      "LETS_TALK": "Lass uns reden",
+      "SPECIAL_INTEREST": "Ich habe ein besonderes Interesse daran, Neues zu lernen"
+    },
+    "PROJECTS": {
+      "PORTFOLIO": "Portfolio",
+      "FEATURED_PROJECTS": "Hervorgehobene Projekte",
+      "EXPLORE_TEXT": "Entdecke hier eine Auswahl meiner Arbeit – Interagiere mit den Projekten, um meine Fähigkeiten in Aktion zu sehen."
+    },
+    "FEEDBACK": {
+      "HEADER_TITLE": "Was meine Kolleginnen und Kollegen über mich sagen",
+      "TEXT1": "Du bist hervorragend darin, komplexe Programmierprobleme schnell zu lösen und neue Technologien, wie die kürzlich implementierte API, zu integrieren.",
+      "TEXT2": "Deine Liebe zum Detail sorgt für sauberen, wartbaren Code, und durch deine klare Kommunikation wird Teamarbeit einfacher.",
+      "TEXT3": "Ich bewundere deine strukturierte Herangehensweise an Aufgaben und wie geduldig du anderen komplexe Themen erklärst."
+    },
+    "CONTACT": {
+      "TITLE": "Kontaktiere mich",
+      "HEADER": "Lass uns zusammenarbeiten",
+      "SUBHEADER": "Haben Sie ein Problem zu lösen?",
+      "TEXT": "Kontaktieren Sie mich über dieses Formular. Ich freue mich darauf, von Ihnen zu hören, Ihre Ideen kennenzulernen und mit meiner Arbeit zu Ihren Projekten beizutragen.",
+      "NEED_DEV": "Benötigen Sie einen Frontend-Entwickler?",
+      "TALK": "Lass uns reden!"
+    },
+    "CONTACT_FORM": {
+      "NAME_LABEL": "Wie heißt du?",
+      "NAME_PLACEHOLDER": "Dein Name hier",
+      "NAME_ERROR": "Ups! Es scheint, dass dein Name fehlt",
+      "NAME_ERROR_TITLE": "Der Name darf nur Buchstaben und Leerzeichen enthalten",
+      "EMAIL_LABEL": "Wie ist deine E-Mail?",
+      "EMAIL_PLACEHOLDER": "youremail@email.com",
+      "EMAIL_ERROR": "Hoppla! Deine E-Mail ist erforderlich",
+      "EMAIL_ERROR_TITLE": "Gib eine gültige E-Mail-Adresse ein (z.B. name@example.com)",
+      "MESSAGE_LABEL": "Wie kann ich dir helfen?",
+      "MESSAGE_PLACEHOLDER": "Hallo Bastian, ich interessiere mich für...",
+      "MESSAGE_ERROR": "Was musst du entwickeln?",
+      "MESSAGE_ERROR_TITLE": "Nachricht darf nicht leer sein. Bitte gib Details an",
+      "PRIVACY_POLICY_TEXT1": "Ich habe die",
+      "PRIVACY_POLICY_LINK": "Datenschutzerklärung",
+      "PRIVACY_POLICY_TEXT2": "gelesen und stimme der Verarbeitung meiner Daten gemäß dieser zu.",
+      "PRIVACY_ERROR": "Bitte akzeptiere die Datenschutzrichtlinie.",
+      "SUBMIT_BUTTON": "Sag Hallo ;)"
+    },
+    "FOOTER": {
+      "WEB_DEVELOPER": "Webentwickler",
+      "LOCATION": "Bispingen, Deutschland",
+      "LEGAL_NOTICE": "Impressum"
+    },
+    "POPUP": {
+      "DESCRIPTION_TITLE": "Worum geht es in diesem Projekt?",
+      "DESCRIPTION1": "Ein interaktiver Pokedex, inspiriert vom Pokémon-Universum. Suche, entdecke und sieh dir Details zu Pokémon an, die mit Daten aus der PokéAPI abgerufen werden. Die App bietet eine flüssige Navigation, detaillierte Pokémon-Statistiken und visuelle Darstellungen, die ein nahtloses Erlebnis für Pokémon-Enthusiasten bieten.",
+      "DESCRIPTION2": "Ein Aufgabenmanager, inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben mithilfe von Drag-and-Drop-Funktionen, weise Benutzern und Kategorien zu.",
+      "DESCRIPTION3": "Ein Jump-, Run- und Wurfspiel, das auf einem objektorientierten Ansatz basiert. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen das verrückte Huhn zu kämpfen.",
+      "NEXT_PROJECT": "Nächstes Projekt"
+    },
+    "SCROLLING_BANNER": {
+      "FRONTEND_DEVELOPER": "Frontend-Entwickler",
+      "BASED_IN": "Ansässig in Bispingen",
+      "AVAILABILITY": "Verfügbar für Remote-Arbeit",
+      "OPEN_TO_WORK": "Offen für neue Herausforderungen"
+    }
+  }

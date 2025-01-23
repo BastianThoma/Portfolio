@@ -1,46 +1,45 @@
-<div class="projectsSection" id="projectsSection">
-  <div class="projetcsContent">
-    <div class="projectsBox">
-      <h2 class="fontKarla">Portfolio</h2>
-      <h1 class="fontFiraCode">Featured Projects</h1>
-      <span class="fontKarla"
-        >Explore a selection of my work here - Interact with <br />
-        projects to see my skills in action.
-      </span>
-      <div class="projectCard borderTopTwoPixel marginTop32" (click)="popup.showPopupWithIndex(0)">
-        <div class="cardTitleBox">
-          <h3 class="fontFiraCode">Pokedex</h3>
-          <img src="/assets/img/arrow_outward.png" alt="Arrow Top Right" />
+  <div class="projectsSection" id="projectsSection">
+    <div class="projetcsContent">
+      <div class="projectsBox">
+        <h2 class="fontKarla">{{ 'PROJECTS.PORTFOLIO' | translate }}</h2>
+        <h1 class="fontFiraCode">{{ 'PROJECTS.FEATURED_PROJECTS' | translate }}</h1>
+        <span class="fontKarla">
+          {{ 'PROJECTS.EXPLORE_TEXT' | translate }}
+        </span>
+        <div class="projectCard borderTopTwoPixel marginTop32" (click)="popup.showPopupWithIndex(0)">
+          <div class="cardTitleBox">
+            <h3 class="fontFiraCode">Pokedex</h3>
+            <img src="/assets/img/arrow_outward.png" alt="Arrow Top Right" />
+          </div>
+          <span class="fontKarla">HTML | CSS | JavaScript | API</span>
+          <div class="projectPreviewHoverBox top100">
+            <img src="/assets/img/portrait.jpg" alt="Pokedex Preview Image" />
+            <img src="/assets/img/Capa_1.png" alt="Preview Image Background-Effect" />
+          </div>
         </div>
-        <span class="fontKarla">HTML | CSS | JavaScript | API</span>
-        <div class="projectPreviewHoverBox top100">
-          <img src="/assets/img/portrait.jpg" alt="Pokedex Preview Image" />
-          <img src="/assets/img/Capa_1.png" alt="Preview Image Background-Effect" />
+        <div class="projectCard borderTopTwoPixel borderBotTwoPixel" (click)="popup.showPopupWithIndex(1)">
+          <div class="cardTitleBox">
+            <h3 class="fontFiraCode">Join</h3>
+            <img src="/assets/img/arrow_outward.png" alt="Arrow Top Right" />
+          </div>
+          <span class="fontKarla">HTML | CSS | JavaScript</span>
+          <div class="projectPreviewHoverBox top50">
+            <img src="/assets/img/portrait.jpg" alt="Join Preview Image" />
+            <img src="/assets/img/Capa_1.png" alt="Preview Image Background-Effect" />
+          </div>
         </div>
-      </div>
-      <div class="projectCard borderTopTwoPixel borderBotTwoPixel" (click)="popup.showPopupWithIndex(1)">
-        <div class="cardTitleBox">
-          <h3 class="fontFiraCode">Join</h3>
-          <img src="/assets/img/arrow_outward.png" alt="Arrow Top Right" />
-        </div>
-        <span class="fontKarla">HTML | CSS | JavaScript</span>
-        <div class="projectPreviewHoverBox top50">
-          <img src="/assets/img/portrait.jpg" alt="Join Preview Image" />
-          <img src="/assets/img/Capa_1.png" alt="Preview Image Background-Effect" />
-        </div>
-      </div>
-      <app-popup #popup></app-popup>
-      <div class="projectCard borderBotTwoPixel" (click)="popup.showPopupWithIndex(2)">
-        <div class="cardTitleBox">
-          <h3 class="fontFiraCode">El Pollo Loco</h3>
-          <img src="/assets/img/arrow_outward.png" alt="Arrow Top Right" />
-        </div>
-        <span class="fontKarla">HTML | CSS | JavaScript | OOP</span>
-        <div class="projectPreviewHoverBox top0">
-          <img src="/assets/img/portrait.jpg" alt="El Pollo Loco Preview Image" />
-          <img src="/assets/img/Capa_1.png" alt="Preview Image Background-Effect" />
+        <app-popup #popup></app-popup>
+        <div class="projectCard borderBotTwoPixel" (click)="popup.showPopupWithIndex(2)">
+          <div class="cardTitleBox">
+            <h3 class="fontFiraCode">El Pollo Loco</h3>
+            <img src="/assets/img/arrow_outward.png" alt="Arrow Top Right" />
+          </div>
+          <span class="fontKarla">HTML | CSS | JavaScript | OOP</span>
+          <div class="projectPreviewHoverBox top0">
+            <img src="/assets/img/portrait.jpg" alt="El Pollo Loco Preview Image" />
+            <img src="/assets/img/Capa_1.png" alt="Preview Image Background-Effect" />
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>

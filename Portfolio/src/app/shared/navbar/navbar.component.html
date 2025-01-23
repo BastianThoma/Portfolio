@@ -2,11 +2,25 @@
   <div class="navbarContent">
     <div class="menu">
       <div class="languageSwitch">
-        <button class="fontFiraCode selected">EN</button>
-        <button class="fontFiraCode">DE</button>
+        <button
+          class="fontFiraCode"
+          [class.selected]="currentLang === 'en'"
+          (click)="switchLanguage('en')"
+        >
+          EN
+        </button>
+
+        <button
+          class="fontFiraCode"
+          [class.selected]="currentLang === 'de'"
+          (click)="switchLanguage('de')"
+        >
+          DE
+        </button>
       </div>
+
       <div class="menuLink fontFiraCode">
-        <a href="#aboutMeSection">About me</a>
+        <a href="#aboutMeSection">{{ "MENU.ABOUT_ME" | translate }}</a>
         <img
           class="radioButton hidden"
           src="/assets/img/radio_button_unchecked.svg"
@@ -16,7 +30,7 @@
         />
       </div>
       <div class="menuLink fontFiraCode">
-        <a href="#skillsSection">Skills</a>
+        <a href="#skillsSection">{{ "MENU.SKILLS" | translate }}</a>
         <img
           class="radioButton hidden"
           src="/assets/img/radio_button_unchecked.svg"
@@ -26,7 +40,7 @@
         />
       </div>
       <div class="menuLink fontFiraCode">
-        <a href="#projectsSection">Projects</a>
+        <a href="#projectsSection">{{ "MENU.PROJECTS" | translate }}</a>
         <img
           class="radioButton hidden"
           src="/assets/img/radio_button_unchecked.svg"
@@ -39,7 +53,7 @@
     <div class="logo"></div>
     <div
       class="burgerMenu"
-      [ngClass]="{ 'menuOpen': isMenuOpen }"
+      [ngClass]="{ menuOpen: isMenuOpen }"
       (click)="togglePopup()"
     ></div>
   </div>
@@ -48,39 +62,33 @@
   <div class="popup" *ngIf="isPopupVisible" (click)="$event.stopPropagation()">
     <div class="popupMenu">
       <div class="popupMenuLink">
-        <a href="#aboutMeSection" (click)="closePopup()">About me</a>
-        <img
-        class="radioButton hidden"
-        src="/assets/img/radio_button_unchecked.svg"
-        width="8px"
-        height="8px"
-        alt=""
-      />
+        <a href="#aboutMeSection" (click)="closePopup()">{{
+          "MENU.ABOUT_ME" | translate
+        }}</a>
       </div>
       <div class="popupMenuLink" (click)="closePopup()">
-        <a href="#skillsSection">Skills</a>
-        <img
-        class="radioButton hidden"
-        src="/assets/img/radio_button_unchecked.svg"
-        width="8px"
-        height="8px"
-        alt=""
-      />
+        <a href="#skillsSection">{{ "MENU.SKILLS" | translate }}</a>
       </div>
       <div class="popupMenuLink" (click)="closePopup()">
-        <a href="#projectsSection">Projects</a>
-        <img
-        class="radioButton hidden"
-        src="/assets/img/radio_button_unchecked.svg"
-        width="8px"
-        height="8px"
-        alt=""
-      />
+        <a href="#projectsSection">{{ "MENU.PROJECTS" | translate }}</a>
       </div>
     </div>
     <div class="popupLanguageSwitch">
-      <button class="popupButton fontFiraCode selected">EN</button>
-      <button class="popupButton fontFiraCode">DE</button>
+      <button
+        class="popupButton fontFiraCode"
+        [class.selected]="currentLang === 'en'"
+        (click)="switchLanguage('en')"
+      >
+        EN
+      </button>
+
+      <button
+        class="popupButton fontFiraCode"
+        [class.selected]="currentLang === 'de'"
+        (click)="switchLanguage('de')"
+      >
+        DE
+      </button>
     </div>
   </div>
 </div>

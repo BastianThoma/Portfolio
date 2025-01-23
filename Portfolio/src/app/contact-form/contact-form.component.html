@@ -1,7 +1,7 @@
 <form (ngSubmit)="onSubmit()" #contactForm="ngForm">
   <div class="labelContainer">
     <label class="inputBox fontFiraCode borderTopTwoPixel" for="name">
-      <span>What´s your name?</span>
+      <span>{{ 'CONTACT_FORM.NAME_LABEL' | translate }}</span>
       <input
         id="name"
         class="form-control"
@@ -11,11 +11,16 @@
         #nameInput="ngModel"
         [placeholder]="
           nameInput.invalid && nameInput.touched
-            ? 'Oops! it seems your name is missing'
-            : 'Your name goes here'
+            ? ('CONTACT_FORM.NAME_ERROR' | translate)
+            : ('CONTACT_FORM.NAME_PLACEHOLDER' | translate)
         "
         required
         pattern="^[a-zA-Z\s]+$"
+        [title]="
+          nameInput.invalid && nameInput.touched
+            ? ('CONTACT_FORM.NAME_ERROR_TITLE' | translate)
+            : ''
+        "
       />
     </label>
   </div>
@@ -25,7 +30,7 @@
       class="inputBox fontFiraCode borderTopTwoPixel borderBotTwoPixel"
       for="email"
     >
-      <span>What´s your email?</span>
+      <span>{{ 'CONTACT_FORM.EMAIL_LABEL' | translate }}</span>
       <input
         id="email"
         class="form-control"
@@ -35,17 +40,23 @@
         #emailInput="ngModel"
         [placeholder]="
           emailInput.invalid && emailInput.touched
-            ? 'Hoppla! your email is required'
-            : 'youremail@email.com'
+            ? ('CONTACT_FORM.EMAIL_ERROR' | translate)
+            : ('CONTACT_FORM.EMAIL_PLACEHOLDER' | translate)
         "
         required
         pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+        [class.invalid-effect]="emailInput.invalid && emailInput.touched"
+        [title]="
+          emailInput.invalid && emailInput.touched
+            ? ('CONTACT_FORM.EMAIL_ERROR_TITLE' | translate)
+            : ''
+        "
       />
     </label>
   </div>
   <div class="labelContainer">
     <label class="messageBox fontFiraCode borderBotTwoPixel" for="message">
-      <span>How can I help you?</span>
+      <span>{{ 'CONTACT_FORM.MESSAGE_LABEL' | translate }}</span>
       <input
         id="message"
         class="form-control"
@@ -54,25 +65,33 @@
         #messageInput="ngModel"
         [placeholder]="
           messageInput.invalid && messageInput.touched
-            ? 'What do you need to develop?'
-            : 'Hello Bastian, I am interested in...'
+            ? ('CONTACT_FORM.MESSAGE_ERROR' | translate)
+            : ('CONTACT_FORM.MESSAGE_PLACEHOLDER' | translate)
         "
         required
+        [title]="
+          messageInput.invalid && messageInput.touched
+            ? ('CONTACT_FORM.MESSAGE_ERROR_TITLE' | translate)
+            : ''
+        "
       />
     </label>
   </div>
   <div id="privacyContainer" class="labelContainer">
     <label class="custom-checkbox">
-      <input
-        type="checkbox"
-        [checked]="contactData.privacyAccepted"
-        (change)="onPrivacyChange($event)"
-        required
-      />
-      <span class="checkmark"></span>
+      <div>
+        <input
+          type="checkbox"
+          [checked]="contactData.privacyAccepted"
+          (change)="onPrivacyChange($event)"
+          required
+        />
+        <span class="checkmark"></span>
+      </div>
       <span class="checkBoxText fontKarla">
-        I've read the <a href="#" class="fontFiraCode">privacy policy</a> and
-        agree to the processing of my data as outlined.
+          {{ 'CONTACT_FORM.PRIVACY_ERROR' | translate }} 
+          <a href="#" class="fontFiraCode">{{ 'CONTACT_FORM.PRIVACY_POLICY_LINK' | translate }}</a>
+          {{ 'CONTACT_FORM.PRIVACY_POLICY_TEXT2' | translate }}
       </span>
     </label>
     <div
@@ -85,7 +104,7 @@
       "
       class="error-message"
     >
-      <small>Please accept the privacy policy.</small>
+      <small>{{ 'CONTACT_FORM.PRIVACY_ERROR' | translate }}</small>
     </div>
   </div>
 
@@ -94,6 +113,6 @@
     type="submit"
     [disabled]="!contactForm.form.valid || !contactData.privacyAccepted"
   >
-    Say Hello ;)
+    {{ 'CONTACT_FORM.SUBMIT_BUTTON' | translate }}
   </button>
 </form>

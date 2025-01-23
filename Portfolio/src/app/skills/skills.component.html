@@ -1,23 +1,22 @@
 <div class="skillsSection" id="skillsSection">
   <div class="skillsContent">
     <app-section-card
-      [sectionTitle]="'Technologies'"
-      [mainHeading]="'Skill Set'"
-      [mainText]="
-        'My journey has involved working on diverse projects, employing a range of frontend technologies and concepts. I am open to embracing new technologies and methodologies to Continously enhance my skills and stay ahead in the ever-evolving landscape of web development.'
-      "
+      [sectionTitle]="'SKILLS.TECHNOLOGIES' | translate"
+      [mainHeading]="'SKILLS.SKILL_SET' | translate"
+      [mainText]="'SKILLS.MAIN_TEXT' | translate"
     >
       <div class="skillsetBoxContent">
         <span class="highlightQuestion fontFiraCode">
-          <span class="whiteText">You need </span>
-          <span class="mintText">another skill?</span>
+          <span class="whiteText">{{ 'SKILLS.YOU_NEED' | translate }}</span>
+          <span class="mintText">{{ 'SKILLS.ANOTHER_SKILL' | translate }}</span>
         </span>
-        <span class="reachOutText whiteText fontKarla"
-          >Feel free to contact me. I look forward to <br />
-          expanding on my previous knowledge.</span
-        >
+        <span class="reachOutText whiteText fontKarla">
+          {{ 'SKILLS.REACHOUT_TEXT' | translate }}
+        </span>
       </div>
-      <button class="letsTalkButton fontKarla"><span>Let's Talk</span></button>
+      <button class="letsTalkButton fontKarla">
+        <span>{{ 'SKILLS.LETS_TALK' | translate }}</span>
+      </button>
     </app-section-card>
 
     <div class="skillsetIconBox">
@@ -39,7 +38,7 @@
           *ngIf="skill.label === 'Growth Mindset' && skill.hovered"
           class="speech-bubble"
         >
-          <p class="speech-text">I have a special interest in learning</p>
+          <p class="speech-text">{{ 'SKILLS.SPECIAL_INTEREST' | translate }}</p>
           <div class="special-skills">
             <div class="special-skill-icon">
               <img

@@ -1,72 +1,84 @@
-$primary-color: #3dcfb6;
-$secondary-color: #3dcfb61a;
-$standard-color: #FFFFFF;
-$font-size-base: 18px;
-$font-size-large: 24px;
-$font-size-xlarge: 64px;
-$font-weight-medium: 500;
-$font-weight-bold: 700;
-$font-weight-regular: 400;
-$border-radius: 30px;
-$spacing: 32px;
-$gap: 16px;
-
-@mixin text-style($color, $font-size, $font-weight) {
-  color: $color;
-  font-size: $font-size;
-  font-weight: $font-weight;
-}
-
-@mixin box-style($background-color, $border-color, $border-radius, $blur: 0) {
-  background-color: $background-color;
-  backdrop-filter: blur($blur);
-  border: solid 2px $border-color;
-  border-radius: $border-radius;
-}
-
 .sectionCardBox {
-  width: 568px;
-  height: 568px;
+  max-width: 568px;
+  width: 100%;
+  max-height: 568px;
+  height: 100%;
   display: flex;
   flex-direction: column;
-
   h2 {
-    @include text-style($primary-color, $font-size-large, $font-weight-medium);
+    font-size: 24px;
+    color: #3dcfb6;
+    font-weight: 500;
   }
 
   .sectionCardText {
     width: 100%;
     height: 100%;
-    @include box-style($secondary-color, $primary-color, $border-radius, 4px);
+    background-color: #3dcfb61a;
+    backdrop-filter: blur(4px);
+    border: solid 2px #3dcfb6;
+    border-radius: 30px;
     position: relative;
-    padding: $spacing;
+    padding: 32px;
     box-sizing: border-box;
-
     h1 {
-      @include text-style($primary-color, $font-size-xlarge, $font-weight-bold);
+      font-size: 64px;
+      color: #3dcfb6;
+      font-weight: 700;
       letter-spacing: -3%;
       margin: 0;
     }
 
     span {
-        @include text-style($standard-color, $font-size-base, $font-weight-regular);
+      font-size: 18px;
+      color: #ffffff;
+      font-weight: 400;
     }
 
     .highlights {
       display: flex;
       flex-direction: column;
-      gap: $gap;
+      gap: 16px;
       padding: 8px 0;
-      @include text-style(
-        $standard-color,
-        $font-size-base,
-        $font-weight-regular
-      );
+
+      font-size: 18px;
+      color: #ffffff;
+      font-weight: 400;
 
       img {
         width: 32px;
         height: 32px;
       }
+    }
+  }
+}
+
+@media (max-width: 1650px) {
+  .sectionCardBox {
+    width: 450px !important;
+    height: 450px !important;
+  }
+  .sectionCardText {
+    h1 {
+      font-size: 32px !important;
+    }
+    span {
+      font-size: 13px !important;
+    }
+  }
+}
+
+@media (max-width: 950px) {
+  .sectionCardBox {
+    width: 290px !important;
+    height: 100% !important;
+  }
+  .sectionCardText {
+    h1 {
+      font-size: 32px !important;
+    }
+    span {
+      font-size: 12px !important;
     }
   }
 }

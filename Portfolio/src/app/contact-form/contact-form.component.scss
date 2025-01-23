@@ -3,7 +3,8 @@ form {
   flex-direction: column;
   align-items: center;
   margin: auto;
-  width: 670px;
+  max-width: 670px;
+  width: 100%;
   #privacyContainer {
     height: 70px;
   }
@@ -16,7 +17,7 @@ form {
       width: 100%;
       display: flex;
       flex-direction: column;
-      padding: 32px;
+      padding: 32px 0px;
       gap: 16px;
       background-color: transparent;
       margin: 0;
@@ -24,6 +25,7 @@ form {
       border-color: #3dcfb680;
       font-size: 24px;
       font-weight: 500;
+      transition: all 0.3s ease-in-out;
       cursor: pointer;
       span {
         padding-left: 32px;
@@ -41,7 +43,25 @@ form {
           color: #ffffffcc;
         }
       }
-
+      .invalid-effect {
+        animation: invalidShake 0.3s ease-in-out;
+        // background-color: #ec7b7b2d;
+        color: #ff2020;
+      }
+      @keyframes invalidShake {
+        0%, 100% {
+          transform: translateX(0);
+        }
+        25% {
+          transform: translateX(-4px);
+        }
+        50% {
+          transform: translateX(4px);
+        }
+        75% {
+          transform: translateX(-4px);
+        }
+      }
       input::placeholder {
         color: #ffffffcc;
       }
@@ -70,7 +90,7 @@ form {
       width: 100%;
       display: flex;
       flex-direction: column;
-      padding: 32px;
+      padding: 32px 0px;
       gap: 16px;
       background-color: transparent;
       margin: 0;
@@ -208,6 +228,46 @@ form {
       &:hover {
         cursor: not-allowed;
       }
+    }
+  }
+}
+
+
+
+@media (max-width: 1650px) {
+
+}
+
+
+@media (max-width: 1350px) {
+
+}
+
+@media (max-width: 950px) {
+button {
+  margin-top: 80px !important;
+}
+}
+
+@media (max-width: 700px) {
+  .inputBox {
+    font-size: 20px !important;
+    span {
+      padding-left: 0px !important;
+    }
+    input {
+      padding-left: 0px !important;
+      font-size: 14px !important;
+    }
+  }
+  .messageBox {
+    font-size: 20px !important;
+    span {
+      padding-left: 0px !important;
+    }
+    input {
+      padding-left: 0px !important;
+      font-size: 14px !important;
     }
   }
 }
