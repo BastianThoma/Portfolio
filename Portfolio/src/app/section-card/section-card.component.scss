@@ -72,6 +72,7 @@
   .sectionCardBox {
     width: 290px !important;
     height: 100% !important;
+    max-height: min-content;
   }
   .sectionCardText {
     h1 {

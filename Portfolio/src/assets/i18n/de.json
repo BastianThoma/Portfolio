@@ -5,10 +5,10 @@
       "PROJECTS": "Projekte"
     },
     "LANDING_PAGE": {
-      "FRONTEND_DEVELOPER": "Frontend-Entwickler",
+      "FRONTEND_DEVELOPER": "Frontend Entwickler",
       "BASTIAN_THOMA": "Bastian Thoma",
-      "CHECK_MY_WORK": "Meine Arbeiten ansehen",
-      "CONTACT_ME": "Kontaktieren Sie mich"
+      "CHECK_MY_WORK": "Meine Arbeit",
+      "CONTACT_ME": "Schreib mir"
     },
     "ABOUT_ME": {
       "WHO_I_AM": "Wer ich bin",
@@ -25,7 +25,7 @@
       "YOU_NEED": "Sie benötigen",
       "ANOTHER_SKILL": " eine andere Fähigkeit?",
       "REACHOUT_TEXT": "Zögern Sie nicht, mich zu kontaktieren. Ich freue mich darauf, mein Wissen zu erweitern.",
-      "LETS_TALK": "Lass uns reden",
+      "LETS_TALK": "Reden wir",
       "SPECIAL_INTEREST": "Ich habe ein besonderes Interesse daran, Neues zu lernen"
     },
     "PROJECTS": {
@@ -41,10 +41,10 @@
     },
     "CONTACT": {
       "TITLE": "Kontaktiere mich",
-      "HEADER": "Lass uns zusammenarbeiten",
+      "HEADER": "Arbeiten wir zusammen",
       "SUBHEADER": "Haben Sie ein Problem zu lösen?",
       "TEXT": "Kontaktieren Sie mich über dieses Formular. Ich freue mich darauf, von Ihnen zu hören, Ihre Ideen kennenzulernen und mit meiner Arbeit zu Ihren Projekten beizutragen.",
-      "NEED_DEV": "Benötigen Sie einen Frontend-Entwickler?",
+      "NEED_DEV": "Benötigen Sie einen Frontend Entwickler?",
       "TALK": "Lass uns reden!"
     },
     "CONTACT_FORM": {
@@ -53,9 +53,9 @@
       "NAME_ERROR": "Ups! Es scheint, dass dein Name fehlt",
       "NAME_ERROR_TITLE": "Der Name darf nur Buchstaben und Leerzeichen enthalten",
       "EMAIL_LABEL": "Wie ist deine E-Mail?",
-      "EMAIL_PLACEHOLDER": "youremail@email.com",
+      "EMAIL_PLACEHOLDER": "deinemail@email.com",
       "EMAIL_ERROR": "Hoppla! Deine E-Mail ist erforderlich",
-      "EMAIL_ERROR_TITLE": "Gib eine gültige E-Mail-Adresse ein (z.B. name@example.com)",
+      "EMAIL_ERROR_TITLE": "Gib eine gültige E-Mail-Adresse ein (z.B. name@beispiel.com)",
       "MESSAGE_LABEL": "Wie kann ich dir helfen?",
       "MESSAGE_PLACEHOLDER": "Hallo Bastian, ich interessiere mich für...",
       "MESSAGE_ERROR": "Was musst du entwickeln?",
@@ -79,7 +79,7 @@
       "NEXT_PROJECT": "Nächstes Projekt"
     },
     "SCROLLING_BANNER": {
-      "FRONTEND_DEVELOPER": "Frontend-Entwickler",
+      "FRONTEND_DEVELOPER": "Frontend Entwickler",
       "BASED_IN": "Ansässig in Bispingen",
       "AVAILABILITY": "Verfügbar für Remote-Arbeit",
       "OPEN_TO_WORK": "Offen für neue Herausforderungen"

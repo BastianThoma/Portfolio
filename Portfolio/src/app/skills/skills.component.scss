@@ -212,6 +212,9 @@
     height: 420px !important;
     gap: 32px !important;
   }
+  .skillsetBoxContent {
+    gap: 8px !important;
+  }
 }
 
 @media (max-width: 1350px) {
@@ -220,6 +223,7 @@
     flex-direction: column !important;
     align-items: center !important;
     justify-content: normal !important;
+    gap: 32px;
   }
   .skillsetIconBox {
     justify-content: center !important;
@@ -235,5 +239,6 @@
   }
   .speech-bubble {
     visibility: hidden !important;
+    display: none !important;
   }
 }

@@ -41,7 +41,7 @@
       width: 363px;
       height: 48px;
       gap: 48px;
-      button {
+      a {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -54,7 +54,7 @@
         color: #ffffff;
         font-size: 18px;
         overflow: hidden;
-
+        text-decoration: none;
         span {
           display: inline-block;
           white-space: nowrap;
@@ -260,14 +260,16 @@
       font-size: 12px;
     }
   }
-  button {
-    width: 70% !important;
-    height: 90% !important;
-  }
   .infoBanner {
     width: 90% !important;
   }
   .heroQuickLinks {
-    gap: 12px !important;
+    gap: 8px !important;
+  }
+  .pixelLineLeft {
+    height: 140px !important;
+  }
+  .pixelLineRight {
+    height: 130px !important;
   }
 }
