@@ -1,4 +1,4 @@
-<div class="skillsSection" id="skillsSection">
+<div class="skillsSection">
   <div class="skillsContent">
     <app-section-card
       [sectionTitle]="'SKILLS.TECHNOLOGIES' | translate"
@@ -7,15 +7,17 @@
     >
       <div class="skillsetBoxContent">
         <span class="highlightQuestion fontFiraCode">
-          <span class="whiteText">{{ 'SKILLS.YOU_NEED' | translate }}</span>
-          <span class="mintText">{{ 'SKILLS.ANOTHER_SKILL' | translate }}</span>
+          <span class="whiteText">{{ "SKILLS.YOU_NEED" | translate }}</span>
+          <span class="mintText">{{ "SKILLS.ANOTHER_SKILL" | translate }}</span>
         </span>
         <span class="reachOutText whiteText fontKarla">
-          {{ 'SKILLS.REACHOUT_TEXT' | translate }}
+          {{ "SKILLS.REACHOUT_TEXT" | translate }}
         </span>
       </div>
       <button class="letsTalkButton fontKarla">
-        <span>{{ 'SKILLS.LETS_TALK' | translate }}</span>
+        <a href="#contactSection"
+          ><span>{{ "SKILLS.LETS_TALK" | translate }}</span></a
+        >
       </button>
     </app-section-card>
 
@@ -38,7 +40,7 @@
           *ngIf="skill.label === 'Growth Mindset' && skill.hovered"
           class="speech-bubble"
         >
-          <p class="speech-text">{{ 'SKILLS.SPECIAL_INTEREST' | translate }}</p>
+          <p class="speech-text">{{ "SKILLS.SPECIAL_INTEREST" | translate }}</p>
           <div class="special-skills">
             <div class="special-skill-icon">
               <img
