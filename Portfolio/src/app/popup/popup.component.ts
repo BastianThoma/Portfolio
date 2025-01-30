@@ -20,7 +20,7 @@ export class PopupComponent {
       projectTitle: 'Pokedex',
       projectDescriptionTitle: 'POPUP.DESCRIPTION_TITLE',
       projectDescription: 'POPUP.DESCRIPTION1',
-      projectImage: '/assets/img/portrait.jpg',
+      projectImage: '/assets/img/pokedex.png',
       githubLink: 'https://github.com',
       liveTestLink: 'https://taskmanager.com',
       techStack: [
@@ -38,7 +38,7 @@ export class PopupComponent {
       projectTitle: 'Join',
       projectDescriptionTitle: 'POPUP.DESCRIPTION_TITLE',
       projectDescription: 'POPUP.DESCRIPTION2',
-      projectImage: '/assets/img/portrait.jpg',
+      projectImage: '/assets/img/join.png',
       githubLink: 'https://github.com',
       liveTestLink: 'https://example.com',
       techStack: [
@@ -55,7 +55,7 @@ export class PopupComponent {
       projectTitle: 'El Pollo Loco',
       projectDescriptionTitle: 'POPUP.DESCRIPTION_TITLE',
       projectDescription: 'POPUP.DESCRIPTION3',
-      projectImage: '/assets/img/portrait.jpg',
+      projectImage: '/assets/img/elPolloLoco.png',
       githubLink: 'https://github.com',
       liveTestLink: 'https://example.com',
       techStack: [
