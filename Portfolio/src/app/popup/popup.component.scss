@@ -1,4 +1,4 @@
-.popup-overlay {
+.popupOverlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -9,7 +9,7 @@
   justify-content: center;
   align-items: center;
   z-index: 1000;
-  .popup-content {
+  .popupContent {
     position: relative;
     display: flex;
     background: linear-gradient(45deg, #1c1c1c 50%, #08463b 100%);
@@ -57,7 +57,7 @@
         color: #ffffff;
         margin: 0 0 30px 0;
       }
-      .tech-stack {
+      .techStack {
         display: flex;
         align-items: center;
         gap: 8px;
@@ -75,7 +75,7 @@
           }
         }
       }
-      .popup-buttons {
+      .popupButtons {
         display: flex;
         width: 304px;
         height: 48px;
@@ -185,7 +185,7 @@
 }
 
 @media (max-width: 1350px) {
-  .popup-content {
+  .popupContent {
     position: static !important;
     flex-direction: column-reverse !important;
     align-items: center !important;
@@ -227,7 +227,7 @@
       margin: 0 !important;
     }
   }
-  .tech-stack {
+  .techStack {
     margin: 20px 0px 20px 0 !important;
   }
   .imageBox {
@@ -243,7 +243,7 @@
 }
 
 @media (max-width: 700px) {
-  .popup-content {
+  .popupContent {
     justify-content: center;
     width: 310px !important;
     height: 850px !important;
@@ -265,10 +265,10 @@
       white-space: wrap !important;
     }
   }
-  .popup-buttons {
+  .popupButtons {
     width: 290px !important;
   }
-  .tech-stack {
+  .techStack {
     flex-wrap: wrap;
     margin: 20px 0px 20px 0 !important;
   }
@@ -279,11 +279,11 @@
   }
 }
 
-@media (max-width: 700px) and (max-height: 900px) {
+@media (max-width: 700px) and (min-height: 800px) and (max-height: 900px) {
   .projectPreviewImg {
     display: none !important;
   }
-  .popup-content {
+  .popupContent {
     height: 620px !important;
     justify-content: flex-end !important;
   }
@@ -297,11 +297,11 @@
   }
 }
 
-@media (max-width: 1280px) and (max-height: 800px) {
+@media (max-width: 1280px) and (min-height: 750px) and (max-height: 800px) {
   .projectPreviewImg {
     display: none !important;
   }
-  .popup-content {
+  .popupContent {
     height: 520px !important;
     justify-content: flex-end !important;
   }
@@ -312,5 +312,41 @@
   .nextButtonBox {
     top: 420px !important;
     left: 180px !important;
+  }
+}
+
+@media (max-width: 540px) and (max-height: 750px) {
+  .projectPreviewImg {
+    display: none !important;
+  }
+  .popupContent {
+    height: 570px !important;
+    justify-content: flex-end !important;
+  }
+  .closeButton {
+    top: 30px !important;
+    left: 160px !important;
+  }
+  .nextButtonBox {
+    top: 510px !important;
+    left: 80px !important;
+  }
+}
+
+@media (min-width: 1024px) and (max-height: 600px) {
+  .projectPreviewImg {
+    display: none !important;
+  }
+  .popupContent {
+    height: 570px !important;
+    // justify-content: flex-end !important;
+  }
+  .closeButton {
+    top: 1px !important;
+    left: 280px !important;
+  }
+  .nextButtonBox {
+    top: 420px !important;
+    left: 200px !important;
   }
 }

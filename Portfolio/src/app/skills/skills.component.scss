@@ -111,7 +111,7 @@
       transition: 0.3s ease;
     }
 
-    &.special-skill {
+    &.specialSkill {
       img {
         transition: none;
       }
@@ -130,13 +130,13 @@
           color: #3dcfb6;
         }
 
-        .speech-bubble {
+        .speechBubble {
           opacity: 1;
           visibility: visible;
         }
       }
 
-      .speech-bubble {
+      .speechBubble {
         position: absolute;
         top: -130px;
         left: 100px;
@@ -166,19 +166,19 @@
           border-color: #1f2e2c transparent transparent transparent;
         }
 
-        .speech-text {
+        .speechText {
           font-size: 16px;
           font-weight: 400;
           color: #3dcfb6;
           word-wrap: break-word;
         }
 
-        .special-skills {
+        .specialSkills {
           display: flex;
           justify-content: center;
           gap: 16px;
 
-          .special-skill-icon {
+          .specialSkillIcon {
             text-align: center;
 
             img {
@@ -235,12 +235,12 @@
 
 @media (max-width: 950px) {
   .skillsContent {
-    height: 1260px !important;
+    height: 1320px !important;
   }
   .skillsetIconBox {
     width: 290px !important;
   }
-  .speech-bubble {
+  .speechBubble {
     visibility: hidden !important;
     display: none !important;
   }

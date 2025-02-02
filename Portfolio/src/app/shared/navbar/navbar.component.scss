@@ -74,13 +74,13 @@
     .logo {
       width: 140px;
       height: 48px;
-      background-image: url("/assets/img/LogoNeuFullColorCutted.png");
+      background-image: url("/assets/img/logo_full_color_cutted.png");
       background-repeat: no-repeat;
       background-size: contain;
       transition: all 0.2s ease-in-out;
       &:hover {
         cursor: pointer;
-        background-image: url("/assets/img/LogoNeuFullOutlineCutted.png");
+        background-image: url("/assets/img/logo_full_outline_cutted.png");
         transform: scale(0.95);
       }
     }
@@ -204,10 +204,10 @@
     display: block !important;
   }
   .logo {
-    background-image: url("/assets/img/LogoFullColor.png") !important;
+    background-image: url("/assets/img/logo_full_color.png") !important;
   }
   .logo:hover {
-    background-image: url("/assets/img/LogoFullOutline.png") !important;
+    background-image: url("/assets/img/logo_full_outline.png") !important;
   }
   .popup {
     top: 140px;

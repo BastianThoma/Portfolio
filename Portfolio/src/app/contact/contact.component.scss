@@ -52,22 +52,15 @@
 @media (max-width: 1650px) {
   .contactContent {
     width: 70% !important;
-    height: 1050px !important;
+    height: 1060px !important;
     flex-direction: column !important;
     align-items: center !important;
   }
 }
 
-@media (max-width: 1350px) {
-}
-
-@media (max-width: 950px) {
-}
-
 @media (max-width: 700px) {
   .contactContent {
     justify-content: center !important;
-    gap: 32px !important;
   }
   .contactMeBox {
     max-height: min-content !important;

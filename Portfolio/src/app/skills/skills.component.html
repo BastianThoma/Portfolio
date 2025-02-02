@@ -25,7 +25,7 @@
       <div
         *ngFor="let skill of skills; let i = index"
         class="skillItem"
-        [ngClass]="{ 'special-skill': skill.label === 'Growth Mindset' }"
+        [ngClass]="{ 'specialSkill': skill.label === 'Growth Mindset' }"
         (mouseenter)="onHover(skill, true)"
         (mouseleave)="onHover(skill, false)"
       >
@@ -38,20 +38,20 @@
 
         <div
           *ngIf="skill.label === 'Growth Mindset' && skill.hovered"
-          class="speech-bubble"
+          class="speechBubble"
         >
-          <p class="speech-text">{{ "SKILLS.SPECIAL_INTEREST" | translate }}</p>
-          <div class="special-skills">
-            <div class="special-skill-icon">
+          <p class="speechText">{{ "SKILLS.SPECIAL_INTEREST" | translate }}</p>
+          <div class="specialSkills">
+            <div class="specialSkillIcon">
               <img
-                src="/assets/img/colored-icons/linux-colored.png"
+                src="/assets/img/colored-icons/linux_colored.png"
                 alt="Linux Icon"
               />
               <p>Linux</p>
             </div>
-            <div class="special-skill-icon">
+            <div class="specialSkillIcon">
               <img
-                src="/assets/img/colored-icons/sql-colored.png"
+                src="/assets/img/colored-icons/sql_colored.png"
                 alt="SQL Icon"
               />
               <p>SQL</p>

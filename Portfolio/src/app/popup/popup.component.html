@@ -1,5 +1,5 @@
-<div class="popup-overlay" *ngIf="isPopupVisible" (click)="closePopup()">
-  <div class="popup-content" (click)="$event.stopPropagation()">
+<div class="popupOverlay" *ngIf="isPopupVisible" (click)="closePopup()">
+  <div class="popupContent" (click)="$event.stopPropagation()">
     <!-- Beschreibung des Projekts -->
     <div class="descriptionBox">
       <h1 class="fontKarla">{{ currentProject.projectNumber }}</h1>
@@ -8,7 +8,7 @@
       <p class="fontKarla">{{ currentProject.projectDescription | translate }}</p>
 
       <!-- Technologiestack, mit *ngFor iteriert über die techStack-Array -->
-      <div class="tech-stack">
+      <div class="techStack">
         <div *ngFor="let tech of currentProject.techStack">
           <img [src]="tech.icon" [alt]="tech.name" />
           <span>{{ tech.name }}</span>
@@ -16,7 +16,7 @@
       </div>
 
       <!-- Buttons für GitHub und Live Test -->
-      <div class="popup-buttons">
+      <div class="popupButtons">
         <button (click)="openLink(currentProject.githubLink)">
           <span>GitHub</span>
           <img src="/assets/img/arrow_outward_mint.png" alt="Arrow Top Right" />

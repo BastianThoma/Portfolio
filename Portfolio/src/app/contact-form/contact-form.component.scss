@@ -44,7 +44,7 @@ form {
           color: #ffffffcc;
         }
       }
-      .invalid-effect {
+      .invalidEffect {
         animation: invalidShake 0.3s ease-in-out;
         // background-color: #ec7b7b2d;
         color: #ff2020;
@@ -141,7 +141,7 @@ form {
         color: #ec7b7b;
       }
     }
-    .custom-checkbox {
+    .customCheckbox {
       margin: 24px 0;
       display: flex;
       align-items: center;
@@ -188,7 +188,7 @@ form {
         text-decoration: none;
       }
     }
-    .error-message {
+    .errorMessage {
       position: relative;
       display: flex;
       justify-content: flex-start;
@@ -231,17 +231,6 @@ form {
       }
     }
   }
-}
-
-
-
-@media (max-width: 1650px) {
-
-}
-
-
-@media (max-width: 1350px) {
-
 }
 
 @media (max-width: 950px) {
