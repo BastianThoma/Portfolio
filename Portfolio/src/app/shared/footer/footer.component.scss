@@ -112,7 +112,7 @@ footer {
   }
   .middleFooterMobile {
     display: block !important;
-    margin-top: 20px !important;
+    margin-top: 40px !important;
   }
   .logo {
     width: 100px !important;
@@ -123,5 +123,10 @@ footer {
   }
   .footerLink {
     font-size: 14px !important;
+    white-space: normal !important;
+    word-break: break-word;
+  }
+  .rightFooterContainer {
+    width: 110px !important;
   }
 }
