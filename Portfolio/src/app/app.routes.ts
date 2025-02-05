@@ -4,5 +4,6 @@ import { PoliciesComponent } from './policies/policies.component';
 
 export const routes: Routes = [
     { path: '', component: MainContentComponent},
-    { path: 'imprint', component: PoliciesComponent}
+    { path: 'imprint', component: PoliciesComponent},
+    { path: 'privacy-policy', component: PoliciesComponent},
 ];

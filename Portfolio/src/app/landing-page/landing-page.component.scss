@@ -270,6 +270,22 @@
     height: 140px !important;
   }
   .pixelLineRight {
-    height: 130px !important;
+    height: 140px !important;
+  }
+  .scrollDownHelper {
+    gap: 8px !important;
+  }
+  .arrowBox {
+    width: 24px !important;
+    height: 40px !important;
+    img {
+      height: 12px !important;
+    }
+  }
+  #heroGithubLink {
+    display: none;
+  }
+  #heroLinkedinLink {
+    display: none;
   }
 }

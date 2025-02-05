@@ -40,7 +40,7 @@ export class PopupComponent {
       projectDescription: 'POPUP.DESCRIPTION2',
       projectImage: '/assets/img/join.png',
       githubLink: 'https://github.com/BastianThoma/join',
-      liveTestLink: '/projects/join',
+      liveTestLink: '/projects/join/Login.html',
       techStack: [
         { name: 'HTML', icon: '/assets/img/colored-icons/html_colored.png' },
         { name: 'CSS', icon: '/assets/img/colored-icons/css_colored.png' },

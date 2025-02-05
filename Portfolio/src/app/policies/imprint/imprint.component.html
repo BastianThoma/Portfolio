@@ -1,15 +1,30 @@
 <section>
-    <h1 id="imprint">{{'imprint-headline' | translate}}</h1>
-    <h2 id="m46">{{'imprint-subheadline' | translate}}</h2>
-    <p>Bastian Thoma</p>
-    <p>Volkwardingen 24A</p>
-    <p>29646 Bispingen</p>
-
-    <h2 id="m56">{{'imprint-contact' | translate}}</h2>
-    <p>contact&#64;webdevelopment-thoma.de</p>
-
-    <p class="seal"><a href="https://datenschutz-generator.de/"
-            title="Rechtstext von Dr. Schwenke - für weitere Informationen bitte anklicken." target="_blank"
-            rel="noopener noreferrer nofollow">{{'imprint-generate' | translate}}</a>
+  <div class="imprintContent">
+    <h2 id="imprint">{{ "IMPRINT.TITLE" | translate }}</h2>
+    <p>
+      Bastian Thoma <br />
+      Volkwardingen 24A <br />
+      29646 Bispingen
     </p>
+
+    <h2>{{ "IMPRINT.CONTACT" | translate }}</h2>
+
+    <p>
+      {{ "IMPRINT.PHONE" | translate }}
+      <a href="tel:01608322057">0160/8322057</a><br />
+      {{ "IMPRINT.EMAIL" | translate }}
+      <a href="mailto:ossi_1993@hotmail.de"
+        >contact&#64;webdevelopment-thoma.de</a
+      >
+    </p>
+    <p>
+      {{ "IMPRINT.SOURCE" | translate }}
+      <a
+        href="https://www.e-recht24.de"
+        target="_blank"
+        rel="noopener noreferrer"
+        >eRecht24.de</a
+      >
+    </p>
+  </div>
 </section>

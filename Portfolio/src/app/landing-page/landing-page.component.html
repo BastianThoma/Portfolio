@@ -1,55 +1,96 @@
 <div class="landingPage">
   <div class="landingPageContent">
     <div class="landingPageCatcher">
-      <h2 class="fontFiraCode">{{ 'LANDING_PAGE.FRONTEND_DEVELOPER' | translate }}</h2>
+      <h2 class="fontFiraCode">
+        {{ "LANDING_PAGE.FRONTEND_DEVELOPER" | translate }}
+      </h2>
       <div class="titleContent">
-        <h1 class="fontKarla">{{ 'LANDING_PAGE.BASTIAN_THOMA' | translate }}</h1>
+        <h1 class="fontKarla">
+          {{ "LANDING_PAGE.BASTIAN_THOMA" | translate }}
+        </h1>
         <div>
-          <a href="#projectsSection" class="fontKarla"><span>{{ 'LANDING_PAGE.CHECK_MY_WORK' | translate }}</span></a>
-          <a href="#contactSection" class="fontKarla"><span>{{ 'LANDING_PAGE.CONTACT_ME' | translate }}</span></a>
+          <a href="#projectsSection" class="fontKarla"
+            ><span>{{ "LANDING_PAGE.CHECK_MY_WORK" | translate }}</span></a
+          >
+          <a href="#contactSection" class="fontKarla"
+            ><span>{{ "LANDING_PAGE.CONTACT_ME" | translate }}</span></a
+          >
         </div>
       </div>
     </div>
     <div class="lateralContainer">
       <div class="scrollDownHelper">
         <a href="#aboutMeSection" class="arrowBox">
-          <img src="/assets/img/arrow_down.png" alt="Arrow Down" height="16px" />
+          <img
+            src="/assets/img/arrow_down.png"
+            alt="Arrow Down"
+            height="16px"
+          />
         </a>
         <div class="pixelLineLeft"></div>
       </div>
 
       <div class="heroQuickLinks">
         <div class="radioButtonMask">
-          <a id="mailToMe" class="heroMailLink fontKarla" href="mailto:ossi_1993@hotmail.de">
-            <img id="mailLogo" src="/assets/img/colored-icons/mail_colored.png" alt="Mail Logo" width="32px" height="32px"/>
+          <a
+            id="mailToMe"
+            class="heroMailLink fontKarla"
+            href="mailto:ossi_1993@hotmail.de"
+          >
+            <img
+              id="mailLogo"
+              src="/assets/img/colored-icons/mail_colored.png"
+              alt="Mail Logo"
+              width="32px"
+              height="32px"
+            />
             <span id="mailAdress">contact&#64;webdevelopment-thoma.de</span>
           </a>
-          <img class="radioButton hidden" src="/assets/img/radio_button_unchecked.svg" width="8px" height="8px"/>
+          <img
+            class="radioButton hidden"
+            src="/assets/img/radio_button_unchecked.svg"
+            width="8px"
+            height="8px"
+          />
         </div>
-        <div class="radioButtonMask">
-          <a href="https://github.com/BastianThoma" target="_blank" rel="noopener noreferrer">
-            <img src="/assets/img/github.png" alt="GitHub Logo" width="32px" height="32px"/>
-          </a>
-          <img class="radioButton hidden" src="/assets/img/radio_button_unchecked.svg" width="8px" height="8px"/>
-        </div>
-        <div class="radioButtonMask">
+        <div class="radioButtonMask" id="heroGithubLink">
           <a
-          href="https://www.linkedin.com/in/bastian-thoma-0972a0336"
-          target="_blank"
-          rel="noopener noreferrer"
-          ><img
-            src="/assets/img/linkedin.png"
-            alt="LinkedIn Logo"
-            width="32px"
-            height="32px"
+            href="https://github.com/BastianThoma"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="/assets/img/github.png"
+              alt="GitHub Logo"
+              width="32px"
+              height="32px"
+            />
+          </a>
+          <img
+            class="radioButton hidden"
+            src="/assets/img/radio_button_unchecked.svg"
+            width="8px"
+            height="8px"
+          />
+        </div>
+        <div class="radioButtonMask" id="heroLinkedinLink">
+          <a
+            href="https://www.linkedin.com/in/bastian-thoma-0972a0336"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img
+              src="/assets/img/linkedin.png"
+              alt="LinkedIn Logo"
+              width="32px"
+              height="32px"
           /></a>
           <img
-          class="radioButton hidden"
-          src="/assets/img/radio_button_unchecked.svg"
-          width="8px"
-          height="8px"
+            class="radioButton hidden"
+            src="/assets/img/radio_button_unchecked.svg"
+            width="8px"
+            height="8px"
           />
-          </div>
+        </div>
         <div class="radioButtonMask">
           <div class="pixelLineRight"></div>
           <img

@@ -1,87 +1,155 @@
 {
-    "MENU": {
-      "ABOUT_ME": "Über mich",
-      "SKILLS": "Fähigkeiten",
-      "PROJECTS": "Projekte"
-    },
-    "LANDING_PAGE": {
-      "FRONTEND_DEVELOPER": "Frontend Entwickler",
-      "BASTIAN_THOMA": "Bastian Thoma",
-      "CHECK_MY_WORK": "Meine Arbeit",
-      "CONTACT_ME": "Schreib mir"
-    },
-    "ABOUT_ME": {
-      "WHO_I_AM": "Wer ich bin",
-      "ABOUT_ME": "Über mich",
-      "MAIN_TEXT": "Hallo, ich bin ein deutschsprachiger Frontend-Entwickler aus Bispingen. Motiviert von den grenzenlosen Möglichkeiten in der IT freue ich mich darauf, visuell ansprechende und intuitive Websites und Anwendungen zu erstellen.",
-      "FLEXIBLE_WORK": "Flexibel in Bezug auf Arbeitsumgebungen kann ich sowohl vor Ort in Bispingen als auch remote effektiv arbeiten.",
-      "OPEN_MINDED": "Ich bin aufgeschlossen und stets auf der Suche nach persönlichen Herausforderungen, um mein Wissen und meine Fähigkeiten kontinuierlich zu verbessern.",
-      "PROBLEM_SOLVING": "In meinem Beruf geht es beim Programmieren nicht nur um das Schreiben von Code; es ist eine kreative Form der Problemlösung. Ich bin stolz darauf, komplexe technische Herausforderungen in einfache, benutzerfreundliche Lösungen zu übersetzen. So helfe ich Ihnen, Ihre Ziele zu erreichen und Ihre Visionen zum Leben zu erwecken."
-    },
-    "SKILLS": {
-      "TECHNOLOGIES": "Technologien",
-      "SKILL_SET": "Fähigkeiten",
-      "MAIN_TEXT": "Meine Reise hat mich dazu gebracht, an verschiedenen Projekten zu arbeiten und eine Vielzahl von Frontend-Technologien und Konzepten einzusetzen. Ich bin offen dafür, neue Technologien und Methoden zu erlernen, um meine Fähigkeiten kontinuierlich zu verbessern und in der sich ständig weiterentwickelnden Welt der Webentwicklung auf dem neuesten Stand zu bleiben.",
-      "YOU_NEED": "Sie benötigen",
-      "ANOTHER_SKILL": " eine andere Fähigkeit?",
-      "REACHOUT_TEXT": "Zögern Sie nicht, mich zu kontaktieren. Ich freue mich darauf, mein Wissen zu erweitern.",
-      "LETS_TALK": "Reden wir",
-      "SPECIAL_INTEREST": "Ich habe ein besonderes Interesse daran, Neues zu lernen"
-    },
-    "PROJECTS": {
-      "PORTFOLIO": "Portfolio",
-      "FEATURED_PROJECTS": "Meine Projekte",
-      "EXPLORE_TEXT": "Entdecke hier eine Auswahl meiner Arbeit – Interagiere mit den Projekten, um meine Fähigkeiten in Aktion zu sehen."
-    },
-    "FEEDBACK": {
-      "HEADER_TITLE": "Was meine Kolleginnen und Kollegen über mich sagen",
-      "TEXT1": "Du bist hervorragend darin, komplexe Programmierprobleme schnell zu lösen und neue Technologien, wie die kürzlich implementierte API, zu integrieren.",
-      "TEXT2": "Deine Liebe zum Detail sorgt für sauberen, wartbaren Code, und durch deine klare Kommunikation wird Teamarbeit einfacher.",
-      "TEXT3": "Ich bewundere deine strukturierte Herangehensweise an Aufgaben und wie geduldig du anderen komplexe Themen erklärst."
-    },
-    "CONTACT": {
-      "TITLE": "Kontaktiere mich",
-      "HEADER": "Arbeiten wir zusammen",
-      "SUBHEADER": "Haben Sie ein Problem zu lösen?",
-      "TEXT": "Kontaktieren Sie mich über dieses Formular. Ich freue mich darauf, von Ihnen zu hören, Ihre Ideen kennenzulernen und mit meiner Arbeit zu Ihren Projekten beizutragen.",
-      "NEED_DEV": "Benötigen Sie einen Frontend Entwickler?",
-      "TALK": "Lass uns reden!"
-    },
-    "CONTACT_FORM": {
-      "NAME_LABEL": "Wie heißt du?",
-      "NAME_PLACEHOLDER": "Dein Name hier",
-      "NAME_ERROR": "Ups! Es scheint, dass dein Name fehlt",
-      "NAME_ERROR_TITLE": "Der Name darf nur Buchstaben und Leerzeichen enthalten",
-      "EMAIL_LABEL": "Wie ist deine E-Mail?",
-      "EMAIL_PLACEHOLDER": "deinemail@email.com",
-      "EMAIL_ERROR": "Hoppla! Deine E-Mail ist erforderlich",
-      "EMAIL_ERROR_TITLE": "Gib eine gültige E-Mail-Adresse ein (z.B. name@beispiel.com)",
-      "MESSAGE_LABEL": "Wie kann ich dir helfen?",
-      "MESSAGE_PLACEHOLDER": "Hallo Bastian, ich interessiere mich für...",
-      "MESSAGE_ERROR": "Was musst du entwickeln?",
-      "MESSAGE_ERROR_TITLE": "Nachricht darf nicht leer sein. Bitte gib Details an",
-      "PRIVACY_POLICY_TEXT1": "Ich habe die",
-      "PRIVACY_POLICY_LINK": "Datenschutzerklärung",
-      "PRIVACY_POLICY_TEXT2": "gelesen und stimme der Verarbeitung meiner Daten gemäß dieser zu.",
-      "PRIVACY_ERROR": "Bitte akzeptiere die Datenschutzrichtlinie.",
-      "SUBMIT_BUTTON": "Sag Hallo ;)"
-    },
-    "FOOTER": {
-      "WEB_DEVELOPER": "Webentwickler",
-      "LOCATION": "Bispingen, Deutschland",
-      "LEGAL_NOTICE": "Impressum"
-    },
-    "POPUP": {
-      "DESCRIPTION_TITLE": "Worum geht es in diesem Projekt?",
-      "DESCRIPTION1": "Ein interaktiver Pokedex, inspiriert vom Pokémon-Universum. Suche, entdecke und sieh dir Details zu Pokémon an, die mit Daten aus der PokéAPI abgerufen werden. Die App bietet eine flüssige Navigation, detaillierte Pokémon-Statistiken und visuelle Darstellungen, die ein nahtloses Erlebnis für Pokémon-Enthusiasten bieten.",
-      "DESCRIPTION2": "Ein Aufgabenmanager, inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben mithilfe von Drag-and-Drop-Funktionen, weise Benutzern und Kategorien zu.",
-      "DESCRIPTION3": "Ein Jump-, Run- und Wurfspiel, das auf einem objektorientierten Ansatz basiert. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen das verrückte Huhn zu kämpfen.",
-      "NEXT_PROJECT": "Nächstes Projekt"
-    },
-    "SCROLLING_BANNER": {
-      "FRONTEND_DEVELOPER": "Frontend Entwickler",
-      "BASED_IN": "Ansässig in Bispingen",
-      "AVAILABILITY": "Verfügbar für Remote-Arbeit",
-      "OPEN_TO_WORK": "Offen für neue Herausforderungen"
-    }
+  "MENU": {
+    "ABOUT_ME": "Über mich",
+    "SKILLS": "Fähigkeiten",
+    "PROJECTS": "Projekte"
+  },
+  "LANDING_PAGE": {
+    "FRONTEND_DEVELOPER": "Frontend Entwickler",
+    "BASTIAN_THOMA": "Bastian Thoma",
+    "CHECK_MY_WORK": "Meine Arbeit",
+    "CONTACT_ME": "Schreib mir"
+  },
+  "ABOUT_ME": {
+    "WHO_I_AM": "Wer ich bin",
+    "ABOUT_ME": "Über mich",
+    "MAIN_TEXT": "Hallo, ich bin ein deutschsprachiger Frontend-Entwickler aus Bispingen. Motiviert von den grenzenlosen Möglichkeiten in der IT freue ich mich darauf, visuell ansprechende und intuitive Websites und Anwendungen zu erstellen.",
+    "FLEXIBLE_WORK": "Flexibel in Bezug auf Arbeitsumgebungen kann ich sowohl vor Ort in Bispingen als auch remote effektiv arbeiten.",
+    "OPEN_MINDED": "Ich bin aufgeschlossen und stets auf der Suche nach persönlichen Herausforderungen, um mein Wissen und meine Fähigkeiten kontinuierlich zu verbessern.",
+    "PROBLEM_SOLVING": "In meinem Beruf geht es beim Programmieren nicht nur um das Schreiben von Code; es ist eine kreative Form der Problemlösung. Ich bin stolz darauf, komplexe technische Herausforderungen in einfache, benutzerfreundliche Lösungen zu übersetzen. So helfe ich Ihnen, Ihre Ziele zu erreichen und Ihre Visionen zum Leben zu erwecken."
+  },
+  "SKILLS": {
+    "TECHNOLOGIES": "Technologien",
+    "SKILL_SET": "Fähigkeiten",
+    "MAIN_TEXT": "Meine Reise hat mich dazu gebracht, an verschiedenen Projekten zu arbeiten und eine Vielzahl von Frontend-Technologien und Konzepten einzusetzen. Ich bin offen dafür, neue Technologien und Methoden zu erlernen, um meine Fähigkeiten kontinuierlich zu verbessern und in der sich ständig weiterentwickelnden Welt der Webentwicklung auf dem neuesten Stand zu bleiben.",
+    "YOU_NEED": "Sie benötigen",
+    "ANOTHER_SKILL": " eine andere Fähigkeit?",
+    "REACHOUT_TEXT": "Zögern Sie nicht, mich zu kontaktieren. Ich freue mich darauf, mein Wissen zu erweitern.",
+    "LETS_TALK": "Reden wir",
+    "SPECIAL_INTEREST": "Ich habe ein besonderes Interesse daran, Neues zu lernen"
+  },
+  "PROJECTS": {
+    "PORTFOLIO": "Portfolio",
+    "FEATURED_PROJECTS": "Meine Projekte",
+    "EXPLORE_TEXT": "Entdecke hier eine Auswahl meiner Arbeit – Interagiere mit den Projekten, um meine Fähigkeiten in Aktion zu sehen."
+  },
+  "FEEDBACK": {
+    "HEADER_TITLE": "Was meine Kolleginnen und Kollegen über mich sagen",
+    "TEXT1": "Du bist hervorragend darin, komplexe Programmierprobleme schnell zu lösen und neue Technologien, wie die kürzlich implementierte API, zu integrieren.",
+    "TEXT2": "Deine Liebe zum Detail sorgt für sauberen, wartbaren Code, und durch deine klare Kommunikation wird Teamarbeit einfacher.",
+    "TEXT3": "Ich bewundere deine strukturierte Herangehensweise an Aufgaben und wie geduldig du anderen komplexe Themen erklärst."
+  },
+  "CONTACT": {
+    "TITLE": "Kontaktiere mich",
+    "HEADER": "Arbeiten wir zusammen",
+    "SUBHEADER": "Haben Sie ein Problem zu lösen?",
+    "TEXT": "Kontaktieren Sie mich über dieses Formular. Ich freue mich darauf, von Ihnen zu hören, Ihre Ideen kennenzulernen und mit meiner Arbeit zu Ihren Projekten beizutragen.",
+    "NEED_DEV": "Benötigen Sie einen Frontend Entwickler?",
+    "TALK": "Lass uns reden!"
+  },
+  "CONTACT_FORM": {
+    "NAME_LABEL": "Wie heißt du?",
+    "NAME_PLACEHOLDER": "Dein Name hier",
+    "NAME_ERROR": "Ups! Es scheint, dass dein Name fehlt",
+    "NAME_ERROR_TITLE": "Der Name darf nur Buchstaben und Leerzeichen enthalten",
+    "EMAIL_LABEL": "Wie ist deine E-Mail?",
+    "EMAIL_PLACEHOLDER": "deinemail@email.com",
+    "EMAIL_ERROR": "Hoppla! Deine E-Mail ist erforderlich",
+    "EMAIL_ERROR_TITLE": "Gib eine gültige E-Mail-Adresse ein (z.B. name@beispiel.com)",
+    "MESSAGE_LABEL": "Wie kann ich dir helfen?",
+    "MESSAGE_PLACEHOLDER": "Hallo Bastian, ich interessiere mich für...",
+    "MESSAGE_ERROR": "Was musst du entwickeln?",
+    "MESSAGE_ERROR_TITLE": "Nachricht darf nicht leer sein. Bitte gib Details an",
+    "PRIVACY_POLICY_TEXT1": "Ich habe die",
+    "PRIVACY_POLICY_LINK": "Datenschutzerklärung",
+    "PRIVACY_POLICY_TEXT2": "gelesen und stimme der Verarbeitung meiner Daten gemäß dieser zu.",
+    "PRIVACY_ERROR": "Bitte akzeptiere die Datenschutzrichtlinie.",
+    "SUBMIT_BUTTON": "Sag Hallo ;)"
+  },
+  "FOOTER": {
+    "WEB_DEVELOPER": "Webentwickler",
+    "LOCATION": "Bispingen, Deutschland",
+    "IMPRINT": "Impressum",
+    "PRIVACY_POLICY": "Datenschutzerklärung"
+  },
+  "POPUP": {
+    "DESCRIPTION_TITLE": "Worum geht es in diesem Projekt?",
+    "DESCRIPTION1": "Ein interaktiver Pokedex, inspiriert vom Pokémon-Universum. Suche, entdecke und sieh dir Details zu Pokémon an, die mit Daten aus der PokéAPI abgerufen werden. Die App bietet eine flüssige Navigation, detaillierte Pokémon-Statistiken und visuelle Darstellungen, die ein nahtloses Erlebnis für Pokémon-Enthusiasten bieten.",
+    "DESCRIPTION2": "Ein Aufgabenmanager, inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben mithilfe von Drag-and-Drop-Funktionen, weise Benutzern und Kategorien zu.",
+    "DESCRIPTION3": "Ein Jump-, Run- und Wurfspiel, das auf einem objektorientierten Ansatz basiert. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen das verrückte Huhn zu kämpfen.",
+    "NEXT_PROJECT": "Nächstes Projekt"
+  },
+  "SCROLLING_BANNER": {
+    "FRONTEND_DEVELOPER": "Frontend Entwickler",
+    "BASED_IN": "Ansässig in Bispingen",
+    "AVAILABILITY": "Verfügbar für Remote-Arbeit",
+    "OPEN_TO_WORK": "Offen für neue Herausforderungen"
+  },
+  "IMPRINT": {
+    "TITLE": "Impressum",
+    "CONTACT": "Kontakt",
+    "PHONE": "Telefon:",
+    "EMAIL": "E-Mail:",
+    "SOURCE": "Quelle:"
+  },
+  "PRIVACY_POLICY": {
+    "TITLE": "Datenschutz­erklärung",
+    "INTRODUCTION": "1. Datenschutz auf einen Blick",
+    "GENERAL_INFO": "Allgemeine Hinweise",
+    "GENERAL_INFO_TEXT": "Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können. Ausführliche Informationen zum Thema Datenschutz entnehmen Sie unserer unter diesem Text aufgeführten Datenschutzerklärung.",
+    "DATA_COLLECTION": "Datenerfassung auf dieser Website",
+    "RESPONSIBLE": "Wer ist verantwortlich für die Datenerfassung auf dieser Website?",
+    "RESPONSIBLE_TEXT": "Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Dessen Kontaktdaten können Sie dem Abschnitt „Hinweis zur Verantwortlichen Stelle“ in dieser Datenschutzerklärung entnehmen.",
+    "HOW_WE_COLLECT": "Wie erfassen wir Ihre Daten?",
+    "HOW_WE_COLLECT_TEXT": "Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen. Hierbei kann es sich z. B. um Daten handeln, die Sie in ein Kontaktformular eingeben. Andere Daten werden automatisch oder nach Ihrer Einwilligung beim Besuch der Website durch unsere IT-Systeme erfasst. Das sind vor allem technische Daten (z. B. Internetbrowser, Betriebssystem oder Uhrzeit des Seitenaufrufs). Die Erfassung dieser Daten erfolgt automatisch, sobald Sie diese Website betreten.",
+    "USAGE": "Wofür nutzen wir Ihre Daten?",
+    "USAGE_TEXT": "Ein Teil der Daten wird erhoben, um eine fehlerfreie Bereitstellung der Website zu gewährleisten. Andere Daten können zur Analyse Ihres Nutzerverhaltens verwendet werden.",
+    "RIGHTS": "Welche Rechte haben Sie bezüglich Ihrer Daten?",
+    "RIGHTS_TEXT": "Sie haben jederzeit das Recht, unentgeltlich Auskunft über Herkunft, Empfänger und Zweck Ihrer gespeicherten personenbezogenen Daten zu erhalten. Sie haben außerdem ein Recht, die Berichtigung oder Löschung dieser Daten zu verlangen. Wenn Sie eine Einwilligung zur Datenverarbeitung erteilt haben, können Sie diese Einwilligung jederzeit für die Zukunft widerrufen. Außerdem haben Sie das Recht, unter bestimmten Umständen die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen. Des Weiteren steht Ihnen ein Beschwerderecht bei der zuständigen Aufsichtsbehörde zu. Hierzu sowie zu weiteren Fragen zum Thema Datenschutz können Sie sich jederzeit an uns wenden.",
+    "HOSTING": "2. Hosting",
+    "HOSTING_TEXT": "Wir hosten die Inhalte unserer Website bei folgendem Anbieter:",
+    "HOSTING_PROVIDER": "All-Inkl",
+    "HOSTING_PROVIDER_DETAILS": "Anbieter ist die ALL-INKL.COM - Neue Medien Münnich, Inh. René Münnich, Hauptstraße 68, 02742 Friedersdorf (nachfolgend All-Inkl). Details entnehmen Sie der Datenschutzerklärung von All-Inkl: ",
+    "HOSTING_LEGAL_BASIS": "Die Verwendung von All-Inkl erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Wir haben ein berechtigtes Interesse an einer möglichst zuverlässigen Darstellung unserer Website. Sofern eine entsprechende Einwilligung abgefragt wurde, erfolgt die Verarbeitung ausschließlich auf Grundlage von Art. 6 Abs. 1 lit. a DSGVO und § 25 Abs. 1 TDDDG, soweit die Einwilligung die Speicherung von Cookies oder den Zugriff auf Informationen im Endgerät des Nutzers (z. B. Device-Fingerprinting) im Sinne des TDDDG umfasst. Die Einwilligung ist jederzeit widerrufbar.",
+    "DATA_PROCESSING": "Auftragsverarbeitung",
+    "DATA_PROCESSING_TEXT": "Wir haben einen Vertrag über Auftragsverarbeitung (AVV) zur Nutzung des oben genannten Dienstes geschlossen. Hierbei handelt es sich um einen datenschutzrechtlich vorgeschriebenen Vertrag, der gewährleistet, dass dieser die personenbezogenen Daten unserer Websitebesucher nur nach unseren Weisungen und unter Einhaltung der DSGVO verarbeitet.",
+    "GENERAL_INFO_OBLIGATIONS": "3. Allgemeine Hinweise und Pflicht­informationen",
+    "DATA_PROTECTION": "Datenschutz",
+    "DATA_PROTECTION_TEXT": "Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend den gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung. Wenn Sie diese Website benutzen, werden verschiedene personenbezogene Daten erhoben. Personenbezogene Daten sind Daten, mit denen Sie persönlich identifiziert werden können. Die vorliegende Datenschutzerklärung erläutert, welche Daten wir erheben und wofür wir sie nutzen. Sie erläutert auch, wie und zu welchem Zweck das geschieht. Wir weisen darauf hin, dass die Datenübertragung im Internet (z. B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich.",
+    "RESPONSIBLE_NOTICE": "Hinweis zur verantwortlichen Stelle",
+    "RESPONSIBLE_ENTITY": "Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:",
+    "RESPONSIBLE_PHONE": "Telefon: ",
+    "RESPONSIBLE_EMAIL": "E-Mail: ",
+    "RESPONSIBLE_ENTITY_TEXT": "Verantwortliche Stelle ist die natürliche oder juristische Person, die allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z. B. Namen, E-Mail-Adressen o. Ä.) entscheidet.",
+    "STORAGE_DURATION": "Speicherdauer",
+    "STORAGE_DURATION_TEXT": "Soweit innerhalb dieser Datenschutzerklärung keine speziellere Speicherdauer genannt wurde, verbleiben Ihre personenbezogenen Daten bei uns, bis der Zweck für die Datenverarbeitung entfällt. Wenn Sie ein berechtigtes Löschersuchen geltend machen oder eine Einwilligung zur Datenverarbeitung widerrufen, werden Ihre Daten gelöscht, sofern wir keine anderen rechtlich zulässigen Gründe für die Speicherung Ihrer personenbezogenen Daten haben (z. B. steuer- oder handelsrechtliche Aufbewahrungsfristen); im letztgenannten Fall erfolgt die Löschung nach Fortfall dieser Gründe.",
+    "LEGAL_BASIS_INFO": "Allgemeine Hinweise zu den Rechtsgrundlagen der Datenverarbeitung auf dieser Website",
+    "LEGAL_BASIS_INFO_TEXT": "Sofern Sie in die Datenverarbeitung eingewilligt haben, verarbeiten wir Ihre personenbezogenen Daten auf Grundlage von Art. 6 Abs. 1 lit. a DSGVO bzw. Art. 9 Abs. 2 lit. a DSGVO, sofern besondere Datenkategorien nach Art. 9 Abs. 1 DSGVO verarbeitet werden. Im Falle einer ausdrücklichen Einwilligung in die Übertragung personenbezogener Daten in Drittstaaten erfolgt die Datenverarbeitung außerdem auf Grundlage von Art. 49 Abs. 1 lit. a DSGVO. Sofern Sie in die Speicherung von Cookies oder in den Zugriff auf Informationen in Ihr Endgerät (z. B. via Device-Fingerprinting) eingewilligt haben, erfolgt die Datenverarbeitung zusätzlich auf Grundlage von § 25 Abs. 1 TDDDG. Die Einwilligung ist jederzeit widerrufbar. Sind Ihre Daten zur Vertragserfüllung oder zur Durchführung vorvertraglicher Maßnahmen erforderlich, verarbeiten wir Ihre Daten auf Grundlage des Art. 6 Abs. 1 lit. b DSGVO. Des Weiteren verarbeiten wir Ihre Daten, sofern diese zur Erfüllung einer rechtlichen Verpflichtung erforderlich sind auf Grundlage von Art. 6 Abs. 1 lit. c DSGVO. Die Datenverarbeitung kann ferner auf Grundlage unseres berechtigten Interesses nach Art. 6 Abs. 1 lit. f DSGVO erfolgen. Über die jeweils im Einzelfall einschlägigen Rechtsgrundlagen wird in den folgenden Absätzen dieser Datenschutzerklärung informiert.",
+    "DATA_RECIPIENTS": "Empfänger von personenbezogenen Daten",
+    "DATA_RECIPIENTS_TEXT": "Im Rahmen unserer Geschäftstätigkeit arbeiten wir mit verschiedenen externen Stellen zusammen. Dabei ist teilweise auch eine Übermittlung von personenbezogenen Daten an diese externen Stellen erforderlich. Wir geben personenbezogene Daten nur dann an externe Stellen weiter, wenn dies im Rahmen einer Vertragserfüllung erforderlich ist, wenn wir gesetzlich hierzu verpflichtet sind (z. B. Weitergabe von Daten an Steuerbehörden), wenn wir ein berechtigtes Interesse nach Art. 6 Abs. 1 lit. f DSGVO an der Weitergabe haben oder wenn eine sonstige Rechtsgrundlage die Datenweitergabe erlaubt. Beim Einsatz von Auftragsverarbeitern geben wir personenbezogene Daten unserer Kunden nur auf Grundlage eines gültigen Vertrags über Auftragsverarbeitung weiter. Im Falle einer gemeinsamen Verarbeitung wird ein Vertrag über gemeinsame Verarbeitung geschlossen.",
+    "CONSENT_WITHDRAWAL": "Widerruf Ihrer Einwilligung zur Datenverarbeitung",
+    "CONSENT_WITHDRAWAL_TEXT": "Viele Datenverarbeitungsvorgänge sind nur mit Ihrer ausdrücklichen Einwilligung möglich. Sie können eine bereits erteilte Einwilligung jederzeit widerrufen. Die Rechtmäßigkeit der bis zum Widerruf erfolgten Datenverarbeitung bleibt vom Widerruf unberührt.",
+    "OBJECTION_RIGHT": "Widerspruchsrecht gegen die Datenerhebung in besonderen Fällen sowie gegen Direktwerbung (Art. 21 DSGVO)",
+    "OBJECTION_RIGHT_TEXT": "WENN DIE DATENVERARBEITUNG AUF GRUNDLAGE VON ART. 6 ABS. 1 LIT. E ODER F DSGVO ERFOLGT, HABEN SIE JEDERZEIT DAS RECHT, AUS GRÜNDEN, DIE SICH AUS IHRER BESONDEREN SITUATION ERGEBEN, GEGEN DIE VERARBEITUNG IHRER PERSONENBEZOGENEN DATEN WIDERSPRUCH EINZULEGEN; DIES GILT AUCH FÜR EIN AUF DIESE BESTIMMUNGEN GESTÜTZTES PROFILING. DIE JEWEILIGE RECHTSGRUNDLAGE, AUF DENEN EINE VERARBEITUNG BERUHT, ENTNEHMEN SIE DIESER DATENSCHUTZERKLÄRUNG. WENN SIE WIDERSPRUCH EINLEGEN, WERDEN WIR IHRE BETROFFENEN PERSONENBEZOGENEN DATEN NICHT MEHR VERARBEITEN, ES SEI DENN, WIR KÖNNEN ZWINGENDE SCHUTZWÜRDIGE GRÜNDE FÜR DIE VERARBEITUNG NACHWEISEN, DIE IHRE INTERESSEN, RECHTE UND FREIHEITEN ÜBERWIEGEN ODER DIE VERARBEITUNG DIENT DER GELTENDMACHUNG, AUSÜBUNG ODER VERTEIDIGUNG VON RECHTSANSPRÜCHEN (WIDERSPRUCH NACH ART. 21 ABS. 1 DSGVO). WERDEN IHRE PERSONENBEZOGENEN DATEN VERARBEITET, UM DIREKTWERBUNG ZU BETREIBEN, SO HABEN SIE DAS RECHT, JEDERZEIT WIDERSPRUCH GEGEN DIE VERARBEITUNG SIE BETREFFENDER PERSONENBEZOGENER DATEN ZUM ZWECKE DERARTIGER WERBUNG EINZULEGEN; DIES GILT AUCH FÜR DAS PROFILING, SOWEIT ES MIT SOLCHER DIREKTWERBUNG IN VERBINDUNG STEHT. WENN SIE WIDERSPRECHEN, WERDEN IHRE PERSONENBEZOGENEN DATEN ANSCHLIESSEND NICHT MEHR ZUM ZWECKE DER DIREKTWERBUNG VERWENDET (WIDERSPRUCH NACH ART. 21 ABS. 2 DSGVO).",
+    "COMPLAINT_RIGHT": "Beschwerde­recht bei der zuständigen Aufsichts­behörde",
+    "COMPLAINT_RIGHT_TEXT": "Im Falle von Verstößen gegen die DSGVO steht den Betroffenen ein Beschwerderecht bei einer Aufsichtsbehörde, insbesondere in dem Mitgliedstaat ihres gewöhnlichen Aufenthalts, ihres Arbeitsplatzes oder des Orts des mutmaßlichen Verstoßes zu. Das Beschwerderecht besteht unbeschadet anderweitiger verwaltungsrechtlicher oder gerichtlicher Rechtsbehelfe.",
+    "DATA_PORTABILITY": "Recht auf Daten­übertrag­barkeit",
+    "DATA_PORTABILITY_TEXT": "Sie haben das Recht, Daten, die wir auf Grundlage Ihrer Einwilligung oder in Erfüllung eines Vertrags automatisiert verarbeiten, an sich oder an einen Dritten in einem gängigen, maschinenlesbaren Format aushändigen zu lassen. Sofern Sie die direkte Übertragung der Daten an einen anderen Verantwortlichen verlangen, erfolgt dies nur, soweit es technisch machbar ist.",
+    "ACCESS_CORRECTION_DELETION": "Auskunft, Berichtigung und Löschung",
+    "ACCESS_CORRECTION_DELETION_TEXT": "Sie haben im Rahmen der geltenden gesetzlichen Bestimmungen jederzeit das Recht auf unentgeltliche Auskunft über Ihre gespeicherten personenbezogenen Daten, deren Herkunft und Empfänger und den Zweck der Datenverarbeitung und ggf. ein Recht auf Berichtigung oder Löschung dieser Daten. Hierzu sowie zu weiteren Fragen zum Thema personenbezogene Daten können Sie sich jederzeit an uns wenden.",
+    "PROCESSING_RESTRICTION": "Recht auf Einschränkung der Verarbeitung",
+    "PROCESSING_RESTRICTION_TEXT": "Sie haben das Recht, die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen. Hierzu können Sie sich jederzeit an uns wenden. Das Recht auf Einschränkung der Verarbeitung besteht in folgenden Fällen: Wenn Sie die Richtigkeit Ihrer bei uns gespeicherten personenbezogenen Daten bestreiten, benötigen wir in der Regel Zeit, um dies zu überprüfen. Für die Dauer der Prüfung haben Sie das Recht, die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen. Wenn die Verarbeitung Ihrer personenbezogenen Daten unrechtmäßig geschah/geschieht, können Sie statt der Löschung die Einschränkung der Datenverarbeitung verlangen. Wenn wir Ihre personenbezogenen Daten nicht mehr benötigen, Sie sie jedoch zur Ausübung, Verteidigung oder Geltendmachung von Rechtsansprüchen benötigen, haben Sie das Recht, statt der Löschung die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen. Wenn Sie einen Widerspruch nach Art. 21 Abs. 1 DSGVO eingelegt haben, muss eine Abwägung zwischen Ihren und unseren Interessen vorgenommen werden. Solange noch nicht feststeht, wessen Interessen überwiegen, haben Sie das Recht, die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen. Wenn Sie die Verarbeitung Ihrer personenbezogenen Daten eingeschränkt haben, dürfen diese Daten – von ihrer Speicherung abgesehen – nur mit Ihrer Einwilligung oder zur Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen oder zum Schutz der Rechte einer anderen natürlichen oder juristischen Person oder aus Gründen eines wichtigen öffentlichen Interesses der Europäischen Union oder eines Mitgliedstaats verarbeitet werden.",
+    "SSL_TLS_ENCRYPTION": "SSL- bzw. TLS-Verschlüsselung",
+    "SSL_TLS_ENCRYPTION_TEXT": "Diese Seite nutzt aus Sicherheitsgründen und zum Schutz der Übertragung vertraulicher Inhalte, wie zum Beispiel Bestellungen oder Anfragen, die Sie an uns als Seitenbetreiber senden, eine SSL- bzw. TLS-Verschlüsselung. Eine verschlüsselte Verbindung erkennen Sie daran, dass die Adresszeile des Browsers von „http://“ auf „https://“ wechselt und an dem Schloss-Symbol in Ihrer Browserzeile. Wenn die SSL- bzw. TLS-Verschlüsselung aktiviert ist, können die Daten, die Sie an uns übermitteln, nicht von Dritten mitgelesen werden.",
+    "AD_EMAIL_OBJECTION": "Widerspruch gegen Werbe-E-Mails",
+    "AD_EMAIL_OBJECTION_TEXT": "Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten zur Übersendung von nicht ausdrücklich angeforderter Werbung und Informationsmaterialien wird hiermit widersprochen. Die Betreiber der Seiten behalten sich ausdrücklich rechtliche Schritte im Falle der unverlangten Zusendung von Werbeinformationen, etwa durch Spam-E-Mails, vor.",
+    "DATA_COLLECTION_WEBSITE": "4. Datenerfassung auf dieser Website",
+    "CONTACT_FORM": "Kontaktformular",
+    "CONTACT_FORM_TEXT": "Wenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben aus dem Anfrageformular inklusive der von Ihnen dort angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter. Die Verarbeitung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO, sofern Ihre Anfrage mit der Erfüllung eines Vertrags zusammenhängt oder zur Durchführung vorvertraglicher Maßnahmen erforderlich ist. In allen übrigen Fällen beruht die Verarbeitung auf unserem berechtigten Interesse an der effektiven Bearbeitung der an uns gerichteten Anfragen (Art. 6 Abs. 1 lit. f DSGVO) oder auf Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO) sofern diese abgefragt wurde; die Einwilligung ist jederzeit widerrufbar. Die von Ihnen im Kontaktformular eingegebenen Daten verbleiben bei uns, bis Sie uns zur Löschung auffordern, Ihre Einwilligung zur Speicherung widerrufen oder der Zweck für die Datenspeicherung entfällt (z. B. nach abgeschlossener Bearbeitung Ihrer Anfrage). Zwingende gesetzliche Bestimmungen – insbesondere Aufbewahrungsfristen – bleiben unberührt.",
+    "REQUEST_BY_EMAIL_PHONE_FAX": "Anfrage per E-Mail, Telefon oder Telefax",
+    "REQUEST_BY_EMAIL_PHONE_FAX_TEXT": "Wenn Sie uns per E-Mail, Telefon oder Telefax kontaktieren, wird Ihre Anfrage inklusive aller daraus hervorgehenden personenbezogenen Daten (Name, Anfrage) zum Zwecke der Bearbeitung Ihres Anliegens bei uns gespeichert und verarbeitet. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.",
+    "DATA_PROCESSING_LEGAL_BASIS": "Die Verarbeitung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO, sofern Ihre Anfrage mit der Erfüllung eines Vertrags zusammenhängt oder zur Durchführung vorvertraglicher Maßnahmen erforderlich ist. In allen übrigen Fällen beruht die Verarbeitung auf unserem berechtigten Interesse an der effektiven Bearbeitung der an uns gerichteten Anfragen (Art. 6 Abs. 1 lit. f DSGVO) oder auf Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO) sofern diese abgefragt wurde; die Einwilligung ist jederzeit widerrufbar.",
+    "DATA_RETENTION": "Die von Ihnen an uns per Kontaktanfragen übersandten Daten verbleiben bei uns, bis Sie uns zur Löschung auffordern, Ihre Einwilligung zur Speicherung widerrufen oder der Zweck für die Datenspeicherung entfällt (z. B. nach abgeschlossener Bearbeitung Ihres Anliegens). Zwingende gesetzliche Bestimmungen – insbesondere gesetzliche Aufbewahrungsfristen – bleiben unberührt.",
+    "SOURCE": "Quelle: "
   }
+}
