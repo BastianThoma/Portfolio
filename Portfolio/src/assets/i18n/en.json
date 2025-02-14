@@ -64,7 +64,10 @@
     "PRIVACY_POLICY_LINK": "privacy policy",
     "PRIVACY_POLICY_TEXT2": " and agree to the processing of my data as outlined.",
     "PRIVACY_ERROR": "Please accept the privacy policy.",
-    "SUBMIT_BUTTON": "Say Hello ;)"
+    "SUBMIT_BUTTON": "Say Hello ;)",
+    "SUCCESS_MESSAGE": "Thank you for your message. I will get back to you as soon as possible.",
+    "ERROR_MESSAGE": "Oops! Something went wrong. Please try again.",
+    "COOLDOWN_MESSAGE": "Please wait a moment before sending another message."
   },
   "FOOTER": {
     "WEB_DEVELOPER": "Web Developer",

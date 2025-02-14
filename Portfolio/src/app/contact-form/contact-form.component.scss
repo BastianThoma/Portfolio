@@ -50,7 +50,8 @@ form {
         color: #ff2020;
       }
       @keyframes invalidShake {
-        0%, 100% {
+        0%,
+        100% {
           transform: translateX(0);
         }
         25% {
@@ -205,6 +206,30 @@ form {
       }
     }
   }
+  .popup {
+    visibility: hidden;
+    min-width: 350px;
+    max-width: 80%;
+    background-color: #333;
+    color: #3dcfb6;
+    text-align: center;
+    border-radius: 16px;
+    padding: 32px;
+    position: fixed;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  }
+
+  .popup.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 4.5s;
+    animation: fadein 0.5s, fadeout 0.5s 4.5s;
+  }
+
   button {
     margin-top: 40px;
     width: 140px;
@@ -234,9 +259,9 @@ form {
 }
 
 @media (max-width: 950px) {
-button {
-  margin-top: 80px !important;
-}
+  button {
+    margin-top: 80px !important;
+  }
 }
 
 @media (max-width: 700px) {
@@ -259,5 +284,13 @@ button {
       padding-left: 0px !important;
       font-size: 14px !important;
     }
+  }
+}
+
+@media (max-width: 500px) {
+  .popup {
+    min-width: 85%;
+    padding: 16px;
+    font-size: 16px;
   }
 }

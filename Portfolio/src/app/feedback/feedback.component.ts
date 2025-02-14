@@ -101,12 +101,16 @@ export class FeedbackComponent {
   }
 
   ngOnInit(): void {
-    window.addEventListener('pointerup', () => {
-      this.isDragging = false;
-      const sliderElement = document.querySelector('.slider') as HTMLElement;
-      if (sliderElement) {
-        sliderElement.classList.remove('dragging');
-      }
-    });
+    const sliderElement = document.querySelector('.slider') as HTMLElement;
+  
+    if (sliderElement) {
+      sliderElement.addEventListener('touchstart', this.onTouchStart.bind(this), { passive: true });
+      sliderElement.addEventListener('touchend', this.onTouchEnd.bind(this), { passive: true });
+  
+      sliderElement.addEventListener('pointerdown', this.onPointerDown.bind(this));
+      sliderElement.addEventListener('pointermove', this.onPointerMove.bind(this));
+      sliderElement.addEventListener('pointerup', this.onPointerUp.bind(this));
+    }
+    window.addEventListener('pointerup', this.onPointerUp.bind(this));
   }
 }

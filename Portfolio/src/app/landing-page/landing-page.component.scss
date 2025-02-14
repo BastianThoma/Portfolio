@@ -289,3 +289,14 @@
     display: none;
   }
 }
+@media (max-width: 620px) {
+  .infoBanner {
+    bottom: 25px !important;
+  }
+  .pixelLineLeft {
+    height: 100px !important;
+  }
+  .pixelLineRight {
+    height: 100px !important;
+  }
+}

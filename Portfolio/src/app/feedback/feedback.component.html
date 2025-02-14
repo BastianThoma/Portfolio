@@ -7,11 +7,6 @@
   <div class="sliderContainer" #sliderContainer>
     <div
       class="slider"
-      (touchstart)="onTouchStart($event)"
-      (touchend)="onTouchEnd($event)"
-      (pointerdown)="onPointerDown($event)"
-      (pointermove)="onPointerMove($event)"
-      (pointerup)="onPointerUp()"
     >
       <div
         *ngFor="let feedback of feedbacks; let i = index"
