@@ -300,3 +300,37 @@
     height: 100px !important;
   }
 }
+
+@media only screen and (orientation: landscape) {
+  .infoBanner {
+    transform: rotate(-1deg) !important;
+    bottom: 24px !important;
+    width: 90% !important;
+    height: 40px !important;
+  }
+  .lateralContainer {
+    width: 85% !important;
+  }
+  .titleContent {
+    gap: 8px !important;
+  }
+  .pixelLineLeft {
+    height: 90px !important;
+  }
+  .pixelLineRight {
+    height: 90px !important;
+  }
+  .arrowBox {
+    width: 24px !important;
+    height: 40px !important;
+    img {
+      height: 12px !important;
+    }
+  }
+  .scrollDownHelper {
+    gap: 8px !important;
+  }
+  .heroQuickLinks {
+    gap: 8px !important;
+  }
+}
