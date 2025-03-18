@@ -1,7 +1,4 @@
 .skillsSection {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: #1c1c1c;
   background: radial-gradient(
       circle at -6% center,
@@ -9,187 +6,167 @@
       transparent 16%
     ),
     #1c1c1c;
-
+  display: flex;
+  justify-content: center;
   .skillsContent {
-    width: 1440px;
-    height: 700px;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-
+    align-items: center;
+    max-width: 1440px;
+    width: 100%;
+    max-height: min-content;
+    height: 100%;
     .skillsetBoxContent {
       display: flex;
       flex-direction: column;
       gap: 32px;
-
       .highlightQuestion {
         margin-top: 32px;
         font-size: 24px;
         font-weight: 700;
       }
-
       .reachOutText {
         font-size: 16px;
         font-weight: 400;
       }
     }
-  }
-}
-
-.letsTalkButton {
-  margin-top: 32px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 128px;
-  height: 48px;
-  padding: 0 24px;
-  border: solid 2px #ffffff;
-  border-radius: 100px;
-  background-color: transparent;
-  font-size: 18px;
-  font-weight: 400;
-  overflow: hidden;
-  a {
-    text-decoration: none;
-    color: #ffffff;
-    span {
-      display: inline-block;
-      white-space: nowrap;
-      transform: translateX(0);
-      opacity: 1;
-      transition: none;
-    }
-  }
-
-  &:hover {
-    a {
-      color: #3dcfb680;
-    }
-    border: solid 2px #3dcfb680;
-    cursor: pointer;
-    span {
-      animation: slide-text 4s ease-in-out infinite;
-    }
-  }
-}
-
-.skillsetIconBox {
-  position: relative;
-  color: #ffffff;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  max-width: 640px;
-  width: 100%;
-  max-height: 430px;
-  width: 100%;
-  gap: 72px;
-  top: 66px;
-
-  .skillItem {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 64px;
-    text-align: center;
-    cursor: pointer;
-    position: relative;
-    transition: transform 0.3s ease;
-
-    &:hover img {
-      animation: bounce 0.6s ease infinite;
-    }
-
-    &:hover p {
-      color: #3dcfb6;
-    }
-
-    img {
-      width: 60px;
-      height: 60px;
-      transition: 0.3s ease;
-    }
-
-    &.specialSkill {
-      img {
-        transition: none;
-      }
-
-      p {
-        color: white;
-        transition: color 0.3s ease;
-      }
-
-      &:hover {
-        img {
-          animation: none;
-          transform: scale(1.15);
-        }
-        p {
-          color: #3dcfb6;
-        }
-
-        .speechBubble {
+    .letsTalkButton {
+      margin-top: 32px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 128px;
+      height: 48px;
+      padding: 0 24px;
+      border: solid 2px #ffffff;
+      border-radius: 100px;
+      background-color: transparent;
+      font-size: 18px;
+      font-weight: 400;
+      overflow: hidden;
+      a {
+        text-decoration: none;
+        color: #ffffff;
+        span {
+          display: inline-block;
+          white-space: nowrap;
+          transform: translateX(0);
           opacity: 1;
-          visibility: visible;
+          transition: none;
         }
       }
-
-      .speechBubble {
-        position: absolute;
-        top: -130px;
-        left: 100px;
-        transform: translateX(-50%);
-        width: 180px;
-        height: auto;
-        padding: 0 12px;
-        background-color: #1f2e2c;
-        border-radius: 16px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        text-align: center;
-        opacity: 0;
-        visibility: hidden;
-        transition: opacity 0.3s ease, visibility 0s 0.3s;
+      &:hover {
+        a {
+          color: #3dcfb680;
+        }
+        border: solid 2px #3dcfb680;
+        cursor: pointer;
+        span {
+          animation: slide-text 4s ease-in-out infinite;
+        }
+      }
+    }
+    .skillsetIconBox {
+      color: #ffffff;
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 568px;
+      width: 100%;
+      max-height: min-content;
+      width: 100%;
+      gap: 65px;
+      .skillItem {
         display: flex;
         flex-direction: column;
-        gap: 8px;
-        &::after {
-          content: "";
-          position: absolute;
-          bottom: -12px;
-          left: 10px;
-          width: 0;
-          height: 0;
-          border-style: solid;
-          border-width: 24px 24px 0 24px;
-          border-color: #1f2e2c transparent transparent transparent;
+        align-items: center;
+        max-width: 64px;
+        text-align: center;
+        cursor: pointer;
+        position: relative;
+        transition: transform 0.3s ease;
+        &:hover img {
+          animation: bounce 0.6s ease infinite;
         }
-
-        .speechText {
-          font-size: 16px;
-          font-weight: 400;
+        &:hover p {
           color: #3dcfb6;
-          word-wrap: break-word;
         }
-
-        .specialSkills {
-          display: flex;
-          justify-content: center;
-          gap: 16px;
-
-          .specialSkillIcon {
-            text-align: center;
-
+        img {
+          width: 60px;
+          height: 60px;
+          transition: 0.3s ease;
+        }
+        &.specialSkill {
+          img {
+            transition: none;
+          }
+          p {
+            color: white;
+            transition: color 0.3s ease;
+          }
+          &:hover {
             img {
-              width: 32px;
-              height: 32px;
+              animation: none;
+              transform: scale(1.15);
             }
-
             p {
-              font-size: 12px;
-              font-weight: 700;
               color: #3dcfb6;
+            }
+            .speechBubble {
+              opacity: 1;
+              visibility: visible;
+            }
+          }
+          .speechBubble {
+            position: absolute;
+            top: -130px;
+            left: 100px;
+            transform: translateX(-50%);
+            width: 180px;
+            height: auto;
+            padding: 0 12px;
+            background-color: #1f2e2c;
+            border-radius: 16px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0s 0.3s;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            &::after {
+              content: "";
+              position: absolute;
+              bottom: -12px;
+              left: 10px;
+              width: 0;
+              height: 0;
+              border-style: solid;
+              border-width: 24px 24px 0 24px;
+              border-color: #1f2e2c transparent transparent transparent;
+            }
+            .speechText {
+              font-size: 16px;
+              font-weight: 400;
+              color: #3dcfb6;
+              word-wrap: break-word;
+            }
+            .specialSkills {
+              display: flex;
+              justify-content: center;
+              gap: 16px;
+              .specialSkillIcon {
+                text-align: center;
+                img {
+                  width: 32px;
+                  height: 32px;
+                }
+                p {
+                  font-size: 12px;
+                  font-weight: 700;
+                  color: #3dcfb6;
+                }
+              }
             }
           }
         }
@@ -197,51 +174,10 @@
     }
   }
 }
-
 .whiteText {
   color: #ffffff;
 }
 
 .mintText {
   color: #3dcfb6;
-}
-
-@media (max-width: 1650px) {
-  .skillsContent {
-    width: 70% !important;
-  }
-  .skillsetIconBox {
-    width: 450px !important;
-    height: 420px !important;
-    gap: 32px !important;
-  }
-  .skillsetBoxContent {
-    gap: 8px !important;
-  }
-}
-
-@media (max-width: 1350px) {
-  .skillsContent {
-    height: 960px !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    justify-content: normal !important;
-    gap: 32px;
-  }
-  .skillsetIconBox {
-    justify-content: center !important;
-  }
-}
-
-@media (max-width: 950px) {
-  .skillsContent {
-    height: 1320px !important;
-  }
-  .skillsetIconBox {
-    width: 290px !important;
-  }
-  .speechBubble {
-    visibility: hidden !important;
-    display: none !important;
-  }
 }

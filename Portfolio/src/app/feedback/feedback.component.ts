@@ -13,7 +13,7 @@ export class FeedbackComponent {
   constructor(private translate: TranslateService) {}
 
   feedbacks = [
-    { text: 'FEEDBACK.TEXT1', author: 'name 1', role: 'Team Partner' },
+    { text: 'FEEDBACK.TEXT1', author: 'Ahmet', role: 'Team Partner' },
     { text: 'FEEDBACK.TEXT2', author: 'name 2', role: 'Team Partner' },
     { text: 'FEEDBACK.TEXT3', author: 'name 3', role: 'Team Partner' }
   ];

@@ -1,16 +1,13 @@
 .projectsSection {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: #1c1c1c;
   color: #3dcfb6;
+  display: flex;
+  justify-content: center;
   .projectsContent {
-    display: flex;
     max-width: 1440px;
     width: 100%;
-    max-height: 620px;
+    max-height: min-content;
     height: 100%;
-    padding-bottom: 20px;
     .projectsBox {
       width: 75%;
       h2 {
@@ -41,7 +38,6 @@
             visibility: visible;
           }
         }
-
         .cardTitleBox {
           display: flex;
           justify-content: flex-start;
@@ -64,16 +60,15 @@
           color: #ffffff;
           word-spacing: 8px;
         }
-
         .projectPreviewHoverBox {
           position: absolute;
           left: calc(
             100% + 70px
-          ); /* Positioniere rechts von der `projectCard` mit 30px Abstand */
-          transform: translateY(-50%); /* Verschiebung zur Mitte */
+          );
+          transform: translateY(-50%);
           display: flex;
-          flex-direction: column; /* Bilder untereinander */
-          gap: 0; /* Kein Abstand zwischen den Bildern */
+          flex-direction: column;
+          gap: 0;
           opacity: 0;
           visibility: hidden;
           transition: opacity 0.3s ease, visibility 0.3s ease;
@@ -86,30 +81,25 @@
           &.top0 {
             top: 0%;
           }
-
           img:first-child {
-            /* Vordergrundbild */
             position: relative;
-            z-index: 2; /* Im Vordergrund */
+            z-index: 2;
             width: 300px;
             height: 200px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             border-radius: 16px;
           }
-
           img:last-child {
-            /* Hintergrundbild */
             position: absolute;
-            top: 10px; /* Verschiebung nach unten */
-            left: 10px; /* Verschiebung nach rechts */
-            z-index: 1; /* Hinter dem Vordergrundbild */
+            top: 10px;
+            left: 10px;
+            z-index: 1;
             width: 300px;
             height: 200px;
-            opacity: 1; /* Optional: Transparenz für den Effekt */
+            opacity: 1;
             border-radius: 16px;
           }
         }
-
         &:hover .projectPreviewHoverBox {
           opacity: 1;
           visibility: visible;
@@ -117,54 +107,4 @@
       }
     }
   }
-}
-
-@media (max-width: 1650px) {
-  .projectsContent {
-    width: 70% !important;
-  }
-}
-
-@media (max-width: 1350px) {
-  .projectsContent {
-    justify-content: center !important;
-  }
-  .projectPreviewHoverBox {
-    visibility: hidden !important;
-    display: none !important; 
-  }
-}
-
-@media (max-width: 950px) {
-  .projectsBox {
-    width: 99% !important;
-  }
-  .projectCard h3{
-    font-size: 20px !important;
-    margin: 0;
-  }
-  .projectCard span{
-    font-size: 13px !important;
-    margin: 0;
-  }
-}
-
-@media (max-width: 700px) {
-  .projectsContent {
-    width: 100% !important;
-  }
-  .projectsBox {
-    width: 95% !important;
-  }
-  .projectsBox h2{
-    font-size: 24px !important;
-  }
-  .projectsBox h1{
-    font-size: 32px !important;
-  }
-  .projectCard {
-    flex-direction: column !important;
-    justify-content: space-evenly !important;
-    align-items: flex-start !important;
-    }
 }

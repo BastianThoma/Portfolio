@@ -11,7 +11,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 90%;
     height: 130px;
     max-width: 1440px;
     .leftFooterContainer {
@@ -94,39 +94,5 @@ footer {
       font-weight: 400;
       text-align: center;
     }
-  }
-}
-
-@media (min-width: 800px) and (max-width: 1650px) {
-  .footerContent {
-    width: 70% !important;
-  }
-}
-
-@media (max-width: 800px) {
-  .footerContent {
-    width: 80% !important;
-  }
-  .middleFooterContainer {
-    display: none !important;
-  }
-  .middleFooterMobile {
-    display: block !important;
-    margin-top: 40px !important;
-  }
-  .logo {
-    width: 100px !important;
-    height: 38px !important;
-  }
-  .smallInfos span {
-    font-size: 14px !important;
-  }
-  .footerLink {
-    font-size: 14px !important;
-    white-space: normal !important;
-    word-break: break-word;
-  }
-  .rightFooterContainer {
-    width: 110px !important;
   }
 }

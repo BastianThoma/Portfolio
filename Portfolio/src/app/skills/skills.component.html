@@ -25,7 +25,7 @@
       <div
         *ngFor="let skill of skills; let i = index"
         class="skillItem"
-        [ngClass]="{ 'specialSkill': skill.label === 'Growth Mindset' }"
+        [ngClass]="{ specialSkill: skill.label === 'Growth Mindset' }"
         (mouseenter)="onHover(skill, true)"
         (mouseleave)="onHover(skill, false)"
       >
