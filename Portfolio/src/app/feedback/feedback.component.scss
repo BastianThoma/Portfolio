@@ -20,12 +20,9 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  // padding: 50px;
   height: 380px;
   overflow: hidden;
   position: relative;
-  // padding-left: 96px;
-  // padding-right: 96px;
   background-color: #1c1c1c;
   .headerTitle {
     margin-bottom: 40px;
@@ -68,17 +65,14 @@ body {
       black 85%,
       transparent 100%
     );
-
     .slider {
       position: relative;
       width: 100%;
       height: 100%;
       cursor: grab;
-
       &.dragging {
         cursor: grabbing;
       }
-
       .slide {
         position: absolute;
         top: 0;
@@ -97,37 +91,30 @@ body {
         filter: blur(5px);
         max-height: 300px;
         min-width: 260px;
-
         &::-webkit-scrollbar {
           width: 6px;
           height: 6px;
         }
-
         &::-webkit-scrollbar-track {
           background: transparent;
           border-radius: 10px;
         }
-
         &::-webkit-scrollbar-thumb {
           background-color: #3dcfb6;
           border-radius: 10px;
           border: 1px solid transparent;
           width: 6px;
           height: 6px;
-
           &:hover {
             background-color: #28b399;
           }
         }
-
         &::-webkit-scrollbar-button {
           display: none;
         }
-
         &::-webkit-scrollbar-corner {
           background: transparent;
         }
-
         &.active {
           background-color: #2f5b54;
           border: 2px solid #3dcfb6;
@@ -136,7 +123,6 @@ body {
           transform: translateX(-50%) scale(1);
           filter: blur(0px);
         }
-
         &.prev {
           background-color: #2b2b2b;
           border: 1px solid #3dcfb6;
@@ -145,7 +131,6 @@ body {
           transform: translateX(-150%) scale(0.85);
           filter: blur(2px);
         }
-
         &.next {
           background-color: #2b2b2b;
           border: 1px solid #3dcfb6;
@@ -154,7 +139,6 @@ body {
           transform: translateX(50%) scale(0.85);
           filter: blur(2px);
         }
-
         .feedbackText {
           font-size: 20px;
           font-family: "Karla", monospace;
@@ -162,20 +146,17 @@ body {
           margin-bottom: 30px;
           text-align: justify;
         }
-
         .feedbackAuthorBox {
           display: flex;
           justify-content: space-between;
           align-items: center;
           width: 100%;
-
           .borderOnePixel {
             border: solid 1px #3dcfb6;
             height: 1px;
             width: 30%;
           }
         }
-
         .feedbackAuthor {
           font-size: 18px;
           font-family: "Karla";
@@ -189,7 +170,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-
     .dot {
       height: 12px;
       width: 12px;
@@ -198,7 +178,6 @@ body {
       border-radius: 50%;
       display: inline-block;
       cursor: pointer;
-
       &.active {
         background-color: #135d50;
       }
@@ -214,17 +193,45 @@ body {
     cursor: pointer;
     position: relative;
     transition: transform 0.2s ease;
-
     &:hover {
       color: #fff;
     }
-
     &.leftArrow:hover {
       transform: translateX(-5px);
     }
-
     &.rightArrow:hover {
       transform: translateX(5px);
     }
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  #feedbackSlider {
+    height: 100%;
+    padding: 20px 0;
+  }
+  #sliderContainer {
+    min-height: 320px;
+  }
+  #headerTitle {
+    width: 80%;
+    margin-bottom: 16px;
+    h2 {
+      font-size: 1.5rem;
+    }
+  }
+  #qoutesImg {
+    display: none;
+  }
+  #feedbackAuthorBox {
+    flex-direction: column;
+    gap: 10px;
+    .borderOnePixel {
+      width: 100%;
+    }
+  }
+  #feedbackText {
+    text-align: center;
+    font-size: 1.1rem;
   }
 }

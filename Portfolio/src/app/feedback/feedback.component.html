@@ -1,13 +1,16 @@
-<div class="feedbackSlider">
-  <div class="headerTitle">
-    <h2>{{ 'FEEDBACK.HEADER_TITLE' | translate }}</h2>
-    <img class="qoutes" src="/assets/img/quotes.png" alt="Quotes Icon" />
+<div id="feedbackSlider" class="feedbackSlider">
+  <div id="headerTitle" class="headerTitle">
+    <h2>{{ "FEEDBACK.HEADER_TITLE" | translate }}</h2>
+    <img
+      id="qoutesImg"
+      class="qoutes"
+      src="/assets/img/quotes.png"
+      alt="Quotes Icon"
+    />
   </div>
 
-  <div class="sliderContainer" #sliderContainer>
-    <div
-      class="slider"
-    >
+  <div id="sliderContainer" class="sliderContainer" #sliderContainer>
+    <div class="slider">
       <div
         *ngFor="let feedback of feedbacks; let i = index"
         class="slide"
@@ -17,10 +20,10 @@
           next: isNext(i)
         }"
       >
-        <div class="feedbackText">
+        <div id="feedbackText" class="feedbackText">
           <p>{{ feedback.text | translate }}</p>
         </div>
-        <div class="feedbackAuthorBox">
+        <div id="feedbackAuthorBox" class="feedbackAuthorBox">
           <div class="borderOnePixel"></div>
           <div class="feedbackAuthor">
             {{ feedback.author }} - {{ feedback.role }}

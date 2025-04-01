@@ -3,10 +3,10 @@ import { CommonModule } from '@angular/common';
 import { TranslateService, TranslateModule } from '@ngx-translate/core';
 @Component({
   selector: 'app-scrolling-banner',
-  standalone: true, // Macht die Komponente zu einer Standalone-Komponente
-  imports: [CommonModule, TranslateModule], // Importiere benötigte Angular-Module
+  standalone: true,
+  imports: [CommonModule, TranslateModule],
   templateUrl: '/src/app/scrolling-banner/scrolling-banner.component.html',
-  styleUrls: ['/src/app/scrolling-banner/scrolling-banner.component.scss']
+  styleUrls: ['/src/app/scrolling-banner/scrolling-banner.component.scss'],
 })
 export class ScrollingBannerComponent {
   constructor(private translate: TranslateService) {}
@@ -23,4 +23,3 @@ export class ScrollingBannerComponent {
   ];
   bannerItems = [...this.originalItems, ...this.originalItems];
 }
-

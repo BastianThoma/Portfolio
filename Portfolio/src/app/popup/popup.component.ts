@@ -13,7 +13,6 @@ export class PopupComponent {
 
   isPopupVisible = false;
 
-  // Array von Projekten
   projects = [
     {
       projectNumber: '01',
@@ -69,7 +68,6 @@ export class PopupComponent {
     },
   ];
 
-  // Das aktuell angezeigte Projekt
   currentProject = this.projects[0];
 
   showPopup() {
@@ -86,15 +84,14 @@ export class PopupComponent {
     window.open(url, '_blank');
   }
 
-  // Wechseln zum nächsten Projekt
   nextProject() {
     const currentIndex = this.projects.indexOf(this.currentProject);
-    const nextIndex = (currentIndex + 1) % this.projects.length; // Zirkulär durch die Projekte
+    const nextIndex = (currentIndex + 1) % this.projects.length;
     this.currentProject = this.projects[nextIndex];
   }
 
   showPopupWithIndex(index: number) {
     this.currentProject = this.projects[index];
-    this.showPopup(); // Öffne das Popup mit dem ausgewählten Projekt
+    this.showPopup();
   }
 }

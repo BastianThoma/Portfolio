@@ -1,12 +1,19 @@
 <div class="contactContainer">
-  <div class="contactContent">
-    <div class="contactMeBox">
-      <h3 class="fontKarla">{{ 'CONTACT.TITLE' | translate }}</h3>
-      <h1 class="fontFiraCode">{{ 'CONTACT.HEADER' | translate }}</h1>
-      <h2 class="fontFiraCode">{{ 'CONTACT.SUBHEADER' | translate }}</h2>
+  <div id="contactContent" class="contactContent">
+    <div id="contactMeBox" class="contactMeBox">
+      <h3 id="contactTitle" class="fontKarla">
+        {{ "CONTACT.TITLE" | translate }}
+      </h3>
+      <h1 id="contactHeader" class="fontFiraCode">
+        {{ "CONTACT.HEADER" | translate }}
+      </h1>
+      <h2 id="contactSubheader" class="fontFiraCode">
+        {{ "CONTACT.SUBHEADER" | translate }}
+      </h2>
       <span class="fontKarla">
-        {{ 'CONTACT.TEXT' | translate }}<br><br>
-        {{ 'CONTACT.NEED_DEV' | translate }} <a href="#contactSection">{{ 'CONTACT.TALK' | translate }}</a>
+        {{ "CONTACT.TEXT" | translate }}<br /><br />
+        {{ "CONTACT.NEED_DEV" | translate }}
+        <a href="#contactSection">{{ "CONTACT.TALK" | translate }}</a>
       </span>
     </div>
     <app-contact-form></app-contact-form>

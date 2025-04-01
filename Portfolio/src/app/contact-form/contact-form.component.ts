@@ -3,7 +3,6 @@ import { HttpClient } from '@angular/common/http';
 import { FormsModule, NgForm } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { TranslateService, TranslateModule } from '@ngx-translate/core';
-
 @Component({
   selector: 'app-contact-form',
   standalone: true,
@@ -44,7 +43,10 @@ export class ContactFormComponent {
 
   canSubmit(): boolean {
     let currentTime = Date.now();
-    if (this.lastSubmitTime && (currentTime - this.lastSubmitTime) < this.submitCooldown) {
+    if (
+      this.lastSubmitTime &&
+      currentTime - this.lastSubmitTime < this.submitCooldown
+    ) {
       this.showPopup(this.translate.instant('CONTACT_FORM.COOLDOWN_MESSAGE'));
       return false;
     }
@@ -53,7 +55,9 @@ export class ContactFormComponent {
   }
 
   handleResponse(ngForm: NgForm, success: boolean) {
-    let message = success ? this.translate.instant('CONTACT_FORM.SUCCESS_MESSAGE') : this.translate.instant('CONTACT_FORM.ERROR_MESSAGE');
+    let message = success
+      ? this.translate.instant('CONTACT_FORM.SUCCESS_MESSAGE')
+      : this.translate.instant('CONTACT_FORM.ERROR_MESSAGE');
     this.showPopup(message);
     ngForm.resetForm();
     this.contactData.privacyAccepted = false;
@@ -63,7 +67,8 @@ export class ContactFormComponent {
     if (!this.canSubmit()) return;
 
     if (ngForm.submitted && ngForm.form.valid) {
-      this.http.post(this.post.endPoint, this.post.body(this.contactData))
+      this.http
+        .post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: () => this.handleResponse(ngForm, true),
           error: (error) => {

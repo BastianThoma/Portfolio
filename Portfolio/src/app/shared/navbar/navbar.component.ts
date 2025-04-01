@@ -13,14 +13,11 @@ export class NavbarComponent {
   isPopupVisible = false;
   isMenuOpen = false;
 
-  // Variable, die die aktuelle Sprache verfolgt
   currentLang: string;
 
   constructor(private translate: TranslateService) {
-    // Initialisiere die aktuelle Sprache mit der in TranslateService gesetzten Sprache
     this.currentLang = this.translate.currentLang || 'en';
 
-    // Überwache die Sprache, wenn sie geändert wird
     this.translate.onLangChange.subscribe((event) => {
       this.currentLang = event.lang;
     });
@@ -39,7 +36,6 @@ export class NavbarComponent {
   }
 
   switchLanguage(lang: string) {
-    // Wenn die Sprache geändert wird, setzen wir die aktuelle Sprache und die "selected" Klasse
     this.translate.use(lang);
     this.currentLang = lang;
   }

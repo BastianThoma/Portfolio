@@ -1,6 +1,6 @@
 <div class="navbar">
-  <div class="navbarContent">
-    <div class="menu">
+  <div id="navbarContent" class="navbarContent">
+    <div id="menu" class="menu">
       <div class="languageSwitch">
         <button
           class="fontFiraCode"
@@ -50,9 +50,10 @@
         />
       </div>
     </div>
-    <div class="logo"></div>
+    <div id="navbarLogo" class="logo"></div>
     <div
       class="burgerMenu"
+      id="burgerMenu"
       [ngClass]="{ menuOpen: isMenuOpen }"
       (click)="togglePopup()"
     ></div>

@@ -1,6 +1,10 @@
 <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
   <div class="labelContainer">
-    <label class="inputBox fontFiraCode borderTopTwoPixel" for="name">
+    <label
+      id="inputBox"
+      class="inputBox fontFiraCode borderTopTwoPixel"
+      for="name"
+    >
       <span>{{ "CONTACT_FORM.NAME_LABEL" | translate }}</span>
       <input
         id="name"
@@ -27,6 +31,7 @@
 
   <div class="labelContainer">
     <label
+      id="inputBox"
       class="inputBox fontFiraCode borderTopTwoPixel borderBotTwoPixel"
       for="email"
     >
@@ -55,7 +60,11 @@
     </label>
   </div>
   <div class="labelContainer">
-    <label class="messageBox fontFiraCode borderBotTwoPixel" for="message">
+    <label
+      id="messageBox"
+      class="messageBox fontFiraCode borderBotTwoPixel"
+      for="message"
+    >
       <span>{{ "CONTACT_FORM.MESSAGE_LABEL" | translate }}</span>
       <input
         id="message"
@@ -81,6 +90,7 @@
     <label class="customCheckbox">
       <div>
         <input
+          id="checkboxInput"
           type="checkbox"
           [checked]="contactData.privacyAccepted"
           (change)="onPrivacyChange($event)"
@@ -88,7 +98,7 @@
         />
         <span class="checkmark"></span>
       </div>
-      <span class="checkBoxText fontKarla">
+      <span id="checkBoxText" class="checkBoxText fontKarla">
         {{ "CONTACT_FORM.PRIVACY_POLICY_TEXT1" | translate }}
         <a href="privacy-policy" class="fontFiraCode">{{
           "CONTACT_FORM.PRIVACY_POLICY_LINK" | translate
@@ -104,6 +114,7 @@
         contactData.email &&
         contactData.message
       "
+      id="errorMessage"
       class="errorMessage"
     >
       <small>{{ "CONTACT_FORM.PRIVACY_ERROR" | translate }}</small>
@@ -113,6 +124,8 @@
     <span id="popupMessage"></span>
   </div>
   <button
+    id="submitButton"
+    class="submitButton fontFiraCode"
     type="submit"
     [disabled]="!contactForm.form.valid || !contactData.privacyAccepted"
   >

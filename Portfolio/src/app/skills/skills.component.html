@@ -1,5 +1,5 @@
 <div class="skillsSection">
-  <div class="skillsContent">
+  <div id="skillsContent" class="skillsContent">
     <app-section-card
       [sectionTitle]="'SKILLS.TECHNOLOGIES' | translate"
       [mainHeading]="'SKILLS.SKILL_SET' | translate"
@@ -21,7 +21,7 @@
       </button>
     </app-section-card>
 
-    <div class="skillsetIconBox">
+    <div id="skillsetIconBox" class="skillsetIconBox">
       <div
         *ngFor="let skill of skills; let i = index"
         class="skillItem"

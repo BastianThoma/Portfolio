@@ -8,7 +8,7 @@ import { TranslateService, TranslateModule } from '@ngx-translate/core';
   standalone: true,
   imports: [ImprintComponent, PrivacyPolicyComponent, TranslateModule],
   templateUrl: './policies.component.html',
-  styleUrl: './policies.component.scss'
+  styleUrl: './policies.component.scss',
 })
 export class PoliciesComponent {
   constructor(private translate: TranslateService) {}

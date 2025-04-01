@@ -25,14 +25,13 @@
         flex-direction: column;
         align-items: center;
         gap: 40px;
-
         h1 {
           margin: 0;
           font-size: 128px;
           font-weight: 700;
           color: #d9d9d9;
         }
-        div {
+        .forwardingButtonBox {
           display: flex;
           justify-content: center;
           width: min-content;
@@ -78,9 +77,8 @@
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    padding: 0 40px;
     bottom: 0;
-    width: 100%;
+    width: 90%;
     max-width: 1440px;
     pointer-events: none;
     .scrollDownHelper {
@@ -163,7 +161,7 @@
     position: absolute;
     bottom: 60px;
     background-color: #ffffff1f;
-    width: 100%;
+    width: 99%;
     max-width: 1510px;
     height: 62px;
     backdrop-filter: blur(5.3px);
@@ -182,5 +180,90 @@
       z-index: -1;
       border-radius: 16px;
     }
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  #professionalText {
+    font-size: 1.8rem;
+  }
+  #mainHeadline {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #professionalText {
+    font-size: 1.2rem;
+  }
+  #mainHeadline {
+    font-size: 2.5rem;
+  }
+  #forwardingButtonBox {
+    flex-direction: column;
+    gap: 8px;
+    a {
+      width: 75px;
+      height: 40px;
+      font-size: 14px;
+    }
+  }
+  #mailAdress {
+    display: none;
+  }
+  #pixelLineLeft {
+    height: 140px;
+  }
+  #pixelLineRight {
+    height: 140px;
+  }
+  #heroQuickLinks {
+    gap: 10px;
+  }
+  #heroLinkedinLink {
+    display: none;
+  }
+  #infoBanner {
+    width: 95%;
+    bottom: 42px;
+    height: 48px;
+  }
+}
+
+@media screen and (max-width: 1024px) and (orientation: landscape) {
+  #professionalText {
+    font-size: 1.2rem;
+  }
+  #mainHeadline {
+    font-size: 2.5rem;
+  }
+  #forwardingButtonBox {
+    flex-direction: row;
+    gap: 8px;
+    a {
+      width: 75px;
+      height: 40px;
+      font-size: 14px;
+    }
+  }
+  #mailAdress {
+    display: none;
+  }
+  #pixelLineLeft {
+    height: 140px;
+  }
+  #pixelLineRight {
+    height: 140px;
+  }
+  #heroQuickLinks {
+    gap: 10px;
+  }
+  #heroLinkedinLink {
+    display: none;
+  }
+  #infoBanner {
+    width: 95%;
+    bottom: 24px;
+    height: 48px;
   }
 }

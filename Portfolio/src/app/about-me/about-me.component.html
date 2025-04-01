@@ -1,6 +1,11 @@
 <div class="aboutMeSection">
-  <div class="aboutMeContent">
-    <div class="imgBox" (mouseenter)="onMouseEnter()" [class.hovered]="hovered">
+  <div id="aboutMeContent" class="aboutMeContent">
+    <div
+      id="imgBox"
+      class="imgBox"
+      (mouseenter)="onMouseEnter()"
+      [class.hovered]="hovered"
+    >
       <img class="backgroundEffect" src="/assets/img/capa.png" alt="" />
       <img class="portrait" src="/assets/img/portrait.png" alt="" />
     </div>
@@ -10,19 +15,25 @@
       [mainHeading]="'ABOUT_ME.ABOUT_ME' | translate"
       [mainText]="'ABOUT_ME.MAIN_TEXT' | translate"
     >
-      <div class="highlights marginTop32">
+      <div id="highlightsBox" class="highlights marginTop32">
         <img src="/assets/img/location_icon.png" alt="Location Icon" />
-        <span class="fontKarla">{{ 'ABOUT_ME.FLEXIBLE_WORK' | translate }}</span>
+        <span id="highlightText" class="fontKarla">{{
+          "ABOUT_ME.FLEXIBLE_WORK" | translate
+        }}</span>
       </div>
 
-      <div class="highlights">
+      <div id="highlightsBox" class="highlights">
         <img src="/assets/img/mind_icon.png" alt="Minded Head Icon" />
-        <span class="fontKarla">{{ 'ABOUT_ME.OPEN_MINDED' | translate }}</span>
+        <span id="highlightText" class="fontKarla">{{
+          "ABOUT_ME.OPEN_MINDED" | translate
+        }}</span>
       </div>
 
-      <div class="highlights">
+      <div id="highlightsBox" class="highlights">
         <img src="/assets/img/checked_gear_icon.png" alt="Checked Gear Icon" />
-        <span class="fontKarla">{{ 'ABOUT_ME.PROBLEM_SOLVING' | translate }}</span>
+        <span id="highlightText" class="fontKarla">{{
+          "ABOUT_ME.PROBLEM_SOLVING" | translate
+        }}</span>
       </div>
     </app-section-card>
   </div>

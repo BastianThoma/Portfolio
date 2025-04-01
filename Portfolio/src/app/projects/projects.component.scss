@@ -18,6 +18,11 @@
         font-size: 64px;
         font-weight: 700;
       }
+      p {
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: 400;
+      }
       span {
         color: #ffffff;
         font-size: 18px;
@@ -62,9 +67,7 @@
         }
         .projectPreviewHoverBox {
           position: absolute;
-          left: calc(
-            100% + 70px
-          );
+          left: calc(100% + 70px);
           transform: translateY(-50%);
           display: flex;
           flex-direction: column;
@@ -106,5 +109,62 @@
         }
       }
     }
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  #projectsContent {
+    width: 80%;
+    padding: 24px 0;
+  }
+  #projectsBox {
+    width: 100%;
+  }
+  #cardTitleBox {
+    gap: 0px;
+    img {
+      display: none;
+    }
+  }
+  #pokedexPreviewBox {
+    display: none;
+  }
+  #joinPreviewBox {
+    display: none;
+  }
+  #elPolloLocoPreviewBox {
+    display: none;
+  }
+  #projectsHeader {
+    font-size: 1.2rem;
+  }
+  #projectsMainHeader {
+    font-size: 2rem;
+    // text-align: center;
+  }
+  #projectsDescriptionText {
+    font-size: 1rem;
+    // text-align: center;
+  }
+  #projectTitle {
+    font-size: 1.3rem;
+    margin: 0;
+  }
+  #techStackText {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #projectCard {
+    padding: 0;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  #projectsMainHeader {
+    text-align: center;
+  }
+  #projectsDescriptionText {
+    text-align: center;
   }
 }

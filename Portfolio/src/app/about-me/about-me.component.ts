@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { SectionCardComponent } from "../section-card/section-card.component";
+import { SectionCardComponent } from '../section-card/section-card.component';
 import { TranslateService, TranslateModule } from '@ngx-translate/core';
 @Component({
   selector: 'app-about-me',
@@ -11,11 +11,11 @@ import { TranslateService, TranslateModule } from '@ngx-translate/core';
 export class AboutMeComponent {
   constructor(private translate: TranslateService) {}
 
-  hovered = false; // Status des Hover-Effekts
+  hovered = false;
 
   onMouseEnter() {
     if (!this.hovered) {
-      this.hovered = true; // Aktiviert den Hover-Effekt
+      this.hovered = true;
     }
   }
 }

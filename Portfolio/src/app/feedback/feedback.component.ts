@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TranslateService, TranslateModule } from '@ngx-translate/core';
-
 @Component({
   selector: 'app-feedback',
   templateUrl: './feedback.component.html',
@@ -15,7 +14,7 @@ export class FeedbackComponent {
   feedbacks = [
     { text: 'FEEDBACK.TEXT1', author: 'Ahmet', role: 'Team Partner' },
     { text: 'FEEDBACK.TEXT2', author: 'name 2', role: 'Team Partner' },
-    { text: 'FEEDBACK.TEXT3', author: 'name 3', role: 'Team Partner' }
+    { text: 'FEEDBACK.TEXT3', author: 'name 3', role: 'Team Partner' },
   ];
 
   currentSlide = 0;
@@ -69,27 +68,27 @@ export class FeedbackComponent {
     if (event.button !== 0) return;
     this.isDragging = true;
     this.startX = event.clientX;
-  
+
     const sliderElement = document.querySelector('.slider');
     if (sliderElement) {
       sliderElement.classList.add('dragging');
     }
-  
+
     event.preventDefault();
   }
-  
+
   onPointerUp(): void {
     this.isDragging = false;
-  
+
     const sliderElement = document.querySelector('.slider');
     if (sliderElement) {
       sliderElement.classList.remove('dragging');
     }
   }
-  
+
   onPointerMove(event: PointerEvent): void {
     if (!this.isDragging) return;
-  
+
     const deltaX = event.clientX - this.startX;
     if (deltaX > this.threshold) {
       this.prevSlide();
@@ -102,13 +101,25 @@ export class FeedbackComponent {
 
   ngOnInit(): void {
     const sliderElement = document.querySelector('.slider') as HTMLElement;
-  
+
     if (sliderElement) {
-      sliderElement.addEventListener('touchstart', this.onTouchStart.bind(this), { passive: true });
-      sliderElement.addEventListener('touchend', this.onTouchEnd.bind(this), { passive: true });
-  
-      sliderElement.addEventListener('pointerdown', this.onPointerDown.bind(this));
-      sliderElement.addEventListener('pointermove', this.onPointerMove.bind(this));
+      sliderElement.addEventListener(
+        'touchstart',
+        this.onTouchStart.bind(this),
+        { passive: true }
+      );
+      sliderElement.addEventListener('touchend', this.onTouchEnd.bind(this), {
+        passive: true,
+      });
+
+      sliderElement.addEventListener(
+        'pointerdown',
+        this.onPointerDown.bind(this)
+      );
+      sliderElement.addEventListener(
+        'pointermove',
+        this.onPointerMove.bind(this)
+      );
       sliderElement.addEventListener('pointerup', this.onPointerUp.bind(this));
     }
     window.addEventListener('pointerup', this.onPointerUp.bind(this));

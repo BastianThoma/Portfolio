@@ -63,6 +63,7 @@ footer {
       .radioButtonMask {
         display: flex;
         align-items: center;
+        justify-content: flex-end;
         gap: 8px;
         width: 100%;
         &:hover .radioButton {
@@ -76,8 +77,8 @@ footer {
           font-size: 16px;
           font-weight: 400;
           text-decoration: none;
+          text-wrap: nowrap;
           color: #ffffff;
-          white-space: nowrap;
           &:hover {
             color: #3dcfb680;
           }
@@ -94,5 +95,27 @@ footer {
       font-weight: 400;
       text-align: center;
     }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #middleFooterMobile {
+    display: block;
+    padding-top: 32px;
+  }
+  #middleFooterContainer {
+    display: none;
+  }
+  #footerLink {
+    font-size: 12px;
+  }
+  #smallInfos {
+    span {
+      font-size: 12px;
+    }
+  }
+  #footerLogo {
+    width: 100px;
+    height: 34px;
   }
 }

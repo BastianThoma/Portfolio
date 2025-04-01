@@ -1,14 +1,14 @@
 <div class="landingPage">
   <div class="landingPageContent">
     <div class="landingPageCatcher">
-      <h2 class="fontFiraCode">
+      <h2 id="professionalText" class="fontFiraCode">
         {{ "LANDING_PAGE.FRONTEND_DEVELOPER" | translate }}
       </h2>
       <div class="titleContent">
-        <h1 class="fontKarla">
+        <h1 id="mainHeadline" class="fontKarla">
           {{ "LANDING_PAGE.BASTIAN_THOMA" | translate }}
         </h1>
-        <div>
+        <div id="forwardingButtonBox" class="forwardingButtonBox">
           <a href="#projectsSection" class="fontKarla"
             ><span>{{ "LANDING_PAGE.CHECK_MY_WORK" | translate }}</span></a
           >
@@ -27,10 +27,10 @@
             height="16px"
           />
         </a>
-        <div class="pixelLineLeft"></div>
+        <div id="pixelLineLeft" class="pixelLineLeft"></div>
       </div>
 
-      <div class="heroQuickLinks">
+      <div id="heroQuickLinks" class="heroQuickLinks">
         <div class="radioButtonMask">
           <a
             id="mailToMe"
@@ -92,7 +92,7 @@
           />
         </div>
         <div class="radioButtonMask">
-          <div class="pixelLineRight"></div>
+          <div id="pixelLineRight" class="pixelLineRight"></div>
           <img
             class="radioButton hidden"
             src="/assets/img/radio_button_unchecked.svg"
@@ -102,7 +102,7 @@
         </div>
       </div>
     </div>
-    <div class="infoBanner">
+    <div id="infoBanner" class="infoBanner">
       <app-scrolling-banner></app-scrolling-banner>
     </div>
   </div>

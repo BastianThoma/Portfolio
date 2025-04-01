@@ -36,7 +36,7 @@ form {
         background-color: transparent;
         font-size: 18px;
         font-weight: 400;
-        cursor: pointer;
+        cursor: text;
         &::placeholder {
           font-family: "Karla", sans-serif;
           color: #ffffffcc;
@@ -44,7 +44,6 @@ form {
       }
       .invalidEffect {
         animation: invalidShake 0.3s ease-in-out;
-        // background-color: #ec7b7b2d;
         color: #ff2020;
       }
       @keyframes invalidShake {
@@ -62,6 +61,7 @@ form {
           transform: translateX(-4px);
         }
       }
+
       input::placeholder {
         color: #ffffffcc;
       }
@@ -110,7 +110,7 @@ form {
         background-color: transparent;
         font-size: 18px;
         font-weight: 400;
-        cursor: pointer;
+        cursor: text;
         &::placeholder {
           font-family: "Karla", sans-serif;
           color: #ffffffcc;
@@ -228,9 +228,8 @@ form {
     animation: fadein 0.5s, fadeout 0.5s 4.5s;
   }
 
-  button {
+  .submitButton {
     margin-top: 40px;
-    width: 140px;
     height: 48px;
     border: solid 2px #ffffff;
     background-color: transparent;
@@ -253,5 +252,50 @@ form {
         cursor: not-allowed;
       }
     }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #inputBox {
+    font-size: 1rem;
+    padding: 16px 0;
+    span {
+      padding-left: 0;
+    }
+    input {
+      padding-left: 0;
+    }
+  }
+  #name {
+    font-size: 0.8rem;
+  }
+  #email {
+    font-size: 0.8rem;
+  }
+  #messageBox {
+    font-size: 1rem;
+    padding: 16px 0;
+    span {
+      padding-left: 0;
+    }
+    input {
+      padding-left: 0;
+    }
+  }
+  #message {
+    font-size: 0.8rem;
+  }
+  #checkBoxText {
+    font-size: 0.8rem;
+  }
+  #errorMessage {
+    font-size: 0.8rem;
+  }
+  #submitButton {
+    font-size: 0.8rem;
+  }
+  #checkboxInput {
+    width: 20px;
+    height: 20px;
   }
 }

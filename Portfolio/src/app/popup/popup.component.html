@@ -1,22 +1,32 @@
 <div class="popupOverlay" *ngIf="isPopupVisible" (click)="closePopup()">
-  <div class="popupContent" (click)="$event.stopPropagation()">
-    <!-- Beschreibung des Projekts -->
-    <div class="descriptionBox">
+  <div
+    id="popupContent"
+    class="popupContent"
+    (click)="$event.stopPropagation()"
+  >
+    <div
+      id="mobileCloseButton"
+      class="mobileCloseButton"
+      (click)="closePopup()"
+    ></div>
+    <div id="descriptionBox" class="descriptionBox">
       <h1 class="fontKarla">{{ currentProject.projectNumber }}</h1>
       <h2 class="fontFiraCode">{{ currentProject.projectTitle }}</h2>
-      <h3 class="fontFiraCode">{{ currentProject.projectDescriptionTitle | translate }}</h3>
-      <p class="fontKarla">{{ currentProject.projectDescription | translate }}</p>
+      <h3 class="fontFiraCode">
+        {{ currentProject.projectDescriptionTitle | translate }}
+      </h3>
+      <p class="fontKarla">
+        {{ currentProject.projectDescription | translate }}
+      </p>
 
-      <!-- Technologiestack, mit *ngFor iteriert über die techStack-Array -->
-      <div class="techStack">
+      <div id="techStack" class="techStack">
         <div *ngFor="let tech of currentProject.techStack">
           <img [src]="tech.icon" [alt]="tech.name" />
           <span>{{ tech.name }}</span>
         </div>
       </div>
 
-      <!-- Buttons für GitHub und Live Test -->
-      <div class="popupButtons">
+      <div id="popupButtons" class="popupButtons">
         <button (click)="openLink(currentProject.githubLink)">
           <span>GitHub</span>
           <img src="/assets/img/arrow_outward_mint.png" alt="Arrow Top Right" />
@@ -27,13 +37,32 @@
         </button>
       </div>
     </div>
+    <div
+      id="mobileNextButtonBox"
+      class="mobileNextButtonBox"
+      (click)="nextProject()"
+    >
+      <span>{{ "POPUP.NEXT_PROJECT" | translate }}</span>
+      <img src="/assets/img/arrow_forward.png" alt="Next Project Button" />
+    </div>
 
-    <!-- Bild des Projekts -->
-    <div class="imageBox">
-      <div class="closeButton" (click)="closePopup()"></div>
-      <img class="projectPreviewImg" [src]="currentProject.projectImage" alt="Project Preview Image" />
-      <div class="nextButtonBox" (click)="nextProject()">
-        <span>{{ 'POPUP.NEXT_PROJECT' | translate }}</span>
+    <div id="imageBox" class="imageBox">
+      <div
+        id="imageBoxNavButtons"
+        class="closeButton"
+        (click)="closePopup()"
+      ></div>
+      <img
+        class="projectPreviewImg"
+        [src]="currentProject.projectImage"
+        alt="Project Preview Image"
+      />
+      <div
+        id="imageBoxNavButtons"
+        class="nextButtonBox"
+        (click)="nextProject()"
+      >
+        <span>{{ "POPUP.NEXT_PROJECT" | translate }}</span>
         <img src="/assets/img/arrow_forward.png" alt="Next Project Button" />
       </div>
     </div>

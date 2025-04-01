@@ -1,5 +1,5 @@
 <div class="bannerContainer">
-  <div class="scrollingContent">
+  <div id="scrollingContent" class="scrollingContent">
     <span *ngFor="let item of bannerItems">
       <ng-container *ngIf="item.type === 'text'">
         {{ item.content | translate }}

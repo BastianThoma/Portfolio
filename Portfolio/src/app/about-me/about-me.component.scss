@@ -53,3 +53,19 @@
     }
   }
 }
+
+@media screen and (max-width: 1600px) {
+  #aboutMeContent {
+    flex-direction: column;
+    width: 80%;
+    gap: 24px;
+    padding: 20px 0;
+  }
+  #highlightText {
+    font-size: 1rem;
+  }
+  #highlightsBox {
+    flex-direction: column;
+    align-items: center;
+  }
+}
