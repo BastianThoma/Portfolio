@@ -16,11 +16,9 @@ export class NavbarComponent {
   currentLang: string;
 
   constructor(private translate: TranslateService) {
-    this.currentLang = this.translate.currentLang || 'en';
-
-    this.translate.onLangChange.subscribe((event) => {
-      this.currentLang = event.lang;
-    });
+    this.currentLang = localStorage.getItem('language') || 'en';
+    this.translate.setDefaultLang(this.currentLang);
+    this.translate.use(this.currentLang);
   }
 
   togglePopup() {
@@ -38,5 +36,6 @@ export class NavbarComponent {
   switchLanguage(lang: string) {
     this.translate.use(lang);
     this.currentLang = lang;
+    localStorage.setItem('language', lang);
   }
 }

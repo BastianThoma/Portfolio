@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { FormsModule, NgForm } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { TranslateService, TranslateModule } from '@ngx-translate/core';
+import { FocusService } from '../services/focus-service/focus-service';
 @Component({
   selector: 'app-contact-form',
   standalone: true,
@@ -11,7 +12,20 @@ import { TranslateService, TranslateModule } from '@ngx-translate/core';
   styleUrl: './contact-form.component.scss',
 })
 export class ContactFormComponent {
-  constructor(private translate: TranslateService) {}
+  @ViewChild('nameInputFocus') nameInputFocus!: ElementRef;
+  
+  constructor(
+    private translate: TranslateService,
+    private focusService: FocusService
+  ) {}
+
+  ngAfterViewInit(): void {
+    this.focusService.registerFocusMethod(() => this.focusNameInput());
+  }
+
+  focusNameInput(): void {
+    this.nameInputFocus.nativeElement.focus();
+  }
 
   http = inject(HttpClient);
 

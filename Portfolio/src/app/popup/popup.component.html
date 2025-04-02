@@ -19,7 +19,7 @@
         {{ currentProject.projectDescription | translate }}
       </p>
 
-      <div id="techStack" class="techStack">
+      <div id="techStack" class="techStack fontKarla">
         <div *ngFor="let tech of currentProject.techStack">
           <img [src]="tech.icon" [alt]="tech.name" />
           <span>{{ tech.name }}</span>
@@ -39,7 +39,7 @@
     </div>
     <div
       id="mobileNextButtonBox"
-      class="mobileNextButtonBox"
+      class="mobileNextButtonBox fontKarla"
       (click)="nextProject()"
     >
       <span>{{ "POPUP.NEXT_PROJECT" | translate }}</span>
@@ -59,7 +59,7 @@
       />
       <div
         id="imageBoxNavButtons"
-        class="nextButtonBox"
+        class="nextButtonBox fontKarla"
         (click)="nextProject()"
       >
         <span>{{ "POPUP.NEXT_PROJECT" | translate }}</span>

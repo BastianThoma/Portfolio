@@ -5,12 +5,12 @@
   overflow: hidden;
   display: flex;
   justify-content: center;
-  width: 100vw;
+  width: 100%;
   height: 98px;
   background: linear-gradient(
     0deg,
-    rgba(0, 0, 0, 0) 13.56%,
-    rgba(0, 0, 0, 0.6) 84.01%
+    rgba(0, 0, 0, 0) 5.00%,
+    rgba(0, 0, 0, 0.7) 76.00%
   );
   .navbarContent {
     display: flex;
@@ -69,14 +69,13 @@
       }
     }
     .logo {
-      width: 140px;
+      width: 132px;
       height: 48px;
       background-image: url("/assets/img/logo_full_color_cutted.png");
       background-repeat: no-repeat;
       background-size: contain;
       transition: all 0.2s ease-in-out;
       &:hover {
-        cursor: pointer;
         background-image: url("/assets/img/logo_full_outline_cutted.png");
         transform: scale(0.95);
       }

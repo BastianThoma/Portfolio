@@ -13,7 +13,7 @@
       <span class="fontKarla">
         {{ "CONTACT.TEXT" | translate }}<br /><br />
         {{ "CONTACT.NEED_DEV" | translate }}
-        <a href="#contactSection">{{ "CONTACT.TALK" | translate }}</a>
+        <a (click)="scrollToContactForm()">{{ "CONTACT.TALK" | translate }}</a>
       </span>
     </div>
     <app-contact-form></app-contact-form>

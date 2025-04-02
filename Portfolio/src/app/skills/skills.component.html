@@ -14,8 +14,8 @@
           {{ "SKILLS.REACHOUT_TEXT" | translate }}
         </span>
       </div>
-      <button class="letsTalkButton fontKarla">
-        <a href="#contactSection"
+      <button class="letsTalkButton fontKarla" (click)="scrollToContactForm()">
+        <a
           ><span>{{ "SKILLS.LETS_TALK" | translate }}</span></a
         >
       </button>
@@ -24,7 +24,7 @@
     <div id="skillsetIconBox" class="skillsetIconBox">
       <div
         *ngFor="let skill of skills; let i = index"
-        class="skillItem"
+        class="skillItem fontKarla"
         [ngClass]="{ specialSkill: skill.label === 'Growth Mindset' }"
         (mouseenter)="onHover(skill, true)"
         (mouseleave)="onHover(skill, false)"
@@ -38,7 +38,7 @@
 
         <div
           *ngIf="skill.label === 'Growth Mindset' && skill.hovered"
-          class="speechBubble"
+          class="speechBubble fontKarla"
         >
           <p class="speechText">{{ "SKILLS.SPECIAL_INTEREST" | translate }}</p>
           <div class="specialSkills">

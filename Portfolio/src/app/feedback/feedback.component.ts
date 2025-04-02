@@ -13,8 +13,8 @@ export class FeedbackComponent {
 
   feedbacks = [
     { text: 'FEEDBACK.TEXT1', author: 'Ahmet', role: 'Team Partner' },
-    { text: 'FEEDBACK.TEXT2', author: 'name 2', role: 'Team Partner' },
-    { text: 'FEEDBACK.TEXT3', author: 'name 3', role: 'Team Partner' },
+    { text: 'FEEDBACK.TEXT2', author: 'Jan', role: 'Team Partner' },
+    { text: 'FEEDBACK.TEXT3', author: 'Dennis', role: 'Team Partner' },
   ];
 
   currentSlide = 0;

@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SectionCardComponent } from '../section-card/section-card.component';
 import { TranslateService, TranslateModule } from '@ngx-translate/core';
+import { FocusService } from '../services/focus-service/focus-service';
 @Component({
   selector: 'app-skills',
   standalone: true,
@@ -10,7 +11,15 @@ import { TranslateService, TranslateModule } from '@ngx-translate/core';
   styleUrls: ['./skills.component.scss'],
 })
 export class SkillsComponent {
-  constructor(private translate: TranslateService) {}
+  constructor(
+    private translate: TranslateService,
+    private focusService: FocusService
+  ) {}
+
+  scrollToContactForm(): void {
+    document.getElementById('contactForm')?.scrollIntoView({ behavior: 'smooth' });
+    this.focusService.triggerFocus();
+  }
 
   skills = [
     {
@@ -51,7 +60,7 @@ export class SkillsComponent {
     },
     {
       icon: '/assets/img/white-icons/material_design.png',
-      coloredIcon: '/assets/img/colored-icons/md_colored.png',
+      coloredIcon: '/assets/img/colored-icons/md_colored_white_outline.png',
       label: 'Material Design',
       hovered: false,
     },

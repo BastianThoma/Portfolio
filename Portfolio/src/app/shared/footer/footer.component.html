@@ -1,7 +1,7 @@
 <footer>
   <div class="footerContent">
     <div class="leftFooterContainer">
-      <div id="footerLogo" class="logo"></div>
+      <div id="footerLogo" class="logo" (click)="scrollToTop()"></div>
       <div id="smallInfos" class="smallInfos">
         <span class="fontKarla">{{ "FOOTER.WEB_DEVELOPER" | translate }}</span>
         <span class="fontKarla">{{ "FOOTER.LOCATION" | translate }}</span>
@@ -23,6 +23,8 @@
           id="footerLink"
           class="footerLink"
           href="https://github.com/BastianThoma"
+          target="_blank"
+          rel="noopener noreferrer"
           >GitHub</a
         >
       </div>
@@ -38,6 +40,8 @@
           id="footerLink"
           class="footerLink"
           href="https://www.linkedin.com/in/bastian-thoma"
+          target="_blank"
+          rel="noopener noreferrer"
           >LinkedIn</a
         >
       </div>

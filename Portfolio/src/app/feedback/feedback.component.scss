@@ -11,7 +11,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  font-family: "Karla", sans-serif;
+  font-family: "Karla";
   height: 100%;
 }
 
@@ -33,7 +33,7 @@ body {
 
     h2 {
       font-size: 32px;
-      font-family: "Karla", monospace;
+      font-family: "Karla";
       font-weight: 700;
       color: #3dcfb6;
     }
@@ -141,7 +141,7 @@ body {
         }
         .feedbackText {
           font-size: 20px;
-          font-family: "Karla", monospace;
+          font-family: "Karla";
           color: white;
           margin-bottom: 30px;
           text-align: justify;

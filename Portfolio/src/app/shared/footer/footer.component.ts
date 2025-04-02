@@ -9,4 +9,8 @@ import { TranslateService, TranslateModule } from '@ngx-translate/core';
 })
 export class FooterComponent {
   constructor(private translate: TranslateService) {}
+
+  scrollToTop(): void {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
 }

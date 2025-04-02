@@ -38,7 +38,7 @@ form {
         font-weight: 400;
         cursor: text;
         &::placeholder {
-          font-family: "Karla", sans-serif;
+          font-family: "Karla";
           color: #ffffffcc;
         }
       }
@@ -62,24 +62,44 @@ form {
         }
       }
 
+      input:focus {
+        outline: none;
+        border-radius: 4px;
+        box-shadow: 0px 0px 6px 2px #3dcfb6;
+        transition: box-shadow 0.3s ease;
+        font-family: "Karla";
+      }
+
       input::placeholder {
         color: #ffffffcc;
+        font-family: "Karla";
       }
 
       input:invalid:focus::placeholder {
         color: #ffffffcc;
+        font-family: "Karla";
       }
 
       input:invalid:not(:focus):placeholder-shown {
         color: #ec7b7b;
+        font-family: "Karla";
       }
 
       input:invalid {
         border-color: #ec7b7b;
+        font-family: "Karla";
       }
 
       input:valid {
         border-color: green;
+        font-family: "Karla";
+      }
+
+      input.ng-invalid.ng-touched {
+        outline: none;
+        border-radius: 4px;
+        box-shadow: 0px 0px 6px 2px #ec7b7b;
+        transition: box-shadow 0.3s ease;
       }
 
       input.ng-touched.ng-invalid::placeholder {
@@ -112,32 +132,54 @@ form {
         font-weight: 400;
         cursor: text;
         &::placeholder {
-          font-family: "Karla", sans-serif;
+          font-family: "Karla";
           color: #ffffffcc;
         }
       }
 
+      input:focus {
+        outline: none;
+        border-radius: 4px;
+        box-shadow: 0px 0px 6px 2px #3dcfb6;
+        transition: box-shadow 0.3s ease;
+        font-family: "Karla";
+      }
+
       input::placeholder {
         color: #ffffffcc;
+        font-family: "Karla";
       }
 
       input:invalid:focus::placeholder {
         color: #ffffffcc;
+        font-family: "Karla";
       }
       input:invalid:not(:focus):placeholder-shown {
         color: #ec7b7b;
+        font-family: "Karla";
       }
 
       input:invalid {
         border-color: #ec7b7b;
+        font-family: "Karla";
       }
 
       input:valid {
         border-color: green;
+        font-family: "Karla";
+      }
+
+      input.ng-invalid.ng-touched {
+        outline: none;
+        border-radius: 4px;
+        box-shadow: 0px 0px 6px 2px #ec7b7b;
+        transition: box-shadow 0.3s ease;
+        font-family: "Karla";
       }
 
       input.ng-touched.ng-invalid::placeholder {
         color: #ec7b7b;
+        font-family: "Karla";
       }
     }
     .customCheckbox {
@@ -260,10 +302,10 @@ form {
     font-size: 1rem;
     padding: 16px 0;
     span {
-      padding-left: 0;
+      padding-left: 8px;
     }
     input {
-      padding-left: 0;
+      padding-left: 8px;
     }
   }
   #name {
@@ -276,10 +318,10 @@ form {
     font-size: 1rem;
     padding: 16px 0;
     span {
-      padding-left: 0;
+      padding-left: 8px;
     }
     input {
-      padding-left: 0;
+      padding-left: 8px;
     }
   }
   #message {
