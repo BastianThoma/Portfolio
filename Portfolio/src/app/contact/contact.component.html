@@ -1,6 +1,13 @@
 <div class="contactContainer">
   <div id="contactContent" class="contactContent">
-    <div id="contactMeBox" class="contactMeBox">
+    <div
+      id="contactMeBox"
+      class="contactMeBox"
+      data-aos="fade-right"
+      data-aos-offset="1100"
+      data-aos-duration="750"
+      data-aos-easing="ease-in-out"
+    >
       <h3 id="contactTitle" class="fontKarla">
         {{ "CONTACT.TITLE" | translate }}
       </h3>
@@ -16,6 +23,11 @@
         <a (click)="scrollToContactForm()">{{ "CONTACT.TALK" | translate }}</a>
       </span>
     </div>
-    <app-contact-form></app-contact-form>
+    <app-contact-form
+      data-aos="fade-left"
+      data-aos-offset="1100"
+      data-aos-duration="750"
+      data-aos-easing="ease-in-out"
+    ></app-contact-form>
   </div>
 </div>

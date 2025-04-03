@@ -1,6 +1,9 @@
 <div class="skillsSection">
   <div id="skillsContent" class="skillsContent">
     <app-section-card
+      data-aos="zoom-in"
+      data-aos-offset="500"
+      data-aos-easing="ease-in-out"
       [sectionTitle]="'SKILLS.TECHNOLOGIES' | translate"
       [mainHeading]="'SKILLS.SKILL_SET' | translate"
       [mainText]="'SKILLS.MAIN_TEXT' | translate"
@@ -21,7 +24,13 @@
       </button>
     </app-section-card>
 
-    <div id="skillsetIconBox" class="skillsetIconBox">
+    <div
+      id="skillsetIconBox"
+      class="skillsetIconBox"
+      data-aos="zoom-in-up"
+      data-aos-offset="700"
+      data-aos-easing="ease-in-out"
+    >
       <div
         *ngFor="let skill of skills; let i = index"
         class="skillItem fontKarla"

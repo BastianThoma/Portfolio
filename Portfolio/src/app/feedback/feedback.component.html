@@ -1,51 +1,60 @@
-<div id="feedbackSlider" class="feedbackSlider">
-  <div id="headerTitle" class="headerTitle">
-    <h2>{{ "FEEDBACK.HEADER_TITLE" | translate }}</h2>
-    <img
-      id="qoutesImg"
-      class="qoutes"
-      src="/assets/img/quotes.png"
-      alt="Quotes Icon"
-    />
-  </div>
+<div class="feedbackSection">
+  <div
+    id="feedbackSlider"
+    class="feedbackSlider"
+    data-aos="zoom-in-up"
+    data-aos-offset="1100"
+    data-aos-duration="750"
+    data-aos-easing="ease-in-out"
+  >
+    <div id="headerTitle" class="headerTitle">
+      <h2>{{ "FEEDBACK.HEADER_TITLE" | translate }}</h2>
+      <img
+        id="qoutesImg"
+        class="qoutes"
+        src="/assets/img/quotes.png"
+        alt="Quotes Icon"
+      />
+    </div>
 
-  <div id="sliderContainer" class="sliderContainer" #sliderContainer>
-    <div class="slider">
-      <div
-        *ngFor="let feedback of feedbacks; let i = index"
-        class="slide"
-        [ngClass]="{
-          active: isActive(i),
-          prev: isPrev(i),
-          next: isNext(i)
-        }"
-      >
-        <div id="feedbackText" class="feedbackText">
-          <p>{{ feedback.text | translate }}</p>
-        </div>
-        <div id="feedbackAuthorBox" class="feedbackAuthorBox">
-          <div class="borderOnePixel"></div>
-          <div class="feedbackAuthor">
-            {{ feedback.author }} - {{ feedback.role }}
+    <div id="sliderContainer" class="sliderContainer" #sliderContainer>
+      <div class="slider">
+        <div
+          *ngFor="let feedback of feedbacks; let i = index"
+          class="slide"
+          [ngClass]="{
+            active: isActive(i),
+            prev: isPrev(i),
+            next: isNext(i)
+          }"
+        >
+          <div id="feedbackText" class="feedbackText">
+            <p>{{ feedback.text | translate }}</p>
+          </div>
+          <div id="feedbackAuthorBox" class="feedbackAuthorBox">
+            <div class="borderOnePixel"></div>
+            <div class="feedbackAuthor">
+              {{ feedback.author }} - {{ feedback.role }}
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="dots">
-    <button class="arrow leftArrow" (click)="prevSlide()">
-      <img src="/assets/img/arrow_back.png" alt="Back Arrow" />
-    </button>
+    <div class="dots">
+      <button class="arrow leftArrow" (click)="prevSlide()">
+        <img src="/assets/img/arrow_back.png" alt="Back Arrow" />
+      </button>
 
-    <span
-      *ngFor="let feedback of feedbacks; let i = index"
-      class="dot"
-      [ngClass]="{ active: currentSlide === i }"
-      (click)="goToSlide(i)"
-    ></span>
+      <span
+        *ngFor="let feedback of feedbacks; let i = index"
+        class="dot"
+        [ngClass]="{ active: currentSlide === i }"
+        (click)="goToSlide(i)"
+      ></span>
 
-    <button class="arrow rightArrow" (click)="nextSlide()">
-      <img src="/assets/img/arrow_forward.png" alt="Forward Arrow" />
-    </button>
+      <button class="arrow rightArrow" (click)="nextSlide()">
+        <img src="/assets/img/arrow_forward.png" alt="Forward Arrow" />
+      </button>
+    </div>
   </div>
 </div>

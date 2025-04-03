@@ -1,9 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import Aos from 'aos';
 
 @Component({
   selector: 'app-root',
@@ -21,6 +22,9 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
 export class AppComponent {
   title = 'Portfolio';
 
+  ngOnInit() {
+    Aos.init();
+  }
   constructor(private translate: TranslateService) {
     this.translate.addLangs(['en', 'de']);
 

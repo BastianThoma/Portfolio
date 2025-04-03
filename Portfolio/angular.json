@@ -31,7 +31,8 @@
             ],
             "styles": [
               "src/styles.scss",
-              "src/fonts.scss"
+              "src/fonts.scss",
+              "node_modules/aos/dist/aos.css"
             ],
             "scripts": []
           },
@@ -92,7 +93,8 @@
             ],
             "styles": [
               "src/styles.scss",
-              "src/fonts.scss"
+              "src/fonts.scss",
+              "node_modules/aos/dist/aos.css"
             ],
             "scripts": []
           }
