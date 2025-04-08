@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TranslateService, TranslateModule } from '@ngx-translate/core';
+import Aos from 'aos';
 
 @Component({
   selector: 'app-navbar',
@@ -37,5 +38,10 @@ export class NavbarComponent {
     this.translate.use(lang);
     this.currentLang = lang;
     localStorage.setItem('language', lang);
+    this.ngAfterViewInit();
+  }
+
+  ngAfterViewInit(): void {
+    setTimeout(() => Aos.refresh(), 200);
   }
 }
