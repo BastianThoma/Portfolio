@@ -1,8 +1,9 @@
 body {
   margin: 0;
+  background-color: #1c1c1c;
   --sb-track-color: #1c1c1c;
   --sb-thumb-color: #3dcfb6;
-  --sb-size: 6px;
+  --sb-size: 10px;
 }
 
 body::-webkit-scrollbar {

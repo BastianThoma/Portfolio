@@ -32,7 +32,6 @@ export class AppComponent {
     this.translate.use('en');
   }
 
-  switchLanguage(lang: string) {
     this.translate.use(lang);
   }
 }
