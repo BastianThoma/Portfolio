@@ -30,7 +30,6 @@ export class AppComponent implements OnInit, AfterViewInit {
 
   ngOnInit(): void {
     Aos.init({
-      disable: 'mobile',
       easing: 'ease-in-out',
     });
   }
