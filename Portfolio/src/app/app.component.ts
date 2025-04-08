@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit, HostListener } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { NavbarComponent } from './shared/navbar/navbar.component';
@@ -19,19 +19,34 @@ import Aos from 'aos';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
-export class AppComponent {
-  title = 'Portfolio';
-
-  ngOnInit() {
-    Aos.init();
-  }
+export class AppComponent implements OnInit, AfterViewInit {
   constructor(private translate: TranslateService) {
     this.translate.addLangs(['en', 'de']);
-
     this.translate.setDefaultLang('en');
     this.translate.use('en');
   }
 
+  title = 'Portfolio';
+
+  ngOnInit(): void {
+    Aos.init({
+      disable: 'mobile',
+      easing: 'ease-in-out',
+    });
+  }
+
+  ngAfterViewInit(): void {
+    setTimeout(() => {
+      Aos.refresh();
+    }, 300);
+  }
+
+  @HostListener('window:resize')
+  onResize() {
+    Aos.refresh();
+  }
+
+  switchLanguage(lang: string): void {
     this.translate.use(lang);
   }
 }

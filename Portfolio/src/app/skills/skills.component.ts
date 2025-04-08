@@ -1,8 +1,9 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component, ViewChild, AfterViewInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SectionCardComponent } from '../section-card/section-card.component';
 import { TranslateService, TranslateModule } from '@ngx-translate/core';
 import { FocusService } from '../services/focus-service/focus-service';
+import Aos from 'aos';
 @Component({
   selector: 'app-skills',
   standalone: true,
@@ -10,7 +11,7 @@ import { FocusService } from '../services/focus-service/focus-service';
   templateUrl: './skills.component.html',
   styleUrls: ['./skills.component.scss'],
 })
-export class SkillsComponent {
+export class SkillsComponent implements AfterViewInit {
   constructor(
     private translate: TranslateService,
     private focusService: FocusService
@@ -98,5 +99,9 @@ export class SkillsComponent {
 
   onHover(skill: any, state: boolean): void {
     skill.hovered = state;
+  }
+
+  ngAfterViewInit(): void {
+    setTimeout(() => Aos.refresh(), 200);
   }
 }

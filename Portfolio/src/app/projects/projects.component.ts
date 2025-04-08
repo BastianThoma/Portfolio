@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, AfterViewInit } from '@angular/core';
 import { PopupComponent } from '../popup/popup.component';
 import { TranslateService, TranslateModule } from '@ngx-translate/core';
+import Aos from 'aos';
 
 @Component({
   selector: 'app-projects',
@@ -9,6 +10,10 @@ import { TranslateService, TranslateModule } from '@ngx-translate/core';
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.scss',
 })
-export class ProjectsComponent {
+export class ProjectsComponent implements AfterViewInit {
   constructor(private translate: TranslateService) {}
+
+  ngAfterViewInit(): void {
+    setTimeout(() => Aos.refresh(), 200);
+  }
 }

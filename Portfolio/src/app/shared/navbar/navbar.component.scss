@@ -72,31 +72,26 @@
       }
     }
     .logo {
-      width: 140px;
+      width: 132px;
       height: 48px;
       background-image: url("/assets/img/logo_full_color_cutted.png");
       background-repeat: no-repeat;
       background-size: contain;
       transition: all 0.2s ease-in-out;
       &:hover {
-        cursor: pointer;
         background-image: url("/assets/img/logo_full_outline_cutted.png");
         transform: scale(0.95);
       }
     }
     .burgerMenu {
-      display: none; /* Standardmäßig ausgeblendet */
+      display: none;
       background-image: url("/assets/img/burger_menu.png");
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
-      position: absolute; /* Absolute Positionierung */
       width: 24px;
       height: 24px;
-      right: 0%; /* Abstand von rechts */
-      top: 50%; /* Vertikale Positionierung */
-      transform: translateY(-50%); /* Zentriert in der Höhe */
-      cursor: pointer; /* Zeigt, dass es klickbar ist */
+      cursor: pointer;
       &.menuOpen {
         background-image: url("/assets/img/burger_menu_colored.png");
       }
@@ -105,32 +100,31 @@
 }
 
 .overlay {
-  position: fixed; /* Über den gesamten Bildschirm */
+  position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5); /* Halbtransparentes Schwarz */
-  z-index: 99; /* Unter dem Popup, über der Navbar */
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 99;
+  overflow: hidden;
 }
 
 .popup {
-  position: fixed; /* Popup über dem Overlay */
-  top: 180px;
-  right: -32px;
-  transform: translate(-50%, -50%); /* Zentrierung */
-  z-index: 100; /* Über dem Overlay */
-  width: 300px; /* Breite des Popups */
+  position: fixed;
+  top: 100px;
+  z-index: 100;
+  width: 300px;
   background: linear-gradient(45deg, #1c1c1c 50%, #08463b 100%);
-  border-radius: 16px; /* Abgerundete Ecken */
+  border-radius: 16px;
   border: solid 1.5px #3dcfb6;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Leichter Schatten */
-  padding: 40px 0px; /* Innenabstand */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  padding: 40px 0px;
   display: flex;
-  flex-direction: column; /* Inhalte vertikal anordnen */
+  flex-direction: column;
   align-items: center;
-  gap: 16px; /* Abstand zwischen Elementen */
-  text-align: center; /* Zentrierter Text */
+  gap: 16px;
+  text-align: center;
   .popupMenu {
     display: flex;
     flex-direction: column;
@@ -186,33 +180,20 @@
   flex: 1;
 }
 
-@media (max-width: 1650px) {
-  .navbar .navbarContent {
-    width: 70%;
+@media screen and (max-width: 1600px) {
+  #navbarContent {
+    width: 90%;
   }
 }
 
-@media (max-width: 950px) {
-  .navbar .menu {
+@media screen and (max-width: 800px) {
+  #menu {
     display: none;
   }
-  .navbar .navbarContent {
-    flex-direction: row-reverse;
-    justify-content: flex-end;
-  }
-  .navbar .burgerMenu {
+  #burgerMenu {
     display: block;
   }
-  .navbar .logo {
-    background-image: url("/assets/img/logo_full_color.png");
-  }
-  .navbar .logo:hover {
-    background-image: url("/assets/img/logo_full_outline.png");
-  }
-  .navbar .popup {
-    top: 140px;
-    right: 50%;
-    left: 50%;
-    width: 250px;
+  #navbarLogo {
+    height: 40px;
   }
 }

@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, AfterViewInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TranslateService, TranslateModule } from '@ngx-translate/core';
+import Aos from 'aos';
 @Component({
   selector: 'app-feedback',
   templateUrl: './feedback.component.html',
@@ -8,7 +9,7 @@ import { TranslateService, TranslateModule } from '@ngx-translate/core';
   standalone: true,
   imports: [CommonModule, TranslateModule],
 })
-export class FeedbackComponent {
+export class FeedbackComponent implements AfterViewInit {
   constructor(private translate: TranslateService) {}
 
   feedbacks = [
@@ -123,5 +124,9 @@ export class FeedbackComponent {
       sliderElement.addEventListener('pointerup', this.onPointerUp.bind(this));
     }
     window.addEventListener('pointerup', this.onPointerUp.bind(this));
+  }
+
+  ngAfterViewInit(): void {
+    setTimeout(() => Aos.refresh(), 200);
   }
 }

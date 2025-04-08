@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, AfterViewInit } from '@angular/core';
 import { TranslateService, TranslateModule } from '@ngx-translate/core';
+import Aos from 'aos';
 @Component({
   selector: 'app-footer',
   standalone: true,
@@ -7,10 +8,14 @@ import { TranslateService, TranslateModule } from '@ngx-translate/core';
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.scss',
 })
-export class FooterComponent {
+export class FooterComponent implements AfterViewInit {
   constructor(private translate: TranslateService) {}
 
   scrollToTop(): void {
     window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  ngAfterViewInit(): void {
+    setTimeout(() => Aos.refresh(), 200);
   }
 }
