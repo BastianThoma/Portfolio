@@ -18,10 +18,18 @@ export class ContactComponent implements AfterViewInit {
   ) {}
 
   scrollToContactForm(): void {
-    document
-      .getElementById('contactForm')
-      ?.scrollIntoView({ behavior: 'smooth' });
-    this.focusService.triggerFocus();
+    let form = document.getElementById('contactForm');
+    if (form) {
+      let offset = -70;
+      let formPosition = form.getBoundingClientRect().top + window.scrollY + offset;
+  
+      window.scrollTo({
+        top: formPosition,
+        behavior: 'smooth',
+      });
+  
+      this.focusService.triggerFocus();
+    }
   }
 
   ngAfterViewInit(): void {
