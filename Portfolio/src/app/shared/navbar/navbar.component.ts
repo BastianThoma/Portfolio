@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Router } from '@angular/router';
 import { TranslateService, TranslateModule } from '@ngx-translate/core';
 import Aos from 'aos';
 
@@ -16,7 +17,7 @@ export class NavbarComponent {
 
   currentLang: string;
 
-  constructor(private translate: TranslateService) {
+  constructor(private translate: TranslateService, private router: Router) {
     this.currentLang = localStorage.getItem('language') || 'en';
     this.translate.setDefaultLang(this.currentLang);
     this.translate.use(this.currentLang);
@@ -43,5 +44,13 @@ export class NavbarComponent {
 
   ngAfterViewInit(): void {
     setTimeout(() => Aos.refresh(), 200);
+  }
+
+  navigateToMainPage() {
+    if (this.router.url === '/') {
+      window.location.reload();
+    } else {
+      this.router.navigate(['/']);
+    }
   }
 }

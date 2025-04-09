@@ -79,6 +79,7 @@
       background-repeat: no-repeat;
       background-size: contain;
       transition: all 0.2s ease-in-out;
+      cursor: pointer;
       &:hover {
         background-image: url("/assets/img/logo_full_outline_cutted.png");
         transform: scale(0.95);
