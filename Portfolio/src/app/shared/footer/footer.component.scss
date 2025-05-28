@@ -1,3 +1,5 @@
+@import "variables";
+
 footer {
   display: flex;
   justify-content: center;
@@ -5,7 +7,7 @@ footer {
   flex-direction: column;
   width: 100%;
   height: 200px;
-  background-color: #1c1c1c;
+  background-color: $background-color-main;
   margin: 180px 0 0 0;
   padding-bottom: 64px;
   .footerContent {
@@ -37,7 +39,7 @@ footer {
         flex-direction: column;
         gap: 8px;
         span {
-          color: #ffffff;
+          color: $text-color-main;
           font-size: 16px;
           font-weight: 400;
         }
@@ -47,7 +49,7 @@ footer {
       display: flex;
       justify-content: center;
       span {
-        color: #3dcfb6;
+        color: $text-color-accent;
         font-size: 18px;
         font-weight: 400;
         text-align: center;
@@ -79,9 +81,9 @@ footer {
           font-weight: 400;
           text-decoration: none;
           text-wrap: nowrap;
-          color: #ffffff;
+          color: $text-color-main;
           &:hover {
-            color: #3dcfb680;
+            color: $hover-color;
           }
         }
       }
@@ -91,7 +93,7 @@ footer {
     display: none;
     text-align: center;
     span {
-      color: #3dcfb6;
+      color: $text-color-accent;
       font-size: 18px;
       font-weight: 400;
       text-align: center;

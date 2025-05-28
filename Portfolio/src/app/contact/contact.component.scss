@@ -1,5 +1,13 @@
+@import "variables";
+
 .contactContainer {
-  background-color: #1c1c1c;
+  background-color: $background-color-main;
+  background: radial-gradient(
+      circle at 0% center,
+      $shadow-color 2%,
+      transparent 10%
+    ),
+    $background-color-main;
   display: flex;
   justify-content: center;
   margin: 180px 0;
@@ -18,7 +26,7 @@
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      color: #3dcfb6;
+      color: $text-color-accent;
       h3 {
         font-size: 24px;
         font-weight: 500;
@@ -32,13 +40,16 @@
         font-weight: 700;
       }
       span {
-        color: #ffffff;
+        color: $text-color-main;
         font-size: 16px;
         font-weight: 400;
         a {
           text-decoration: none;
           cursor: pointer;
-          color: #3dcfb6;
+          color: $text-color-accent;
+          &:hover {
+            color: $hover-color;
+          }
         }
       }
     }

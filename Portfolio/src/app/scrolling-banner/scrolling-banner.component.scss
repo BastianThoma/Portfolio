@@ -1,3 +1,5 @@
+@import 'variables';
+
 .bannerContainer {
   width: 100%;
   height: 100%;
@@ -11,7 +13,7 @@
     span {
       font-family: "Karla";
       font-size: 32px;
-      color: #3dcfb6;
+      color: $text-color-accent;
       display: inline-block;
       margin-right: 80px;
     }

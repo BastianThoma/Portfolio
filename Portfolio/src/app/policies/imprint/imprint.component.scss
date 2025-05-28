@@ -1,3 +1,5 @@
+@import 'variables';
+
 section {
   .imprintContent {
     display: flex;
@@ -5,7 +7,7 @@ section {
     align-items: center;
     max-width: 1440px;
     width: 100%;
-    color: #cccccc;
+    color: $text-color-main;
     font-family: "Karla";
     gap: 16px;
   }
@@ -31,10 +33,10 @@ section {
     margin: 6px 0;
   }
   a {
-    color: #3dcfb6;
+    color: $text-color-accent;
     text-decoration: none;
     &:hover {
-      color: #3dcfb680;
+      color: $hover-color;
     }
   }
 }

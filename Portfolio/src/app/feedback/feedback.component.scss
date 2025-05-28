@@ -1,3 +1,5 @@
+@import "variables";
+
 *,
 *::before,
 *::after {
@@ -15,7 +17,7 @@ body {
   height: 100%;
 }
 .feedbackSection {
-  background-color: #1c1c1c;
+  background-color: $background-color-main;
 }
 
 .feedbackSlider {
@@ -26,7 +28,7 @@ body {
   height: 380px;
   overflow: hidden;
   position: relative;
-  background-color: #1c1c1c;
+  // background-color: $background-color-main;
   .headerTitle {
     margin-bottom: 40px;
     position: relative;
@@ -38,7 +40,7 @@ body {
       font-size: 32px;
       font-family: "Karla";
       font-weight: 700;
-      color: #3dcfb6;
+      color: $text-color-accent;
     }
 
     .qoutes {
@@ -103,13 +105,13 @@ body {
           border-radius: 10px;
         }
         &::-webkit-scrollbar-thumb {
-          background-color: #3dcfb6;
+          background-color: $text-color-accent;
           border-radius: 10px;
           border: 1px solid transparent;
           width: 6px;
           height: 6px;
           &:hover {
-            background-color: #28b399;
+            background-color: $background-color-main;
           }
         }
         &::-webkit-scrollbar-button {
@@ -119,24 +121,24 @@ body {
           background: transparent;
         }
         &.active {
-          background-color: #2f5b54;
-          border: 2px solid #3dcfb6;
+          background-color: $background-color-main;
+          border: 2px solid $border-color;
           opacity: 1;
           z-index: 3;
           transform: translateX(-50%) scale(1);
           filter: blur(0px);
         }
         &.prev {
-          background-color: #2b2b2b;
-          border: 1px solid #3dcfb6;
+          background-color: $background-color-secondary;
+          border: 1px solid $border-color;
           opacity: 0.6;
           z-index: 2;
           transform: translateX(-150%) scale(0.85);
           filter: blur(2px);
         }
         &.next {
-          background-color: #2b2b2b;
-          border: 1px solid #3dcfb6;
+          background-color: $background-color-secondary;
+          border: 1px solid $border-color;
           opacity: 0.6;
           z-index: 2;
           transform: translateX(50%) scale(0.85);
@@ -145,7 +147,7 @@ body {
         .feedbackText {
           font-size: 20px;
           font-family: "Karla";
-          color: white;
+          color: $text-color-main;
           margin-bottom: 30px;
           text-align: justify;
         }
@@ -155,7 +157,7 @@ body {
           align-items: center;
           width: 100%;
           .borderOnePixel {
-            border: solid 1px #3dcfb6;
+            border: solid 1px $border-color;
             height: 1px;
             width: 30%;
           }
@@ -163,7 +165,7 @@ body {
         .feedbackAuthor {
           font-size: 18px;
           font-family: "Karla";
-          color: #3dcfb6;
+          color: $text-color-accent;
         }
       }
     }
@@ -177,12 +179,12 @@ body {
       height: 12px;
       width: 12px;
       margin: 0 5px;
-      background-color: #bbb;
+      background-color: $background-color-secondary;
       border-radius: 50%;
       display: inline-block;
       cursor: pointer;
       &.active {
-        background-color: #135d50;
+        background-color: $hover-color;
       }
     }
   }
@@ -190,14 +192,15 @@ body {
   .arrow {
     background: none;
     border: none;
-    color: #3dcfb6;
+    color: $text-color-accent;
     font-size: 32px;
     padding: 0 8px;
     cursor: pointer;
     position: relative;
     transition: transform 0.2s ease;
     &:hover {
-      color: #fff;
+      color: $hover-color;
+      filter: drop-shadow(0 0 10px $shadow-color);
     }
     &.leftArrow:hover {
       transform: translateX(-5px);

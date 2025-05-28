@@ -1,6 +1,14 @@
+@import "variables";
+
 .projectsSection {
-  background-color: #1c1c1c;
-  color: #3dcfb6;
+  background-color: $background-color-main;
+  background: radial-gradient(
+      circle at 102% center,
+      $shadow-color 2%,
+      transparent 10%
+    ),
+    $background-color-main;
+  color: $text-color-accent;
   display: flex;
   justify-content: center;
   margin: 180px 0;
@@ -20,12 +28,12 @@
         font-weight: 700;
       }
       p {
-        color: #ffffff;
+        color: $text-color-main;
         font-size: 18px;
         font-weight: 400;
       }
       span {
-        color: #ffffff;
+        color: $text-color-main;
         font-size: 18px;
         font-weight: 400;
       }
@@ -36,10 +44,16 @@
         justify-content: space-between;
         align-items: center;
         padding: 0 20px;
-        border-color: #3dcfb6;
+        border-color: $border-color;
         cursor: pointer;
         &:hover {
-          background-color: #26524b;
+          background-color: $background-color-secondary;
+          .cardTitleBox h3 {
+            color: $hover-color;
+          }
+          #techStackText {
+            color: $hover-color;
+          }
           .cardTitleBox img {
             visibility: visible;
           }
@@ -57,13 +71,13 @@
           h3 {
             font-size: 24px;
             font-weight: 700;
-            color: #ffffff;
+            color: $text-color-main;
           }
         }
         span {
           font-size: 18px;
           font-weight: 400;
-          color: #ffffff;
+          color: $text-color-main;
           word-spacing: 8px;
         }
         .projectPreviewHoverBox {

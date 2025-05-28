@@ -1,8 +1,10 @@
+@import "variables";
+
 body {
   margin: 0;
-  background-color: #1c1c1c;
-  --sb-track-color: #1c1c1c;
-  --sb-thumb-color: #3dcfb6;
+  background-color: $background-color-main;
+  --sb-track-color: #2c3e50;
+  --sb-thumb-color: #4a90e2;
   --sb-size: 10px;
 }
 

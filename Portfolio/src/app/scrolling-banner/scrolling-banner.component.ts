@@ -13,13 +13,13 @@ export class ScrollingBannerComponent {
 
   originalItems = [
     { type: 'text', content: 'SCROLLING_BANNER.FRONTEND_DEVELOPER' },
-    { type: 'image', content: '/assets/img/radio_button_unchecked.svg' },
+    { type: 'image', content: '/assets/img/radio_button_unchecked.png' },
     { type: 'text', content: 'SCROLLING_BANNER.BASED_IN' },
-    { type: 'image', content: '/assets/img/radio_button_unchecked.svg' },
+    { type: 'image', content: '/assets/img/radio_button_unchecked.png' },
     { type: 'text', content: 'SCROLLING_BANNER.AVAILABILITY' },
-    { type: 'image', content: '/assets/img/radio_button_unchecked.svg' },
+    { type: 'image', content: '/assets/img/radio_button_unchecked.png' },
     { type: 'text', content: 'SCROLLING_BANNER.OPEN_TO_WORK' },
-    { type: 'image', content: '/assets/img/radio_button_unchecked.svg' },
+    { type: 'image', content: '/assets/img/radio_button_unchecked.png' },
   ];
   bannerItems = [...this.originalItems, ...this.originalItems];
 }

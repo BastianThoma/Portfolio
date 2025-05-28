@@ -1,3 +1,5 @@
+@import 'variables';
+
 .sectionCardBox {
   max-width: 568px;
   width: 100%;
@@ -5,36 +7,36 @@
   height: 100%;
   h2 {
     font-size: 24px;
-    color: #3dcfb6;
+    color: $text-color-accent;
     font-weight: 500;
   }
   .sectionCardText {
     width: 100%;
     height: 100%;
-    background-color: #3dcfb61a;
+    background-color: #4a91e225;
     backdrop-filter: blur(4px);
-    border: solid 2px #3dcfb6;
+    border: solid 2px $border-color;
     border-radius: 30px;
     position: relative;
     padding: 32px;
     box-sizing: border-box;
     h1 {
       font-size: 64px;
-      color: #3dcfb6;
+      color: $text-color-accent;
       font-weight: 700;
       letter-spacing: -3%;
       margin: 0;
     }
     span {
       font-size: 18px;
-      color: #ffffff;
+      color: $text-color-main;
       font-weight: 400;
     }
     .highlights {
       gap: 16px;
       padding: 8px 0;
       font-size: 18px;
-      color: #ffffff;
+      color: $text-color-main;
       font-weight: 400;
       img {
         width: 32px;

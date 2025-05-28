@@ -1,3 +1,5 @@
+@import "variables";
+
 form {
   display: flex;
   flex-direction: column;
@@ -19,8 +21,8 @@ form {
       gap: 16px;
       background-color: transparent;
       margin: 0;
-      color: #3dcfb6;
-      border-color: #3dcfb680;
+      color: $text-color-accent;
+      border-color: $border-color;
       font-size: 24px;
       font-weight: 500;
       transition: all 0.3s ease-in-out;
@@ -32,14 +34,14 @@ form {
         padding-left: 32px;
         border: none;
         outline: none;
-        color: #3dcfb6;
+        color: $text-color-accent;
         background-color: transparent;
         font-size: 18px;
         font-weight: 400;
         cursor: text;
         &::placeholder {
           font-family: "Karla";
-          color: #ffffffcc;
+          color: $text-color-secondary;
         }
       }
       .invalidEffect {
@@ -65,18 +67,18 @@ form {
       input:focus {
         outline: none;
         border-radius: 4px;
-        box-shadow: 0px 0px 6px 2px #3dcfb6;
+        box-shadow: 0px 0px 6px 2px $shadow-color;
         transition: box-shadow 0.3s ease;
         font-family: "Karla";
       }
 
       input::placeholder {
-        color: #ffffffcc;
+        color: $text-color-secondary;
         font-family: "Karla";
       }
 
       input:invalid:focus::placeholder {
-        color: #ffffffcc;
+        color: $text-color-secondary;
         font-family: "Karla";
       }
 
@@ -114,8 +116,8 @@ form {
       gap: 16px;
       background-color: transparent;
       margin: 0;
-      color: #3dcfb6;
-      border-color: #3dcfb680;
+      color: $text-color-accent;
+      border-color: $border-color;
       font-size: 24px;
       font-weight: 500;
       cursor: pointer;
@@ -126,32 +128,32 @@ form {
         padding-left: 32px;
         border: none;
         outline: none;
-        color: #3dcfb6;
+        color: $text-color-accent;
         background-color: transparent;
         font-size: 18px;
         font-weight: 400;
         cursor: text;
         &::placeholder {
           font-family: "Karla";
-          color: #ffffffcc;
+          color: $text-color-secondary;
         }
       }
 
       input:focus {
         outline: none;
         border-radius: 4px;
-        box-shadow: 0px 0px 6px 2px #3dcfb6;
+        box-shadow: 0px 0px 6px 2px $shadow-color;
         transition: box-shadow 0.3s ease;
         font-family: "Karla";
       }
 
       input::placeholder {
-        color: #ffffffcc;
+        color: $text-color-secondary;
         font-family: "Karla";
       }
 
       input:invalid:focus::placeholder {
-        color: #ffffffcc;
+        color: $text-color-secondary;
         font-family: "Karla";
       }
       input:invalid:not(:focus):placeholder-shown {
@@ -192,15 +194,15 @@ form {
         appearance: none;
         width: 24px;
         height: 24px;
-        border: 2px solid #3dcfb6;
+        border: 2px solid $border-color;
         border-radius: 8px;
         background-color: transparent;
         position: relative;
         cursor: pointer;
         transition: background-color 0.3s ease, border-color 0.3s ease;
         &:checked {
-          border-color: #3dcfb6;
-          background-color: #3dcfb740;
+          border-color: $border-color;
+          background-color: $shadow-color;
         }
         &:checked::before {
           content: "✓";
@@ -209,7 +211,7 @@ form {
           left: 50%;
           transform: translate(-50%, -50%);
           font-size: 16px;
-          color: #ffffff;
+          color: $text-color-main;
           font-weight: bold;
         }
       }
@@ -221,12 +223,15 @@ form {
       }
 
       .checkBoxText {
-        color: #ffffff;
+        color: $text-color-main;
       }
 
       a {
-        color: #3dcfb6;
+        color: $text-color-accent;
         text-decoration: none;
+        &:hover {
+          color: $hover-color;
+        }
       }
     }
     .errorMessage {
@@ -251,8 +256,8 @@ form {
     visibility: hidden;
     width: 90%;
     max-width: 400px;
-    background-color: #333;
-    color: #3dcfb6;
+    background-color: $background-color-secondary;
+    color: $text-color-accent;
     text-align: center;
     border-radius: 16px;
     padding: 32px;
@@ -261,7 +266,7 @@ form {
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 20px;
-    box-shadow: 0px 0px 10px 6px rgba(61, 207, 182, 0.4);
+    box-shadow: 0px 0px 10px 6px $shadow-color;
   }
 
   .popup.show {
@@ -273,19 +278,19 @@ form {
   .submitButton {
     margin-top: 40px;
     height: 48px;
-    border: solid 2px #ffffff;
+    border: solid 2px $border-color;
     background-color: transparent;
     border-radius: 100px;
     padding: 0 24px;
     gap: 10px;
-    color: #ffffff;
+    color: $text-color-main;
     font-size: 18px;
     font-weight: 400;
     white-space: nowrap;
     cursor: pointer;
     &:hover {
-      border: solid 2px #3dcfb680;
-      color: #3dcfb680;
+      border: solid 2px $hover-color;
+      color: $hover-color;
     }
     &:disabled {
       border: solid 2px #ffffff80;

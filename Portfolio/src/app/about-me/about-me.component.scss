@@ -1,5 +1,13 @@
+@import "variables";
+
 .aboutMeSection {
-  background-color: #1c1c1c;
+  background-color: $background-color-main;
+  background: radial-gradient(
+      circle at 102% center,
+      $shadow-color 2%,
+      transparent 10%
+    ),
+    $background-color-main;
   display: flex;
   justify-content: center;
   margin: 180px 0;
@@ -10,7 +18,7 @@
     max-width: 1440px;
     width: 100%;
     height: min-content;
-    color: #ffffffcc;
+    color: $text-color-main;
     .imgBox {
       display: grid;
       max-width: 568px;
@@ -42,7 +50,7 @@
     }
     .highlights {
       display: flex;
-      color: #ffffff;
+      color: $text-color-main;
       gap: 16px;
       padding: 8px 0;
       font-weight: 400;

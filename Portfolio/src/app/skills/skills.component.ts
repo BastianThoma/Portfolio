@@ -18,7 +18,9 @@ export class SkillsComponent implements AfterViewInit {
   ) {}
 
   scrollToContactForm(): void {
-    document.getElementById('contactForm')?.scrollIntoView({ behavior: 'smooth' });
+    document
+      .getElementById('contactForm')
+      ?.scrollIntoView({ behavior: 'smooth' });
     this.focusService.triggerFocus();
   }
 
@@ -61,7 +63,7 @@ export class SkillsComponent implements AfterViewInit {
     },
     {
       icon: '/assets/img/white-icons/material_design.png',
-      coloredIcon: '/assets/img/colored-icons/md_colored_white_outline.png',
+      coloredIcon: '/assets/img/colored-icons/md_colored.png',
       label: 'Material Design',
       hovered: false,
     },

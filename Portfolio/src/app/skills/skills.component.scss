@@ -1,11 +1,13 @@
+@import "variables";
+
 .skillsSection {
-  background-color: #1c1c1c;
+  background-color: $background-color-main;
   background: radial-gradient(
-      circle at -6% center,
-      #08463bbd 5%,
-      transparent 16%
+      circle at 0% center,
+      $shadow-color 2%,
+      transparent 10%
     ),
-    #1c1c1c;
+    $background-color-main;
   display: flex;
   justify-content: center;
   margin: 180px 0;
@@ -39,7 +41,7 @@
       width: 128px;
       height: 48px;
       padding: 0 24px;
-      border: solid 2px #ffffff;
+      border: solid 2px $border-color;
       border-radius: 100px;
       background-color: transparent;
       font-size: 18px;
@@ -47,7 +49,7 @@
       overflow: hidden;
       a {
         text-decoration: none;
-        color: #ffffff;
+        color: $text-color-main;
         span {
           display: inline-block;
           white-space: nowrap;
@@ -58,9 +60,9 @@
       }
       &:hover {
         a {
-          color: #3dcfb680;
+          color: $hover-color;
         }
-        border: solid 2px #3dcfb680;
+        border: solid 2px $hover-color;
         cursor: pointer;
         span {
           animation: slide-text 4s ease-in-out infinite;
@@ -68,7 +70,7 @@
       }
     }
     .skillsetIconBox {
-      color: #ffffff;
+      color: $text-color-main;
       display: flex;
       flex-wrap: wrap;
       max-width: 568px;
@@ -86,9 +88,10 @@
         transition: transform 0.3s ease;
         &:hover img {
           animation: bounce 0.6s ease infinite;
+          filter: drop-shadow(0 0 10px $shadow-color);
         }
         &:hover p {
-          color: #3dcfb6;
+          color: $hover-color;
         }
         img {
           width: 60px;
@@ -100,7 +103,7 @@
             transition: none;
           }
           p {
-            color: white;
+            color: $text-color-main;
             transition: color 0.3s ease;
           }
           &:hover {
@@ -109,7 +112,7 @@
               transform: scale(1.15);
             }
             p {
-              color: #3dcfb6;
+              color: $hover-color;
             }
             .speechBubble {
               opacity: 1;
@@ -124,9 +127,9 @@
             width: 180px;
             height: auto;
             padding: 0 12px;
-            background-color: #1f2e2c;
+            background-color: $background-color-secondary;
             border-radius: 16px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px $shadow-color;
             text-align: center;
             opacity: 0;
             visibility: hidden;
@@ -143,12 +146,13 @@
               height: 0;
               border-style: solid;
               border-width: 24px 24px 0 24px;
-              border-color: #1f2e2c transparent transparent transparent;
+              border-color: $background-color-secondary transparent transparent
+                transparent;
             }
             .speechText {
               font-size: 16px;
               font-weight: 400;
-              color: #3dcfb6;
+              color: $text-color-accent;
               word-wrap: break-word;
             }
             .specialSkills {
@@ -164,7 +168,7 @@
                 p {
                   font-size: 12px;
                   font-weight: 700;
-                  color: #3dcfb6;
+                  color: $text-color-accent;
                 }
               }
             }
@@ -175,11 +179,11 @@
   }
 }
 .whiteText {
-  color: #ffffff;
+  color: $text-color-main;
 }
 
 .mintText {
-  color: #3dcfb6;
+  color: $text-color-accent;
 }
 
 @media screen and (max-width: 1600px) {

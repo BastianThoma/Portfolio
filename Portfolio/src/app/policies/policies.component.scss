@@ -1,5 +1,7 @@
+@import 'variables';
+
 section {
-  background-color: #1c1c1c;
+  background-color: $background-color-main;
   height: 100%;
   overflow-y: hidden;
   .policiesContent {
