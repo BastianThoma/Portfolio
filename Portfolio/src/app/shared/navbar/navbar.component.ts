@@ -18,7 +18,10 @@ export class NavbarComponent {
   currentLang: string;
 
   constructor(private translate: TranslateService, private router: Router) {
-    this.currentLang = localStorage.getItem('language') || 'en';
+    let browserLang = navigator.language.split('-')[0];
+    this.currentLang =
+      localStorage.getItem('language') ||
+      (['de', 'en'].includes(browserLang) ? browserLang : 'en');
     this.translate.setDefaultLang(this.currentLang);
     this.translate.use(this.currentLang);
   }
