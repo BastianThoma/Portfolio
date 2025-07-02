@@ -1,27 +1,50 @@
-# Portfolio
+# 🎨 My Portfolio
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.3.
+Willkommen – hier findest du mein persönliches Portfolio, entwickelt mit modernen Webtechnologien, um meine Projekte und Fähigkeiten bestmöglich zu präsentieren.
 
-## Development server
+---
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## 🚀 Live Demo
 
-## Code scaffolding
+[👉 Zur Live-Version](https://bastian-thoma.de/)  
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+---
 
-## Build
+## 📚 Inhalt
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- **Landing Page** – Vorstellung & Hero-Sektion  
+- **Über mich** – Wer ich bin, Hintergrund & Skills  
+- **Projekte** – Auswahl meiner Arbeiten  
+- **Kontakt** – Möglichkeiten zur Kontaktaufnahme
+- **Feedback Slider** – Slider mit Feedback von Teammates  
+- **Impressum & Datenschutz** – Rechtliche Hinweise
 
-## Running unit tests
+---
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## 🛠 Technologien
 
-## Running end-to-end tests
+Das Projekt wurde mit folgenden Tools aufgebaut:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- **Framework / Library**: [Angular 17](https://angular.io/)
+- **Styling**: SCSS
+- **Animationen**: AOS
+- **Bundler**: Angular CLI (Webpack-basiert)
+- **Deployment**: Hosting bei All-Inkl.com
 
-## Further help
+---
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## ❤️ Lizenz
+
+Dieses Projekt ist lizenziert unter der MIT License – siehe [LICENSE](LICENSE).
+
+---
+
+## 📞 Kontakt
+
+- **GitHub**: [@BastianThoma](https://github.com/BastianThoma)  
+- **E-Mail**: contact@bastian-thoma.de
+- **LinkedIn**: [Bastian Jerome Thoma](https://www.linkedin.com/in/bastian-thoma/)
+
+---
+
+*Viel Spaß beim Erkunden und vielen Dank für deinen Besuch!*
