@@ -31,7 +31,10 @@
   "PROJECTS": {
     "PORTFOLIO": "Portfolio",
     "FEATURED_PROJECTS": "Meine Projekte",
-    "EXPLORE_TEXT": "Entdecke hier eine Auswahl meiner Arbeit – Interagiere mit den Projekten, um meine Fähigkeiten in Aktion zu sehen."
+    "EXPLORE_TEXT": "Entdecke hier eine Auswahl meiner Arbeit – Interagiere mit den Projekten, um meine Fähigkeiten in Aktion zu sehen.",
+    "COMING_SOON_BADGE": "Demnächst",
+    "COMING_SOON_TITLE": "Demnächst",
+    "COMING_SOON_DESCRIPTION": "Live-Test in Vorbereitung..."
   },
   "FEEDBACK": {
     "HEADER_TITLE": "Was meine Kolleginnen und Kollegen über mich sagen",

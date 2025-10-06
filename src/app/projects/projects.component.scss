@@ -122,6 +122,99 @@
           opacity: 1;
           visibility: visible;
         }
+        
+        // Coming Soon / Disabled Project Styles
+        &.projectCard--disabled {
+          cursor: not-allowed;
+          position: relative;
+          
+          .cardTitleBox {
+            .coming-soon-badge {
+              background: linear-gradient(45deg, $hover-color, #ff6b6b);
+              color: white;
+              padding: 4px 12px;
+              border-radius: 16px;
+              font-size: 12px;
+              font-weight: 600;
+              animation: pulse 2s infinite;
+              margin-left: 16px; // Standard Abstand für große Bildschirme
+              flex-shrink: 0; // Verhindert Schrumpfung
+              
+              span {
+                color: white;
+                font-size: 12px;
+              }
+            }
+          }
+          
+          .coming-soon-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.9);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            border-radius: 8px;
+            
+            .coming-soon-content {
+              text-align: center;
+              transform: translateY(20px);
+              transition: transform 0.3s ease;
+              
+              h4 {
+                color: $hover-color;
+                font-size: 24px;
+                margin: 0 0 8px 0;
+                font-weight: 700;
+              }
+              
+              p {
+                color: $text-color-main;
+                font-size: 14px;
+                margin: 0;
+                opacity: 0.8;
+              }
+            }
+          }
+          
+          &:hover {
+            background-color: transparent;
+            
+            .cardTitleBox h3 {
+              color: $text-color-main;
+            }
+            
+            #techStackText {
+              color: $text-color-main;
+            }
+            
+            .coming-soon-overlay {
+              opacity: 1;
+              visibility: visible;
+              
+              .coming-soon-content {
+                transform: translateY(0);
+              }
+            }
+          }
+        }
+        
+        @keyframes pulse {
+          0%, 100% {
+            transform: scale(1);
+            opacity: 1;
+          }
+          50% {
+            transform: scale(1.05);
+            opacity: 0.8;
+          }
+        }
       }
     }
   }
@@ -168,18 +261,35 @@
   #techStackText {
     font-size: 0.9rem;
   }
+  
+  // Coming Soon Badge responsive für mittlere Bildschirme
+  .coming-soon-badge {
+    margin-left: 12px !important; // Reduzierter Abstand für mittlere Bildschirme
+    font-size: 11px !important;
+    padding: 3px 10px !important;
+  }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   #projectCard {
     padding: 0;
     flex-direction: column;
     justify-content: space-evenly;
+    span {
+      word-spacing: 0px;
+    }
   }
   #projectsMainHeader {
     text-align: center;
   }
   #projectsDescriptionText {
     text-align: center;
+  }
+  
+  // Coming Soon Badge responsive für kleine Bildschirme
+  .coming-soon-badge {
+    margin-left: 8px !important; // Minimaler Abstand für kleine Bildschirme
+    font-size: 10px !important;
+    padding: 2px 8px !important;
   }
 }
