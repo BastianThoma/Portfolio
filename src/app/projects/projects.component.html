@@ -41,25 +41,28 @@
       </div>
       <div
         id="projectCard"
-        class="projectCard borderTopTwoPixel borderBotTwoPixel"
-        (click)="popup.showPopupWithIndex(1)"
+        class="projectCard projectCardRework borderTopTwoPixel borderBotTwoPixel"
       >
         <div id="cardTitleBox" class="cardTitleBox">
           <h3 id="projectTitle" class="fontFiraCode">Join</h3>
-          <img
-            src="/assets/img/arrow_outward_colored.png"
-            alt="Arrow Top Right"
-          />
+          <div class="reworkBadge">
+            <span class="fontKarla">{{
+              "PROJECTS.REWORK_BADGE" | translate
+            }}</span>
+          </div>
         </div>
         <span id="techStackText" class="fontKarla"
           >HTML | CSS | JavaScript</span
         >
-        <div id="joinPreviewBox" class="projectPreviewHoverBox top50">
-          <img src="/assets/img/join.png" alt="Join Preview Image" />
-          <img
-            src="/assets/img/capa.png"
-            alt="Preview Image Background-Effect"
-          />
+        <div class="reworkOverlay">
+          <div class="reworkContent">
+            <h4 class="fontFiraCode">
+              🔄 {{ "PROJECTS.REWORK_TITLE" | translate }}
+            </h4>
+            <p class="fontKarla">
+              {{ "PROJECTS.REWORK_DESCRIPTION" | translate }}
+            </p>
+          </div>
         </div>
       </div>
 
