@@ -5,7 +5,9 @@
     "PROJECTS": "Projekte",
     "LOGO_ARIA_LABEL": "Zur Startseite navigieren",
     "OPEN_MENU_ARIA_LABEL": "Navigationsmenü öffnen",
-    "CLOSE_MENU_ARIA_LABEL": "Navigationsmenü schließen"
+    "CLOSE_MENU_ARIA_LABEL": "Navigationsmenü schließen",
+    "SWITCH_TO_ENGLISH": "Zur englischen Sprache wechseln",
+    "SWITCH_TO_GERMAN": "Zur deutschen Sprache wechseln"
   },
   "LANDING_PAGE": {
     "FRONTEND_DEVELOPER": "Frontend Entwickler",

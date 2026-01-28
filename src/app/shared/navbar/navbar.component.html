@@ -5,6 +5,8 @@
         <button
           class="fontFiraCode"
           [class.selected]="currentLang === 'en'"
+          [attr.aria-label]="'MENU.SWITCH_TO_ENGLISH' | translate"
+          [attr.aria-current]="currentLang === 'en' ? 'true' : null"
           (click)="switchLanguage('en')"
         >
           EN
@@ -13,6 +15,8 @@
         <button
           class="fontFiraCode"
           [class.selected]="currentLang === 'de'"
+          [attr.aria-label]="'MENU.SWITCH_TO_GERMAN' | translate"
+          [attr.aria-current]="currentLang === 'de' ? 'true' : null"
           (click)="switchLanguage('de')"
         >
           DE
@@ -114,6 +118,8 @@
       <button
         class="popupButton fontFiraCode"
         [class.selected]="currentLang === 'en'"
+        [attr.aria-label]="'MENU.SWITCH_TO_ENGLISH' | translate"
+        [attr.aria-current]="currentLang === 'en' ? 'true' : null"
         (click)="switchLanguage('en')"
       >
         EN
@@ -122,6 +128,8 @@
       <button
         class="popupButton fontFiraCode"
         [class.selected]="currentLang === 'de'"
+        [attr.aria-label]="'MENU.SWITCH_TO_GERMAN' | translate"
+        [attr.aria-current]="currentLang === 'de' ? 'true' : null"
         (click)="switchLanguage('de')"
       >
         DE
