@@ -2,7 +2,10 @@
   "MENU": {
     "ABOUT_ME": "Über mich",
     "SKILLS": "Fähigkeiten",
-    "PROJECTS": "Projekte"
+    "PROJECTS": "Projekte",
+    "LOGO_ARIA_LABEL": "Zur Startseite navigieren",
+    "OPEN_MENU_ARIA_LABEL": "Navigationsmenü öffnen",
+    "CLOSE_MENU_ARIA_LABEL": "Navigationsmenü schließen"
   },
   "LANDING_PAGE": {
     "FRONTEND_DEVELOPER": "Frontend Entwickler",

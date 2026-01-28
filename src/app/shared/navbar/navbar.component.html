@@ -50,12 +50,27 @@
         />
       </div>
     </div>
-    <div id="navbarLogo" class="logo" (click)="navigateToMainPage()"></div>
+    <div 
+      id="navbarLogo" 
+      class="logo" 
+      role="button"
+      tabindex="0"
+      [attr.aria-label]="'MENU.LOGO_ARIA_LABEL' | translate"
+      (click)="navigateToMainPage()"
+      (keydown.enter)="navigateToMainPage()"
+      (keydown.space)="$event.preventDefault(); navigateToMainPage()"
+    ></div>
     <div
       class="burgerMenu"
       id="burgerMenu"
+      role="button"
+      tabindex="0"
+      [attr.aria-label]="isMenuOpen ? ('MENU.CLOSE_MENU_ARIA_LABEL' | translate) : ('MENU.OPEN_MENU_ARIA_LABEL' | translate)"
+      [attr.aria-expanded]="isMenuOpen"
       [ngClass]="{ menuOpen: isMenuOpen }"
       (click)="togglePopup()"
+      (keydown.enter)="togglePopup()"
+      (keydown.space)="$event.preventDefault(); togglePopup()"
     ></div>
   </div>
 
