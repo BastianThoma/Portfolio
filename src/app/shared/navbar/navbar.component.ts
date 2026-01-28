@@ -24,6 +24,7 @@ export class NavbarComponent {
       (['de', 'en'].includes(browserLang) ? browserLang : 'en');
     this.translate.setDefaultLang(this.currentLang);
     this.translate.use(this.currentLang);
+    document.documentElement.lang = this.currentLang;
   }
 
   togglePopup() {
@@ -42,6 +43,7 @@ export class NavbarComponent {
     this.translate.use(lang);
     this.currentLang = lang;
     localStorage.setItem('language', lang);
+    document.documentElement.lang = lang;
     this.ngAfterViewInit();
   }
 
