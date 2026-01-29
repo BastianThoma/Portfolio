@@ -62,6 +62,9 @@
     "NEED_DEV": "Benötigen Sie einen Frontend Entwickler?",
     "TALK": "Lass uns reden!"
   },
+  "ACCESSIBILITY": {
+    "SKIP_TO_MAIN_CONTENT": "Zum Hauptinhalt springen"
+  },
   "CONTACT_FORM": {
     "NAME_LABEL": "Wie heißt du?",
     "NAME_PLACEHOLDER": "Dein Name hier",

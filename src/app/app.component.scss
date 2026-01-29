@@ -1,0 +1,18 @@
+// Skip to main content link - accessible keyboard navigation
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #00bee8;
+  color: #141d2f;
+  padding: 8px 16px;
+  text-decoration: none;
+  font-weight: bold;
+  z-index: 9999;
+  border-radius: 0 0 4px 0;
+  transition: top 0.3s;
+
+  &:focus {
+    top: 0;
+  }
+}
