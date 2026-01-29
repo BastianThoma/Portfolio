@@ -13,7 +13,10 @@
     "FRONTEND_DEVELOPER": "Frontend Entwickler",
     "BASTIAN_THOMA": "Bastian Thoma",
     "CHECK_MY_WORK": "Meine Arbeit",
-    "CONTACT_ME": "Schreib mir"
+    "CONTACT_ME": "Schreib mir",
+    "EMAIL_ARIA_LABEL": "E-Mail an contact@bastian-thoma.de senden",
+    "GITHUB_ARIA_LABEL": "Mein GitHub-Profil besuchen (öffnet in neuem Tab)",
+    "LINKEDIN_ARIA_LABEL": "Mein LinkedIn-Profil besuchen (öffnet in neuem Tab)"
   },
   "ABOUT_ME": {
     "WHO_I_AM": "Wer ich bin",
