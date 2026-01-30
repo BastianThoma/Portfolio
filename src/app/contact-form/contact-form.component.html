@@ -19,14 +19,19 @@
             ? ('CONTACT_FORM.NAME_ERROR' | translate)
             : ('CONTACT_FORM.NAME_PLACEHOLDER' | translate)
         "
+        [attr.aria-describedby]="nameInput.invalid && nameInput.touched ? 'name-error' : null"
+        [attr.aria-invalid]="nameInput.invalid && nameInput.touched"
         required
         pattern="^(?!\s*$)[a-zA-Z\s]+$"
-        [title]="
-          nameInput.invalid && nameInput.touched
-            ? ('CONTACT_FORM.NAME_ERROR_TITLE' | translate)
-            : ''
-        "
       />
+      <span
+        *ngIf="nameInput.invalid && nameInput.touched"
+        id="name-error"
+        class="sr-only"
+        role="alert"
+      >
+        {{ "CONTACT_FORM.NAME_ERROR" | translate }}
+      </span>
     </label>
   </div>
 
@@ -49,15 +54,20 @@
             ? ('CONTACT_FORM.EMAIL_ERROR' | translate)
             : ('CONTACT_FORM.EMAIL_PLACEHOLDER' | translate)
         "
+        [attr.aria-describedby]="emailInput.invalid && emailInput.touched ? 'email-error' : null"
+        [attr.aria-invalid]="emailInput.invalid && emailInput.touched"
         pattern="^[^@\s]+@[^@\s]+\.[^@\s]+$"
         required
         [class.invalidEffect]="emailInput.invalid && emailInput.touched"
-        [title]="
-          emailInput.invalid && emailInput.touched
-            ? ('CONTACT_FORM.EMAIL_ERROR_TITLE' | translate)
-            : ''
-        "
       />
+      <span
+        *ngIf="emailInput.invalid && emailInput.touched"
+        id="email-error"
+        class="sr-only"
+        role="alert"
+      >
+        {{ "CONTACT_FORM.EMAIL_ERROR" | translate }}
+      </span>
     </label>
   </div>
   <div class="labelContainer">
@@ -78,14 +88,19 @@
             ? ('CONTACT_FORM.MESSAGE_ERROR' | translate)
             : ('CONTACT_FORM.MESSAGE_PLACEHOLDER' | translate)
         "
+        [attr.aria-describedby]="messageInput.invalid && messageInput.touched ? 'message-error' : null"
+        [attr.aria-invalid]="messageInput.invalid && messageInput.touched"
         required
         pattern="^(?!\s*$).+"
-        [title]="
-          messageInput.invalid && messageInput.touched
-            ? ('CONTACT_FORM.MESSAGE_ERROR_TITLE' | translate)
-            : ''
-        "
       />
+      <span
+        *ngIf="messageInput.invalid && messageInput.touched"
+        id="message-error"
+        class="sr-only"
+        role="alert"
+      >
+        {{ "CONTACT_FORM.MESSAGE_ERROR" | translate }}
+      </span>
     </label>
   </div>
   <div id="privacyContainer" class="labelContainer">
@@ -95,6 +110,8 @@
           id="checkboxInput"
           type="checkbox"
           [checked]="contactData.privacyAccepted"
+          [attr.aria-describedby]="!contactData.privacyAccepted && contactForm.form.touched && contactData.name && contactData.email && contactData.message ? 'privacy-error' : null"
+          [attr.aria-invalid]="!contactData.privacyAccepted && contactForm.form.touched"
           (change)="onPrivacyChange($event)"
           required
         />
@@ -116,8 +133,9 @@
         contactData.email &&
         contactData.message
       "
-      id="errorMessage"
+      id="privacy-error"
       class="errorMessage fontFiraCode"
+      role="alert"
     >
       <small>{{ "CONTACT_FORM.PRIVACY_ERROR" | translate }}</small>
     </div>
