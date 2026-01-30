@@ -8,8 +8,8 @@
       (mouseenter)="onMouseEnter()"
       [class.hovered]="hovered"
     >
-      <img class="backgroundEffect" src="/assets/img/capa.png" alt="" />
-      <img class="portrait" src="/assets/img/portrait.png" alt="" />
+      <img class="backgroundEffect" src="/assets/img/capa.png" alt="" role="presentation" />
+      <img class="portrait" src="/assets/img/portrait.png" [attr.alt]="'ABOUT_ME.PORTRAIT_ALT' | translate" />
     </div>
 
     <app-section-card
@@ -21,21 +21,21 @@
       [mainText]="'ABOUT_ME.MAIN_TEXT' | translate"
     >
       <div id="highlightsBox" class="highlights marginTop32">
-        <img src="/assets/img/location_icon.png" alt="Location Icon" />
+        <img src="/assets/img/location_icon.png" alt="" role="presentation" />
         <span id="highlightText" class="fontKarla">{{
           "ABOUT_ME.FLEXIBLE_WORK" | translate
         }}</span>
       </div>
 
       <div id="highlightsBox" class="highlights">
-        <img src="/assets/img/mind_icon.png" alt="Minded Head Icon" />
+        <img src="/assets/img/mind_icon.png" alt="" role="presentation" />
         <span id="highlightText" class="fontKarla">{{
           "ABOUT_ME.OPEN_MINDED" | translate
         }}</span>
       </div>
 
       <div id="highlightsBox" class="highlights">
-        <img src="/assets/img/checked_gear_icon.png" alt="Checked Gear Icon" />
+        <img src="/assets/img/checked_gear_icon.png" alt="" role="presentation" />
         <span id="highlightText" class="fontKarla">{{
           "ABOUT_ME.PROBLEM_SOLVING" | translate
         }}</span>
