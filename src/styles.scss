@@ -13,6 +13,43 @@
   border-width: 0;
 }
 
+// Global focus indicators for keyboard accessibility
+// Applies to all interactive elements
+*:focus {
+  outline: 2px solid $accent-color; // Mint color from your theme
+  outline-offset: 2px;
+  transition: outline 0.2s ease;
+}
+
+// Enhanced focus for buttons and links
+a:focus,
+button:focus {
+  outline: 3px solid $accent-color;
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+// Focus for form inputs
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 2px solid $accent-color;
+  outline-offset: 0px;
+  box-shadow: 0 0 0 3px rgba(0, 190, 232, 0.2); // Glow effect
+}
+
+// Remove outline for mouse users (only show for keyboard)
+*:focus:not(:focus-visible) {
+  outline: none;
+  box-shadow: none;
+}
+
+// Keep outline for keyboard users
+*:focus-visible {
+  outline: 3px solid $accent-color;
+  outline-offset: 2px;
+}
+
 body {
   margin: 0;
   background-color: $background-color-main;
