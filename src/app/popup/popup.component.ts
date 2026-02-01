@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TranslateService, TranslateModule } from '@ngx-translate/core';
 @Component({
@@ -78,6 +78,13 @@ export class PopupComponent {
   closePopup() {
     this.isPopupVisible = false;
     document.body.style.overflow = '';
+  }
+
+  @HostListener('document:keydown.escape')
+  onEscapeKey() {
+    if (this.isPopupVisible) {
+      this.closePopup();
+    }
   }
 
   openLink(url: string) {

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
 import { TranslateService, TranslateModule } from '@ngx-translate/core';
@@ -49,6 +49,13 @@ export class NavbarComponent {
 
   ngAfterViewInit(): void {
     setTimeout(() => Aos.refresh(), 200);
+  }
+
+  @HostListener('document:keydown.escape')
+  onEscapeKey() {
+    if (this.isPopupVisible) {
+      this.closePopup();
+    }
   }
 
   navigateToMainPage() {
