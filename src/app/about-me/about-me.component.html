@@ -1,9 +1,8 @@
 <div class="aboutMeSection">
-  <div id="aboutMeContent" class="aboutMeContent">
+  <div class="aboutMeContent">
     <div
       data-aos="fade-right"
       data-aos-duration="275"
-      id="imgBox"
       class="imgBox"
       (mouseenter)="onMouseEnter()"
       [class.hovered]="hovered"
@@ -15,28 +14,28 @@
     <app-section-card
       data-aos="fade-up"
       data-aos-duration="275"
-      id="aboutMeCard"
+      class="aboutMeCard"
       [sectionTitle]="'ABOUT_ME.WHO_I_AM' | translate"
       [mainHeading]="'ABOUT_ME.ABOUT_ME' | translate"
       [mainText]="'ABOUT_ME.MAIN_TEXT' | translate"
     >
-      <div id="highlightsBox" class="highlights marginTop32">
+      <div class="highlights marginTop32">
         <img src="/assets/img/location_icon.png" alt="" role="presentation" />
-        <span id="highlightText" class="fontKarla">{{
+        <span class="highlightText fontKarla">{{
           "ABOUT_ME.FLEXIBLE_WORK" | translate
         }}</span>
       </div>
 
-      <div id="highlightsBox" class="highlights">
+      <div class="highlights">
         <img src="/assets/img/mind_icon.png" alt="" role="presentation" />
-        <span id="highlightText" class="fontKarla">{{
+        <span class="highlightText fontKarla">{{
           "ABOUT_ME.OPEN_MINDED" | translate
         }}</span>
       </div>
 
-      <div id="highlightsBox" class="highlights">
+      <div class="highlights">
         <img src="/assets/img/checked_gear_icon.png" alt="" role="presentation" />
-        <span id="highlightText" class="fontKarla">{{
+        <span class="highlightText fontKarla">{{
           "ABOUT_ME.PROBLEM_SOLVING" | translate
         }}</span>
       </div>

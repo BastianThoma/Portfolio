@@ -303,7 +303,7 @@ form {
 }
 
 @media screen and (max-width: 600px) {
-  #inputBox {
+  form .labelContainer .inputBox {
     font-size: 1rem;
     padding: 16px 0;
     span {
@@ -313,13 +313,13 @@ form {
       padding-left: 8px;
     }
   }
-  #name {
+  form #name {
     font-size: 0.8rem;
   }
-  #email {
+  form #email {
     font-size: 0.8rem;
   }
-  #messageBox {
+  form #messageBox {
     font-size: 1rem;
     padding: 16px 0;
     span {
@@ -329,19 +329,19 @@ form {
       padding-left: 8px;
     }
   }
-  #message {
+  form #message {
     font-size: 0.8rem;
   }
-  #checkBoxText {
+  form #checkBoxText {
     font-size: 0.8rem;
   }
-  #errorMessage {
+  form .errorMessage {
     font-size: 0.8rem;
   }
-  #submitButton {
+  form #submitButton {
     font-size: 0.8rem;
   }
-  #checkboxInput {
+  form #checkboxInput {
     width: 20px;
     height: 20px;
   }

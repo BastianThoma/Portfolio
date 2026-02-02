@@ -51,7 +51,7 @@
           .cardTitleBox h3 {
             color: $hover-color;
           }
-          #techStackText {
+          .techStackText {
             color: $hover-color;
           }
           .cardTitleBox img {
@@ -190,7 +190,7 @@
               color: $text-color-main;
             }
             
-            #techStackText {
+            .techStackText {
               color: $text-color-main;
             }
             
@@ -272,7 +272,7 @@
               color: $text-color-main;
             }
             
-            #techStackText {
+            .techStackText {
               color: $text-color-main;
             }
             
@@ -321,7 +321,7 @@
   #projectsBox {
     width: 100%;
   }
-  #cardTitleBox {
+  .projectsSection .projectsContent .projectsBox .projectCard .cardTitleBox {
     gap: 0px;
     img {
       display: none;
@@ -347,31 +347,31 @@
     font-size: 1rem;
     // text-align: center;
   }
-  #projectTitle {
+  .projectsSection .projectsContent .projectsBox .projectCard .cardTitleBox h3 {
     font-size: 1.3rem;
     margin: 0;
   }
-  #techStackText {
+  .projectsSection .projectsContent .projectsBox .projectCard span.techStackText {
     font-size: 0.9rem;
   }
   
   // Rework Badge responsive für mittlere Bildschirme
-  .reworkBadge {
-    margin-left: 12px !important;
-    font-size: 11px !important;
-    padding: 3px 10px !important;
+  .projectsSection .projectsContent .projectsBox .projectCard.projectCardRework .cardTitleBox .reworkBadge {
+    margin-left: 12px;
+    font-size: 11px;
+    padding: 3px 10px;
   }
 
   // Coming Soon Badge responsive für mittlere Bildschirme
-  .coming-soon-badge {
-    margin-left: 12px !important; // Reduzierter Abstand für mittlere Bildschirme
-    font-size: 11px !important;
-    padding: 3px 10px !important;
+  .projectsSection .projectsContent .projectsBox .projectCard.projectCard--disabled .cardTitleBox .coming-soon-badge {
+    margin-left: 12px;
+    font-size: 11px;
+    padding: 3px 10px;
   }
 }
 
 @media screen and (max-width: 700px) {
-  #projectCard {
+  .projectsSection .projectsContent .projectsBox .projectCard {
     padding: 0;
     flex-direction: column;
     justify-content: space-evenly;
@@ -387,16 +387,16 @@
   }
   
   // Rework Badge responsive für kleine Bildschirme
-  .reworkBadge {
-    margin-left: 8px !important;
-    font-size: 10px !important;
-    padding: 2px 8px !important;
+  .projectsSection .projectsContent .projectsBox .projectCard.projectCardRework .cardTitleBox .reworkBadge {
+    margin-left: 8px;
+    font-size: 10px;
+    padding: 2px 8px;
   }
 
   // Coming Soon Badge responsive für kleine Bildschirme
-  .coming-soon-badge {
-    margin-left: 8px !important; // Minimaler Abstand für kleine Bildschirme
-    font-size: 10px !important;
-    padding: 2px 8px !important;
+  .projectsSection .projectsContent .projectsBox .projectCard.projectCard--disabled .cardTitleBox .coming-soon-badge {
+    margin-left: 8px;
+    font-size: 10px;
+    padding: 2px 8px;
   }
 }

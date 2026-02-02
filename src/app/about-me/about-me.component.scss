@@ -64,16 +64,16 @@
 }
 
 @media screen and (max-width: 1600px) {
-  #aboutMeContent {
+  .aboutMeSection .aboutMeContent {
     flex-direction: column;
     width: 80%;
     gap: 24px;
     padding: 20px 0;
   }
-  #highlightText {
+  .aboutMeSection .aboutMeContent .highlightText {
     font-size: 1rem;
   }
-  #highlightsBox {
+  .aboutMeSection .aboutMeContent .highlights {
     flex-direction: column;
     align-items: center;
   }

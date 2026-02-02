@@ -5,7 +5,7 @@
   width: 100%;
   max-height: max-content;
   height: 100%;
-  h2 {
+  h1 {
     font-size: 24px;
     color: $text-color-accent;
     font-weight: 500;
@@ -20,7 +20,7 @@
     position: relative;
     padding: 32px;
     box-sizing: border-box;
-    h1 {
+    h2 {
       font-size: 64px;
       color: $text-color-accent;
       font-weight: 700;
@@ -47,19 +47,19 @@
 }
 
 @media screen and (max-width: 1600px) {
-  #sectionTitle {
+  .sectionCardBox h1 {
     font-size: 1.2rem;
   }
-  #sectionCardText {
+  .sectionCardBox .sectionCardText {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
-  #mainHeading {
+  .sectionCardBox .sectionCardText h2 {
     font-size: 2rem;
   }
-  #mainText {
+  .sectionCardBox .sectionCardText span {
     text-align: center;
     font-size: 1rem;
   }
