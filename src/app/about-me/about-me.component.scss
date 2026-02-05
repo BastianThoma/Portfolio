@@ -26,6 +26,11 @@
       max-height: 568px;
       height: auto;
       border-radius: 30px;
+      picture {
+        grid-area: 1 / 1 / 2 / 2;
+        z-index: 2;
+        display: contents;
+      }
       .portrait {
         width: 100%;
         height: 100%;

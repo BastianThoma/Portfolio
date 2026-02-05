@@ -45,8 +45,6 @@ export class LandingPageComponent implements AfterViewInit {
    * Loads configuration from external JSON file.
    */
   ngAfterViewInit(): void {
-    particlesJS.load('particles-js', 'assets/particlesjs-config.json', function() {
-      console.log('callback - particles.js config loaded');
-    });
+    particlesJS.load('particles-js', 'assets/particlesjs-config.json');
   }
 }
