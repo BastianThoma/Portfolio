@@ -1,4 +1,4 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, HostListener, ElementRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TranslateService, TranslateModule } from '@ngx-translate/core';
 @Component({
@@ -9,7 +9,13 @@ import { TranslateService, TranslateModule } from '@ngx-translate/core';
   styleUrls: ['./popup.component.scss'],
 })
 export class PopupComponent {
-  constructor(private translate: TranslateService) {}
+  private lastFocusedElement: HTMLElement | null = null;
+  private focusableElements: HTMLElement[] = [];
+
+  constructor(
+    private translate: TranslateService,
+    private elementRef: ElementRef
+  ) {}
 
   isPopupVisible = false;
 
@@ -73,17 +79,68 @@ export class PopupComponent {
   showPopup() {
     this.isPopupVisible = true;
     document.body.style.overflow = 'hidden';
+
+    // Store currently focused element
+    this.lastFocusedElement = document.activeElement as HTMLElement;
+    // Set focus trap on next tick
+    setTimeout(() => this.setFocusTrap(), 0);
   }
 
   closePopup() {
     this.isPopupVisible = false;
     document.body.style.overflow = '';
+    this.restoreFocus();
   }
 
   @HostListener('document:keydown.escape')
   onEscapeKey() {
     if (this.isPopupVisible) {
       this.closePopup();
+    }
+  }
+
+  @HostListener('document:keydown.tab', ['$event'])
+  handleTabKey(event: any) {
+    if (!this.isPopupVisible || this.focusableElements.length === 0) {
+      return;
+    }
+
+    const firstElement = this.focusableElements[0];
+    const lastElement = this.focusableElements[this.focusableElements.length - 1];
+
+    if (event.shiftKey) {
+      // SHIFT + TAB: move backwards
+      if (document.activeElement === firstElement) {
+        event.preventDefault();
+        lastElement.focus();
+      }
+    } else {
+      // TAB: move forwards
+      if (document.activeElement === lastElement) {
+        event.preventDefault();
+        firstElement.focus();
+      }
+    }
+  }
+
+  private setFocusTrap() {
+    const popupContent = this.elementRef.nativeElement.querySelector('.popupContent');
+    if (!popupContent) return;
+
+    // Get all focusable elements within popup
+    const focusableSelectors = 'a[href], button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])';
+    this.focusableElements = Array.from(popupContent.querySelectorAll(focusableSelectors));
+
+    // Focus first element (close button)
+    if (this.focusableElements.length > 0) {
+      this.focusableElements[0].focus();
+    }
+  }
+
+  private restoreFocus() {
+    if (this.lastFocusedElement) {
+      this.lastFocusedElement.focus();
+      this.lastFocusedElement = null;
     }
   }
 
