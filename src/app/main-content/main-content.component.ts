@@ -5,6 +5,12 @@ import { SkillsComponent } from '../skills/skills.component';
 import { ProjectsComponent } from '../projects/projects.component';
 import { FeedbackComponent } from '../feedback/feedback.component';
 import { ContactComponent } from '../contact/contact.component';
+
+/**
+ * Main content container component.
+ * Orchestrates all portfolio sections in correct order.
+ * Acts as layout wrapper for single-page application structure.
+ */
 @Component({
   selector: 'app-main-content',
   standalone: true,

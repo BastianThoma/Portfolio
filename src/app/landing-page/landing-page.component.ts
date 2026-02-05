@@ -3,8 +3,16 @@ import { ScrollingBannerComponent } from '../scrolling-banner/scrolling-banner.c
 import { TranslateService, TranslateModule } from '@ngx-translate/core';
 import { FocusService } from '../services/focus-service/focus-service';
 
+/** External particles.js library declaration */
 declare var particlesJS: any;
 
+/**
+ * Landing page hero section component.
+ * Features animated particle background and call-to-action buttons.
+ * Integrates particles.js for visual effects.
+ * 
+ * @implements {AfterViewInit}
+ */
 @Component({
   selector: 'app-landing-page',
   standalone: true,
@@ -13,18 +21,30 @@ declare var particlesJS: any;
   styleUrl: './landing-page.component.scss',
 })
 export class LandingPageComponent implements AfterViewInit {
+  /**
+   * @param {TranslateService} translate - ngx-translate service for i18n
+   * @param {FocusService} focusService - Service for focusing contact form
+   */
   constructor(
     private translate: TranslateService,
     private focusService: FocusService
     
   ) {}
 
+  /**
+   * Smoothly scrolls to contact form and focuses name input.
+   * Used by "Contact Me" call-to-action button.
+   */
   scrollToContactForm(): void {
     document.getElementById('contactForm')?.scrollIntoView({ behavior: 'smooth' });
     this.focusService.triggerFocus();
   }
 
-    ngAfterViewInit(): void {
+  /**
+   * Lifecycle hook that initializes particles.js animation.
+   * Loads configuration from external JSON file.
+   */
+  ngAfterViewInit(): void {
     particlesJS.load('particles-js', 'assets/particlesjs-config.json', function() {
       console.log('callback - particles.js config loaded');
     });
