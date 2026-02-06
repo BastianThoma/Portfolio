@@ -23,7 +23,7 @@
         font-size: 24px;
         font-weight: 700;
       }
-      h1 {
+      h3 {
         font-size: 64px;
         font-weight: 700;
       }
@@ -68,7 +68,7 @@
             width: 14px;
             height: 14px;
           }
-          h3 {
+          h4 {
             font-size: 24px;
             font-weight: 700;
             color: $text-color-main;
@@ -347,7 +347,7 @@
     font-size: 1rem;
     // text-align: center;
   }
-  .projectsSection .projectsContent .projectsBox .projectCard .cardTitleBox h3 {
+  .projectsSection .projectsContent .projectsBox .projectCard .cardTitleBox h4 {
     font-size: 1.3rem;
     margin: 0;
   }

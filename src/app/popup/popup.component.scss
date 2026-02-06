@@ -72,7 +72,7 @@
       // height: 100%;
       // max-height: 370px;
       padding: 24px 40px;
-      h1 {
+      h2 {
         margin: 0;
         font-size: 4rem;
         font-weight: 700;
@@ -80,7 +80,7 @@
         line-height: 100px;
         letter-spacing: -2%;
       }
-      h2 {
+      h3 {
         margin: 0;
         font-size: 2.5rem;
         color: $text-color-main;
@@ -88,7 +88,7 @@
         letter-spacing: -3%;
         white-space: nowrap;
       }
-      h3 {
+      h4 {
         margin: 10px 0;
         font-size: 1.5rem;
         font-weight: 700;
@@ -231,13 +231,13 @@
     #descriptionBox {
       align-items: center;
       text-align: center;
-      h1 {
+      h2 {
         font-size: 3rem;
       }
-      h2 {
+      h3 {
         font-size: 2rem;
       }
-      h3 {
+      h4 {
         font-size: 1.25rem;
       }
       p {
@@ -279,10 +279,10 @@
     bottom: 12px;
   }
   #descriptionBox {
-    h1 {
+    h2 {
       margin: -30px;
     }
-    h3 {
+    h4 {
       margin: 0;
     }
   }
