@@ -4,13 +4,6 @@ import { TranslateService, TranslateModule } from '@ngx-translate/core';
 import { FocusService } from '../services/focus-service/focus-service';
 import Aos from 'aos';
 
-/**
- * Contact section component.
- * Wraps contact form and handles smooth scrolling with offset.
- * Integrates FocusService for accessibility.
- * 
- * @implements {AfterViewInit}
- */
 @Component({
   selector: 'app-contact',
   standalone: true,
@@ -19,20 +12,11 @@ import Aos from 'aos';
   styleUrl: './contact.component.scss',
 })
 export class ContactComponent implements AfterViewInit {
-  /**
-   * @param {TranslateService} translate - ngx-translate service for i18n
-   * @param {FocusService} focusService - Service for focusing contact form input
-   */
   constructor(
     private translate: TranslateService,
     private focusService: FocusService
   ) {}
 
-  /**
-   * Scrolls to contact form with navbar offset and focuses name input.
-   * Offset compensates for fixed navbar height (-70px).
-   * Used by navigation links from other sections.
-   */
   scrollToContactForm(): void {
     let form = document.getElementById('contactForm');
     if (form) {
@@ -48,10 +32,6 @@ export class ContactComponent implements AfterViewInit {
     }
   }
 
-  /**
-   * Lifecycle hook that refreshes AOS animations.
-   * Ensures contact section animates correctly on scroll.
-   */
   ngAfterViewInit(): void {
     setTimeout(() => Aos.refresh(), 200);
   }

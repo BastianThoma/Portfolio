@@ -4,14 +4,6 @@ import { SectionCardComponent } from '../section-card/section-card.component';
 import { TranslateService, TranslateModule } from '@ngx-translate/core';
 import { FocusService } from '../services/focus-service/focus-service';
 import Aos from 'aos';
-
-/**
- * Skills section component displaying technical competencies.
- * Features interactive skill icons with hover effects.
- * Icons change from white to colored on hover for visual feedback.
- * 
- * @implements {AfterViewInit}
- */
 @Component({
   selector: 'app-skills',
   standalone: true,
@@ -20,19 +12,11 @@ import Aos from 'aos';
   styleUrls: ['./skills.component.scss'],
 })
 export class SkillsComponent implements AfterViewInit {
-  /**
-   * @param {TranslateService} translate - ngx-translate service for i18n
-   * @param {FocusService} focusService - Service for focusing contact form
-   */
   constructor(
     private translate: TranslateService,
     private focusService: FocusService
   ) {}
 
-  /**
-   * Smoothly scrolls to contact form and focuses name input.
-   * Used by "Let's work together" call-to-action button.
-   */
   scrollToContactForm(): void {
     document
       .getElementById('contactForm')
@@ -40,10 +24,6 @@ export class SkillsComponent implements AfterViewInit {
     this.focusService.triggerFocus();
   }
 
-  /**
-   * Array of technical skills with icon paths and hover states.
-   * Each skill has white icon (default) and colored icon (hover).
-   */
   skills = [
     {
       icon: '/assets/img/white-icons/html.png',
@@ -119,21 +99,10 @@ export class SkillsComponent implements AfterViewInit {
     },
   ];
 
-  /**
-   * Handles hover state for skill icons.
-   * Toggles between white and colored icons.
-   * 
-   * @param {any} skill - Skill object from skills array
-   * @param {boolean} state - True when hovering, false when not
-   */
   onHover(skill: any, state: boolean): void {
     skill.hovered = state;
   }
 
-  /**
-   * Lifecycle hook that refreshes AOS animations.
-   * Ensures skills section animates correctly on scroll.
-   */
   ngAfterViewInit(): void {
     setTimeout(() => Aos.refresh(), 200);
   }
