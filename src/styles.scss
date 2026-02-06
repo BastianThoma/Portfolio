@@ -16,8 +16,9 @@
 // Global focus indicators for keyboard accessibility
 // Applies to all interactive elements
 *:focus {
-  outline: 2px solid $accent-color;
+  outline: 2px solid $accent-color; // Mint color from your theme
   outline-offset: 2px;
+  transition: outline 0.2s ease;
 }
 
 // Enhanced focus for buttons and links
@@ -34,7 +35,7 @@ textarea:focus,
 select:focus {
   outline: 2px solid $accent-color;
   outline-offset: 0px;
-  box-shadow: 0 0 0 3px rgba(0, 190, 232, 0.2);
+  box-shadow: 0 0 0 3px rgba(0, 190, 232, 0.2); // Glow effect
 }
 
 // Remove outline for mouse users (only show for keyboard)
@@ -83,7 +84,7 @@ html {
 
 .hidden {
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.5s ease;
 }
 
 .cursorPointer {
@@ -104,7 +105,6 @@ html {
 
 .fontFiraCode {
   font-family: "Fira Code";
-  color: #e5e7eb;
 }
 
 .fontKarla {

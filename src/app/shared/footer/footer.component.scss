@@ -49,7 +49,7 @@ footer {
       display: flex;
       justify-content: center;
       span {
-        color: #e5e7eb;
+        color: $text-color-accent;
         font-size: 18px;
         font-weight: 400;
         text-align: center;
@@ -58,31 +58,33 @@ footer {
     .rightFooterContainer {
       display: flex;
       flex-direction: column;
-      align-items: flex-end;
-      gap: 4px;
-      .footerLink {
-        display: inline-flex;
+      align-items: flex-start;
+      width: 100px;
+      height: 100px;
+      pointer-events: auto;
+      gap: 8px;
+      .radioButtonMask {
+        display: flex;
         align-items: center;
         justify-content: flex-end;
         gap: 8px;
-        padding: 4px 6px;
-        min-width: 40px;
-        min-height: 40px;
-        font-size: 16px;
-        font-weight: 400;
-        text-decoration: none;
-        text-wrap: nowrap;
-        color: $text-color-main;
-        transition: color 0.3s;
-        &:hover {
-          color: $hover-color;
-        }
+        width: 100%;
         &:hover .radioButton {
           opacity: 1;
         }
         .radioButton {
           opacity: 0;
           transition: opacity 0.3s;
+        }
+        .footerLink {
+          font-size: 16px;
+          font-weight: 400;
+          text-decoration: none;
+          text-wrap: nowrap;
+          color: $text-color-main;
+          &:hover {
+            color: $hover-color;
+          }
         }
       }
     }
@@ -91,7 +93,7 @@ footer {
     display: none;
     text-align: center;
     span {
-      color: #e5e7eb;
+      color: $text-color-accent;
       font-size: 18px;
       font-weight: 400;
       text-align: center;
@@ -107,7 +109,7 @@ footer {
   #middleFooterContainer {
     display: none;
   }
-  footer .footerContent .rightFooterContainer .footerLink {
+  footer .footerContent .rightFooterContainer .radioButtonMask .footerLink {
     font-size: 12px;
   }
   #smallInfos {

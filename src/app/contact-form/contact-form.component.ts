@@ -148,7 +148,7 @@ export class ContactFormComponent {
             console.error(error);
             this.handleResponse(ngForm, false);
           },
-          complete: () => {},
+          complete: () => console.info('send post complete'),
         });
     }
   }

@@ -7,19 +7,8 @@
       (mouseenter)="onMouseEnter()"
       [class.hovered]="hovered"
     >
-      <img class="backgroundEffect" src="/assets/img/capa.png" alt="" role="presentation" loading="lazy" width="568" height="568" />
-      <picture>
-        <source srcset="/assets/img/portrait.webp" type="image/webp">
-        <img 
-          class="portrait" 
-          src="/assets/img/portrait.png" 
-          [attr.alt]="'ABOUT_ME.PORTRAIT_ALT' | translate" 
-          width="800" 
-          height="718" 
-          loading="eager"
-          fetchpriority="high"
-        />
-      </picture>
+      <img class="backgroundEffect" src="/assets/img/capa.png" alt="" role="presentation" />
+      <img class="portrait" src="/assets/img/portrait.png" [attr.alt]="'ABOUT_ME.PORTRAIT_ALT' | translate" />
     </div>
 
     <app-section-card
@@ -31,21 +20,21 @@
       [mainText]="'ABOUT_ME.MAIN_TEXT' | translate"
     >
       <div class="highlights marginTop32">
-        <img src="/assets/img/location_icon.png" alt="" role="presentation" loading="lazy" />
+        <img src="/assets/img/location_icon.png" alt="" role="presentation" />
         <span class="highlightText fontKarla">{{
           "ABOUT_ME.FLEXIBLE_WORK" | translate
         }}</span>
       </div>
 
       <div class="highlights">
-        <img src="/assets/img/mind_icon.png" alt="" role="presentation" loading="lazy" />
+        <img src="/assets/img/mind_icon.png" alt="" role="presentation" />
         <span class="highlightText fontKarla">{{
           "ABOUT_ME.OPEN_MINDED" | translate
         }}</span>
       </div>
 
       <div class="highlights">
-        <img src="/assets/img/checked_gear_icon.png" alt="" role="presentation" loading="lazy" />
+        <img src="/assets/img/checked_gear_icon.png" alt="" role="presentation" />
         <span class="highlightText fontKarla">{{
           "ABOUT_ME.PROBLEM_SOLVING" | translate
         }}</span>

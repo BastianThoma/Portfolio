@@ -49,12 +49,7 @@ export class AppComponent implements OnInit, AfterViewInit {
    */
   ngOnInit(): void {
     Aos.init({
-      easing: 'ease-out',
-      once: true,
-      duration: 300,
-      disable: 'mobile',
-      offset: 0,
-      delay: 0,
+      easing: 'ease-in-out',
     });
   }
 
@@ -63,7 +58,9 @@ export class AppComponent implements OnInit, AfterViewInit {
    * Ensures animations trigger correctly after DOM stabilizes.
    */
   ngAfterViewInit(): void {
-    Aos.refresh();
+    setTimeout(() => {
+      Aos.refresh();
+    }, 300);
   }
 
   /**
