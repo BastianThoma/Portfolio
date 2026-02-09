@@ -83,7 +83,7 @@
 
   <div class="overlay" *ngIf="isPopupVisible" (click)="closePopup()"></div>
   <div class="popup" *ngIf="isPopupVisible" (click)="$event.stopPropagation()">
-    <div class="popupMenu">
+    <div class="popupMenu fontFiraCode">
       <div class="popupMenuLink">
         <a href="#aboutMeSection" (click)="closePopup()" [attr.aria-label]="'MENU.ABOUT_ME_ARIA_LABEL' | translate">{{
           "MENU.ABOUT_ME" | translate
