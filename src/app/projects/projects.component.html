@@ -18,7 +18,12 @@
       </p>
       <div
         class="projectCard borderTopTwoPixel marginTop32"
+        role="button"
+        tabindex="0"
+        [attr.aria-label]="'PROJECTS.POKEDEX_ARIA_LABEL' | translate"
         (click)="popup.showPopupWithIndex(0)"
+        (keydown.enter)="popup.showPopupWithIndex(0)"
+        (keydown.space)="$event.preventDefault(); popup.showPopupWithIndex(0)"
       >
         <div class="cardTitleBox">
           <h4 class="projectTitle fontFiraCode">Pokedex</h4>
@@ -68,7 +73,12 @@
 
       <div
         class="projectCard borderBotTwoPixel"
+        role="button"
+        tabindex="0"
+        [attr.aria-label]="'PROJECTS.EL_POLLO_LOCO_ARIA_LABEL' | translate"
         (click)="popup.showPopupWithIndex(2)"
+        (keydown.enter)="popup.showPopupWithIndex(2)"
+        (keydown.space)="$event.preventDefault(); popup.showPopupWithIndex(2)"
       >
         <div class="cardTitleBox">
           <h4 class="projectTitle fontFiraCode">El Pollo Loco</h4>

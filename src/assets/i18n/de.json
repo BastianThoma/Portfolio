@@ -42,6 +42,8 @@
     "PORTFOLIO": "Portfolio",
     "FEATURED_PROJECTS": "Meine Projekte",
     "EXPLORE_TEXT": "Entdecke hier eine Auswahl meiner Arbeit – Interagiere mit den Projekten, um meine Fähigkeiten in Aktion zu sehen.",
+    "POKEDEX_ARIA_LABEL": "Pokedex-Projektdetails anzeigen",
+    "EL_POLLO_LOCO_ARIA_LABEL": "El Pollo Loco-Projektdetails anzeigen",
     "REWORK_BADGE": "Überarbeitung",
     "REWORK_TITLE": "Überarbeitung",
     "REWORK_DESCRIPTION": "Verbesserte Version in Entwicklung...",
