@@ -5,7 +5,16 @@
     data-aos-duration="950"
   >
     <div class="leftFooterContainer">
-      <div id="footerLogo" class="logo" (click)="scrollToTop()"></div>
+      <div 
+        id="footerLogo" 
+        class="logo" 
+        role="button"
+        tabindex="0"
+        [attr.aria-label]="'FOOTER.SCROLL_TO_TOP_ARIA_LABEL' | translate"
+        (click)="scrollToTop()"
+        (keydown.enter)="scrollToTop()"
+        (keydown.space)="$event.preventDefault(); scrollToTop()"
+      ></div>
       <div id="smallInfos" class="smallInfos">
         <span class="fontKarla">{{ "FOOTER.WEB_DEVELOPER" | translate }}</span>
         <span class="fontKarla">{{ "FOOTER.LOCATION" | translate }}</span>

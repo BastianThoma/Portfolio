@@ -93,6 +93,7 @@
   "FOOTER": {
     "WEB_DEVELOPER": "Webentwickler",
     "LOCATION": "Bispingen, Deutschland",
+    "SCROLL_TO_TOP_ARIA_LABEL": "Zum Seitenanfang scrollen",
     "IMPRINT": "Impressum",
     "PRIVACY_POLICY": "Datenschutz"
   },

@@ -91,6 +91,7 @@
   "FOOTER": {
     "WEB_DEVELOPER": "Web Developer",
     "LOCATION": "Bispingen Germany",
+    "SCROLL_TO_TOP_ARIA_LABEL": "Scroll to top of page",
     "IMPRINT": "Imprint",
     "PRIVACY_POLICY": "Privacy Policy"
   },
