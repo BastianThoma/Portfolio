@@ -130,6 +130,7 @@
         img {
           width: 60px;
           height: 60px;
+          object-fit: contain;
           transition: 0.3s ease;
         }
         &.specialSkill {
@@ -198,6 +199,7 @@
                 img {
                   width: 32px;
                   height: 32px;
+                  object-fit: contain;
                 }
                 p {
                   font-size: 12px;

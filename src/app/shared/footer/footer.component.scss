@@ -61,76 +61,27 @@ footer {
       display: flex;
       flex-direction: column;
       align-items: flex-end;
-      align-self: flex-start;
-      pointer-events: auto;
-      gap: 8px;
+      min-width: 250px;
       
-      .testLink {
+      .footerLink {
+        font-family: "Fira Code";
         font-size: 16px;
         font-weight: 400;
         text-decoration: none;
         color: $text-color-main;
-        width: 100px;
-        height: 48px;
-        line-height: 48px;
-        text-align: center;
-        display: inline-block;
-        position: relative;
+        width: 200px;
+        height: 64px;
+        margin-bottom: 48px;
+        display: block;
+        line-height: 64px;
+        text-align: right;
         
-        &::before {
-          content: '';
-          position: absolute;
-          left: -16px;
-          top: 50%;
-          transform: translateY(-50%);
-          width: 8px;
-          height: 8px;
-          background-image: url('/assets/img/radio_button_unchecked.png');
-          background-size: contain;
-          background-repeat: no-repeat;
-          opacity: 0;
-          transition: opacity 0.3s;
-          pointer-events: none;
+        &:last-child {
+          margin-bottom: 0;
         }
         
         &:hover {
           color: $hover-color;
-          &::before {
-            opacity: 1;
-          }
-        }
-      }
-      
-      .radioButtonMask {
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        gap: 12px;
-        position: relative;
-        &:hover .radioButton {
-          opacity: 1;
-        }
-        .radioButton {
-          opacity: 0;
-          transition: opacity 0.3s;
-          position: absolute;
-          left: 0;
-          pointer-events: none;
-        }
-        .footerLink {
-          font-size: 16px;
-          font-weight: 400;
-          text-decoration: none;
-          text-wrap: nowrap;
-          color: $text-color-main;
-          width: 100px;
-          height: 48px;
-          line-height: 48px;
-          text-align: center;
-          display: block;
-          &:hover {
-            color: $hover-color;
-          }
         }
       }
     }
@@ -158,8 +109,16 @@ footer {
   #middleFooterContainer {
     display: none;
   }
-  footer .footerContent .rightFooterContainer .radioButtonMask .footerLink {
-    font-size: 12px;
+  footer .footerContent .rightFooterContainer {
+    min-width: 200px;
+    
+    .footerLink {
+      font-size: 14px;
+      width: 180px;
+      height: 56px;
+      line-height: 56px;
+      margin-bottom: 20px;
+    }
   }
   #smallInfos {
     span {
