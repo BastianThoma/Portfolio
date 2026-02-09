@@ -1,16 +1,48 @@
 @import "variables";
 
+@keyframes floatContact {
+  0% { transform: translate(0, 0) scale(1) rotate(0deg); }
+  18% { transform: translate(-500px, -120px) scale(1.05) rotate(-5deg); }
+  38% { transform: translate(260px, 210px) scale(0.96) rotate(3deg); }
+  58% { transform: translate(440px, -180px) scale(1.08) rotate(-4deg); }
+  78% { transform: translate(-200px, 150px) scale(0.92) rotate(4deg); }
+  100% { transform: translate(0, 0) scale(1) rotate(0deg); }
+}
+
 .contactContainer {
-  background-color: $background-color-main;
-  background: radial-gradient(
-      circle at 0% center,
-      $shadow-color 2%,
-      transparent 10%
-    ),
-    $background-color-main;
   display: flex;
   justify-content: center;
   margin: 180px 0;
+  position: relative;
+  overflow: visible;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 25%;
+    left: -12%;
+    width: 520px;
+    height: 520px;
+    background: radial-gradient(circle, rgba(90, 165, 246, 0.19), transparent 70%);
+    filter: blur(54px);
+    pointer-events: none;
+    z-index: 0;
+    animation: floatContact 14s ease-in-out infinite;
+  }
+  
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 20%;
+    left: 3%;
+    width: 360px;
+    height: 360px;
+    background: radial-gradient(circle, rgba(56, 189, 248, 0.16), transparent 70%);
+    filter: blur(60px);
+    pointer-events: none;
+    z-index: 0;
+    animation: floatContact 19s ease-in-out infinite reverse;
+  }
   .contactContent {
     display: flex;
     justify-content: space-between;
@@ -18,6 +50,8 @@
     width: 100%;
     max-height: min-content;
     height: 100%;
+    position: relative;
+    z-index: 1;
     .contactMeBox {
       max-width: 570px;
       width: 100%;

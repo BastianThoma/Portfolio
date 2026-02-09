@@ -1,22 +1,56 @@
 @import "variables";
 
+@keyframes floatAboutMe {
+  0% { transform: translate(0, 0) scale(1) rotate(0deg); }
+  20% { transform: translate(350px, -180px) scale(1.08) rotate(3deg); }
+  40% { transform: translate(200px, 120px) scale(0.96) rotate(-2deg); }
+  60% { transform: translate(-280px, 200px) scale(1.05) rotate(4deg); }
+  80% { transform: translate(-400px, -100px) scale(0.93) rotate(-3deg); }
+  100% { transform: translate(0, 0) scale(1) rotate(0deg); }
+}
+
 .aboutMeSection {
-  background-color: $background-color-main;
-  background: radial-gradient(
-      circle at 102% center,
-      $shadow-color 2%,
-      transparent 10%
-    ),
-    $background-color-main;
   display: flex;
   justify-content: center;
   margin: 180px 0;
+  position: relative;
+  overflow: visible;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 10%;
+    right: -5%;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(90, 165, 246, 0.17), transparent 70%);
+    filter: blur(50px);
+    pointer-events: none;
+    z-index: 0;
+    animation: floatAboutMe 11s ease-in-out infinite;
+  }
+  
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 20%;
+    right: 10%;
+    width: 350px;
+    height: 350px;
+    background: radial-gradient(circle, rgba(56, 189, 248, 0.13), transparent 70%);
+    filter: blur(60px);
+    pointer-events: none;
+    z-index: 0;
+    animation: floatAboutMe 16s ease-in-out infinite reverse;
+  }
   .aboutMeContent {
     display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: 1440px;
     width: 100%;
+    position: relative;
+    z-index: 1;
     height: min-content;
     color: $text-color-main;
     .imgBox {

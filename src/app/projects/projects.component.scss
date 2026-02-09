@@ -1,22 +1,55 @@
 @import "variables";
 
+@keyframes floatProjects {
+  0% { transform: translate(0, 0) scale(1) rotate(0deg); }
+  25% { transform: translate(380px, -250px) scale(1.07) rotate(5deg); }
+  50% { transform: translate(-320px, -140px) scale(0.95) rotate(-4deg); }
+  75% { transform: translate(-460px, 190px) scale(1.04) rotate(3deg); }
+  100% { transform: translate(0, 0) scale(1) rotate(0deg); }
+}
+
 .projectsSection {
-  background-color: $background-color-main;
-  background: radial-gradient(
-      circle at 102% center,
-      $shadow-color 2%,
-      transparent 10%
-    ),
-    $background-color-main;
   color: $text-color-accent;
   display: flex;
   justify-content: center;
   margin: 180px 0;
+  position: relative;
+  overflow: visible;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 20%;
+    right: -8%;
+    width: 480px;
+    height: 480px;
+    background: radial-gradient(circle, rgba(90, 165, 246, 0.18), transparent 70%);
+    filter: blur(52px);
+    pointer-events: none;
+    z-index: 0;
+    animation: floatProjects 12s ease-in-out infinite;
+  }
+  
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 15%;
+    right: 8%;
+    width: 380px;
+    height: 380px;
+    background: radial-gradient(circle, rgba(56, 189, 248, 0.14), transparent 70%);
+    filter: blur(58px);
+    pointer-events: none;
+    z-index: 0;
+    animation: floatProjects 17s ease-in-out infinite reverse;
+  }
   .projectsContent {
     max-width: 1440px;
     width: 100%;
     max-height: min-content;
     height: 100%;
+    position: relative;
+    z-index: 1;
     .projectsBox {
       width: 75%;
       h2 {
@@ -131,7 +164,7 @@
           .cardTitleBox {
             .reworkBadge {
               background: linear-gradient(45deg, #ffa500, #ff8c00);
-              color: white;
+              color: $background-color-main;
               padding: 4px 12px;
               border-radius: 16px;
               font-size: 12px;
@@ -141,7 +174,7 @@
               flex-shrink: 0;
               
               span {
-                color: white;
+                color: $background-color-main;
                 font-size: 12px;
               }
             }
@@ -213,7 +246,7 @@
           .cardTitleBox {
             .coming-soon-badge {
               background: linear-gradient(45deg, $hover-color, #ff6b6b);
-              color: white;
+              color: $background-color-main;
               padding: 4px 12px;
               border-radius: 16px;
               font-size: 12px;
@@ -223,7 +256,7 @@
               flex-shrink: 0; // Verhindert Schrumpfung
               
               span {
-                color: white;
+                color: $background-color-main;
                 font-size: 12px;
               }
             }

@@ -24,7 +24,16 @@
       <span class="fontFiraCode">© Bastian Thoma 2025</span>
     </div>
     <div class="rightFooterContainer">
-      <div class="radioButtonMask fontFiraCode">
+      <!-- Test-Link ohne Maske -->
+      <a 
+        class="testLink" 
+        href="https://github.com/BastianThoma"
+        target="_blank"
+        rel="noopener noreferrer"
+        [attr.aria-label]="'FOOTER.GITHUB_ARIA_LABEL' | translate"
+      >GitHub</a>
+      
+      <!-- <div class="radioButtonMask fontFiraCode">
         <img
           class="radioButton hidden"
           src="/assets/img/radio_button_unchecked.png"
@@ -85,7 +94,7 @@
         <a class="footerLink" href="privacy-policy" [attr.aria-label]="'FOOTER.PRIVACY_POLICY_ARIA_LABEL' | translate">{{
           "FOOTER.PRIVACY_POLICY" | translate
         }}</a>
-      </div>
+      </div> -->
     </div>
   </div>
   <div id="middleFooterMobile" class="middleFooterMobile">

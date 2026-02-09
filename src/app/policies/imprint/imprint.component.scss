@@ -35,6 +35,11 @@ section {
   a {
     color: $text-color-accent;
     text-decoration: none;
+    min-height: 48px;
+    min-width: 48px;
+    padding: 12px 8px;
+    display: inline-block;
+    line-height: 24px;
     &:hover {
       color: $hover-color;
     }

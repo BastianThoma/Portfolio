@@ -6,6 +6,30 @@
   overflow: hidden;
   display: flex;
   align-items: center;
+  position: relative;
+  
+  // Fade-out Shadows an den Rändern
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 120px;
+    pointer-events: none;
+    z-index: 1;
+  }
+  
+  &::before {
+    left: 0;
+    background: linear-gradient(to right, rgba(26, 31, 46, 0.5), transparent);
+  }
+  
+  &::after {
+    right: 0;
+    background: linear-gradient(to left, rgba(26, 31, 46, 0.5), transparent);
+  }
+  
   .scrollingContent {
     display: flex;
     white-space: nowrap;
