@@ -138,7 +138,13 @@
       <small>{{ "CONTACT_FORM.PRIVACY_ERROR" | translate }}</small>
     </div>
   </div>
-  <div id="popup" class="popup">
+  <div 
+    id="popup" 
+    class="popup" 
+    role="status" 
+    aria-live="polite" 
+    aria-atomic="true"
+  >
     <span id="popupMessage" class="fontFiraCode"></span>
   </div>
   <button
