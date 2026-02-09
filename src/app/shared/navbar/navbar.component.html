@@ -24,7 +24,7 @@
       </div>
 
       <div class="menuLink fontFiraCode">
-        <a href="#aboutMeSection">{{ "MENU.ABOUT_ME" | translate }}</a>
+        <a href="#aboutMeSection" [attr.aria-label]="'MENU.ABOUT_ME_ARIA_LABEL' | translate">{{ "MENU.ABOUT_ME" | translate }}</a>
         <img
           class="radioButton hidden"
           src="/assets/img/radio_button_unchecked.png"
@@ -35,7 +35,7 @@
         />
       </div>
       <div class="menuLink fontFiraCode">
-        <a href="#skillsSection">{{ "MENU.SKILLS" | translate }}</a>
+        <a href="#skillsSection" [attr.aria-label]="'MENU.SKILLS_ARIA_LABEL' | translate">{{ "MENU.SKILLS" | translate }}</a>
         <img
           class="radioButton hidden"
           src="/assets/img/radio_button_unchecked.png"
@@ -46,7 +46,7 @@
         />
       </div>
       <div class="menuLink fontFiraCode">
-        <a href="#projectsSection">{{ "MENU.PROJECTS" | translate }}</a>
+        <a href="#projectsSection" [attr.aria-label]="'MENU.PROJECTS_ARIA_LABEL' | translate">{{ "MENU.PROJECTS" | translate }}</a>
         <img
           class="radioButton hidden"
           src="/assets/img/radio_button_unchecked.png"
@@ -85,7 +85,7 @@
   <div class="popup" *ngIf="isPopupVisible" (click)="$event.stopPropagation()">
     <div class="popupMenu">
       <div class="popupMenuLink">
-        <a href="#aboutMeSection" (click)="closePopup()">{{
+        <a href="#aboutMeSection" (click)="closePopup()" [attr.aria-label]="'MENU.ABOUT_ME_ARIA_LABEL' | translate">{{
           "MENU.ABOUT_ME" | translate
         }}</a>
         <img
@@ -98,7 +98,7 @@
         />
       </div>
       <div class="popupMenuLink" (click)="closePopup()">
-        <a href="#skillsSection">{{ "MENU.SKILLS" | translate }}</a>
+        <a href="#skillsSection" [attr.aria-label]="'MENU.SKILLS_ARIA_LABEL' | translate">{{ "MENU.SKILLS" | translate }}</a>
         <img
           class="radioButton hidden"
           src="/assets/img/radio_button_unchecked.png"
@@ -109,7 +109,7 @@
         />
       </div>
       <div class="popupMenuLink" (click)="closePopup()">
-        <a href="#projectsSection">{{ "MENU.PROJECTS" | translate }}</a>
+        <a href="#projectsSection" [attr.aria-label]="'MENU.PROJECTS_ARIA_LABEL' | translate">{{ "MENU.PROJECTS" | translate }}</a>
         <img
           class="radioButton hidden"
           src="/assets/img/radio_button_unchecked.png"

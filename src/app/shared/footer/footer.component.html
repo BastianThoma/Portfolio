@@ -38,6 +38,7 @@
           href="https://github.com/BastianThoma"
           target="_blank"
           rel="noopener noreferrer"
+          [attr.aria-label]="'FOOTER.GITHUB_ARIA_LABEL' | translate"
           >GitHub</a
         >
       </div>
@@ -55,6 +56,7 @@
           href="https://www.linkedin.com/in/bastian-thoma"
           target="_blank"
           rel="noopener noreferrer"
+          [attr.aria-label]="'FOOTER.LINKEDIN_ARIA_LABEL' | translate"
           >LinkedIn</a
         >
       </div>
@@ -67,7 +69,7 @@
           alt=""
           role="presentation"
         />
-        <a class="footerLink" href="imprint">{{
+        <a class="footerLink" href="imprint" [attr.aria-label]="'FOOTER.IMPRINT_ARIA_LABEL' | translate">{{
           "FOOTER.IMPRINT" | translate
         }}</a>
       </div>
@@ -80,7 +82,7 @@
           alt=""
           role="presentation"
         />
-        <a class="footerLink" href="privacy-policy">{{
+        <a class="footerLink" href="privacy-policy" [attr.aria-label]="'FOOTER.PRIVACY_POLICY_ARIA_LABEL' | translate">{{
           "FOOTER.PRIVACY_POLICY" | translate
         }}</a>
       </div>

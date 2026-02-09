@@ -1,8 +1,11 @@
 {
   "MENU": {
     "ABOUT_ME": "About Me",
+    "ABOUT_ME_ARIA_LABEL": "Navigate to about me section",
     "SKILLS": "Skills",
+    "SKILLS_ARIA_LABEL": "Navigate to skills section",
     "PROJECTS": "Projects",
+    "PROJECTS_ARIA_LABEL": "Navigate to projects section",
     "MAIN_NAVIGATION": "Main navigation",
     "LOGO_ARIA_LABEL": "Navigate to home page",
     "OPEN_MENU_ARIA_LABEL": "Open navigation menu",
@@ -14,7 +17,10 @@
     "FRONTEND_DEVELOPER": "Frontend Developer",
     "BASTIAN_THOMA": "Bastian Thoma",
     "CHECK_MY_WORK": "Check My Work",
+    "CHECK_MY_WORK_ARIA_LABEL": "Navigate to projects section",
     "CONTACT_ME": "Contact Me",
+    "CONTACT_ME_ARIA_LABEL": "Navigate to contact form",
+    "SCROLL_DOWN_ARIA_LABEL": "Scroll down to about me section",
     "EMAIL_ARIA_LABEL": "Send email to contact@bastian-thoma.de",
     "GITHUB_ARIA_LABEL": "Visit my GitHub profile (opens in new tab)",
     "LINKEDIN_ARIA_LABEL": "Visit my LinkedIn profile (opens in new tab)"
@@ -81,6 +87,7 @@
     "MESSAGE_ERROR_TITLE": "Message cannot be empty. Please provide some details",
     "PRIVACY_POLICY_TEXT1": "I've read the",
     "PRIVACY_POLICY_LINK": "privacy policy",
+    "PRIVACY_POLICY_LINK_ARIA_LABEL": "Read privacy policy (opens privacy policy page)",
     "PRIVACY_POLICY_TEXT2": " and agree to the processing of my data as outlined.",
     "PRIVACY_ERROR": "Please accept the privacy policy.",
     "SUBMIT_BUTTON": "Say Hello ;)",
@@ -92,8 +99,12 @@
     "WEB_DEVELOPER": "Web Developer",
     "LOCATION": "Bispingen Germany",
     "SCROLL_TO_TOP_ARIA_LABEL": "Scroll to top of page",
+    "GITHUB_ARIA_LABEL": "Visit Bastian Thoma on GitHub (opens in new tab)",
+    "LINKEDIN_ARIA_LABEL": "Visit Bastian Thoma on LinkedIn (opens in new tab)",
     "IMPRINT": "Imprint",
-    "PRIVACY_POLICY": "Privacy Policy"
+    "IMPRINT_ARIA_LABEL": "View legal notice and imprint",
+    "PRIVACY_POLICY": "Privacy Policy",
+    "PRIVACY_POLICY_ARIA_LABEL": "View privacy policy"
   },
   "POPUP": {
     "DESCRIPTION_TITLE": "What is this project about?",
@@ -112,7 +123,9 @@
     "TITLE": "Imprint",
     "CONTACT": "Contact",
     "PHONE": "Phone:",
+    "PHONE_ARIA_LABEL": "Call 0160 8322057",
     "EMAIL": "Email:",
+    "EMAIL_ARIA_LABEL": "Send email to contact@bastian-thoma.de",
     "SOURCE": "Source:"
   },
   "PRIVACY_POLICY": {
@@ -142,7 +155,9 @@
     "RESPONSIBLE_NOTICE": "Notice concerning the responsible party",
     "RESPONSIBLE_ENTITY": "The responsible party for data processing on this website is:",
     "RESPONSIBLE_PHONE": "Phone: ",
+    "PHONE_ARIA_LABEL": "Call 0160 8322057",
     "RESPONSIBLE_EMAIL": "Email: ",
+    "EMAIL_ARIA_LABEL": "Send email to contact@bastian-thoma.de",
     "RESPONSIBLE_ENTITY_TEXT": "The responsible party is the natural or legal person who alone or jointly with others decides on the purposes and means of processing personal data (e.g., names, email addresses, etc.).",
     "STORAGE_DURATION": "Storage Duration",
     "STORAGE_DURATION_TEXT": "Unless a more specific storage period has been specified within this privacy policy, your personal data will remain with us until the purpose for data processing no longer applies. If you assert a legitimate request for deletion or revoke your consent to data processing, your data will be deleted unless we have other legally permissible reasons for storing your personal data (e.g., tax or commercial law retention periods); in the latter case, the deletion will take place after these reasons cease to apply.",

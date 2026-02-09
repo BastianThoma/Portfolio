@@ -63,10 +63,10 @@
     </p>
     <p>
       {{ "PRIVACY_POLICY.RESPONSIBLE_PHONE" | translate }}
-      <a href="tel:01608322057">0160/8322057</a>
+      <a href="tel:01608322057" [attr.aria-label]="'PRIVACY_POLICY.PHONE_ARIA_LABEL' | translate">0160/8322057</a>
       <br />
       {{ "PRIVACY_POLICY.RESPONSIBLE_EMAIL" | translate }}
-      <a href="mailto:contact@bastian-thoma.de">contact&#64;bastian-thoma.de</a>
+      <a href="mailto:contact@bastian-thoma.de" [attr.aria-label]="'PRIVACY_POLICY.EMAIL_ARIA_LABEL' | translate">contact&#64;bastian-thoma.de</a>
     </p>
     <p>{{ "PRIVACY_POLICY.RESPONSIBLE_ENTITY_TEXT" | translate }}</p>
     <h3>{{ "PRIVACY_POLICY.STORAGE_DURATION" | translate }}</h3>

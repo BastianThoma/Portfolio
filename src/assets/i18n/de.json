@@ -1,8 +1,11 @@
 {
   "MENU": {
     "ABOUT_ME": "Über mich",
+    "ABOUT_ME_ARIA_LABEL": "Zur Über-mich-Sektion navigieren",
     "SKILLS": "Fähigkeiten",
+    "SKILLS_ARIA_LABEL": "Zur Fähigkeiten-Sektion navigieren",
     "PROJECTS": "Projekte",
+    "PROJECTS_ARIA_LABEL": "Zur Projekt-Sektion navigieren",
     "MAIN_NAVIGATION": "Hauptnavigation",
     "LOGO_ARIA_LABEL": "Zur Startseite navigieren",
     "OPEN_MENU_ARIA_LABEL": "Navigationsmenü öffnen",
@@ -14,7 +17,10 @@
     "FRONTEND_DEVELOPER": "Frontend Entwickler",
     "BASTIAN_THOMA": "Bastian Thoma",
     "CHECK_MY_WORK": "Meine Arbeit",
+    "CHECK_MY_WORK_ARIA_LABEL": "Zur Projektsektion navigieren",
     "CONTACT_ME": "Schreib mir",
+    "CONTACT_ME_ARIA_LABEL": "Zum Kontaktformular navigieren",
+    "SCROLL_DOWN_ARIA_LABEL": "Nach unten zur Über-mich-Sektion scrollen",
     "EMAIL_ARIA_LABEL": "E-Mail an contact@bastian-thoma.de senden",
     "GITHUB_ARIA_LABEL": "Mein GitHub-Profil besuchen (öffnet in neuem Tab)",
     "LINKEDIN_ARIA_LABEL": "Mein LinkedIn-Profil besuchen (öffnet in neuem Tab)"
@@ -83,6 +89,7 @@
     "MESSAGE_ERROR_TITLE": "Nachricht darf nicht leer sein. Bitte gib Details an",
     "PRIVACY_POLICY_TEXT1": "Ich habe die",
     "PRIVACY_POLICY_LINK": "Datenschutzerklärung",
+    "PRIVACY_POLICY_LINK_ARIA_LABEL": "Datenschutzerklärung lesen (öffnet Datenschutzseite)",
     "PRIVACY_POLICY_TEXT2": "gelesen und stimme der Verarbeitung meiner Daten gemäß dieser zu.",
     "PRIVACY_ERROR": "Bitte akzeptiere die Datenschutzrichtlinie.",
     "SUBMIT_BUTTON": "Sag Hallo ;)",
@@ -94,8 +101,12 @@
     "WEB_DEVELOPER": "Webentwickler",
     "LOCATION": "Bispingen, Deutschland",
     "SCROLL_TO_TOP_ARIA_LABEL": "Zum Seitenanfang scrollen",
+    "GITHUB_ARIA_LABEL": "Bastian Thoma auf GitHub besuchen (öffnet in neuem Tab)",
+    "LINKEDIN_ARIA_LABEL": "Bastian Thoma auf LinkedIn besuchen (öffnet in neuem Tab)",
     "IMPRINT": "Impressum",
-    "PRIVACY_POLICY": "Datenschutz"
+    "IMPRINT_ARIA_LABEL": "Impressum und rechtliche Hinweise anzeigen",
+    "PRIVACY_POLICY": "Datenschutz",
+    "PRIVACY_POLICY_ARIA_LABEL": "Datenschutzerklärung anzeigen"
   },
   "POPUP": {
     "DESCRIPTION_TITLE": "Worum geht es in diesem Projekt?",
@@ -114,7 +125,9 @@
     "TITLE": "Impressum",
     "CONTACT": "Kontakt",
     "PHONE": "Telefon:",
+    "PHONE_ARIA_LABEL": "Anrufen 0160 8322057",
     "EMAIL": "E-Mail:",
+    "EMAIL_ARIA_LABEL": "E-Mail an contact@bastian-thoma.de senden",
     "SOURCE": "Quelle:"
   },
   "PRIVACY_POLICY": {
@@ -144,7 +157,9 @@
     "RESPONSIBLE_NOTICE": "Hinweis zur verantwortlichen Stelle",
     "RESPONSIBLE_ENTITY": "Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:",
     "RESPONSIBLE_PHONE": "Telefon: ",
+    "PHONE_ARIA_LABEL": "Anrufen 0160 8322057",
     "RESPONSIBLE_EMAIL": "E-Mail: ",
+    "EMAIL_ARIA_LABEL": "E-Mail an contact@bastian-thoma.de senden",
     "RESPONSIBLE_ENTITY_TEXT": "Verantwortliche Stelle ist die natürliche oder juristische Person, die allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z. B. Namen, E-Mail-Adressen o. Ä.) entscheidet.",
     "STORAGE_DURATION": "Speicherdauer",
     "STORAGE_DURATION_TEXT": "Soweit innerhalb dieser Datenschutzerklärung keine speziellere Speicherdauer genannt wurde, verbleiben Ihre personenbezogenen Daten bei uns, bis der Zweck für die Datenverarbeitung entfällt. Wenn Sie ein berechtigtes Löschersuchen geltend machen oder eine Einwilligung zur Datenverarbeitung widerrufen, werden Ihre Daten gelöscht, sofern wir keine anderen rechtlich zulässigen Gründe für die Speicherung Ihrer personenbezogenen Daten haben (z. B. steuer- oder handelsrechtliche Aufbewahrungsfristen); im letztgenannten Fall erfolgt die Löschung nach Fortfall dieser Gründe.",

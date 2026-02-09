@@ -117,7 +117,7 @@
       </div>
       <span id="checkBoxText" class="checkBoxText fontKarla">
         {{ "CONTACT_FORM.PRIVACY_POLICY_TEXT1" | translate }}
-        <a href="privacy-policy" class="fontFiraCode">{{
+        <a href="privacy-policy" class="fontFiraCode" [attr.aria-label]="'CONTACT_FORM.PRIVACY_POLICY_LINK_ARIA_LABEL' | translate">{{
           "CONTACT_FORM.PRIVACY_POLICY_LINK" | translate
         }}</a>
         {{ "CONTACT_FORM.PRIVACY_POLICY_TEXT2" | translate }}

@@ -11,10 +11,10 @@
           {{ "LANDING_PAGE.BASTIAN_THOMA" | translate }}
         </h2>
         <div id="forwardingButtonBox" class="forwardingButtonBox">
-          <a href="#projectsSection" class="fontKarla"
+          <a href="#projectsSection" class="fontKarla" [attr.aria-label]="'LANDING_PAGE.CHECK_MY_WORK_ARIA_LABEL' | translate"
             ><span>{{ "LANDING_PAGE.CHECK_MY_WORK" | translate }}</span></a
           >
-          <a class="fontKarla" (click)="scrollToContactForm()"
+          <a class="fontKarla" [attr.aria-label]="'LANDING_PAGE.CONTACT_ME_ARIA_LABEL' | translate" (click)="scrollToContactForm()"
             ><span>{{ "LANDING_PAGE.CONTACT_ME" | translate }}</span></a
           >
         </div>
@@ -22,10 +22,11 @@
     </div>
     <div class="lateralContainer">
       <div class="scrollDownHelper">
-        <a href="#aboutMeSection" class="arrowBox">
+        <a href="#aboutMeSection" class="arrowBox" [attr.aria-label]="'LANDING_PAGE.SCROLL_DOWN_ARIA_LABEL' | translate">
           <img
             src="/assets/img/arrow_down.png"
-            alt="Arrow Down"
+            alt=""
+            role="presentation"
             height="16px"
           />
         </a>
