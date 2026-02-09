@@ -22,8 +22,15 @@ import Aos from 'aos';
 export class AppComponent implements OnInit, AfterViewInit {
   constructor(private translate: TranslateService) {
     this.translate.addLangs(['en', 'de']);
-    this.translate.setDefaultLang('en');
-    this.translate.use('en');
+    
+    let browserLang = navigator.language.split('-')[0];
+    let currentLang =
+      localStorage.getItem('language') ||
+      (['de', 'en'].includes(browserLang) ? browserLang : 'en');
+    
+    this.translate.setDefaultLang(currentLang);
+    this.translate.use(currentLang);
+    document.documentElement.lang = currentLang;
   }
 
   title = 'Portfolio';
