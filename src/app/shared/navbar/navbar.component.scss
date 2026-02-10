@@ -164,7 +164,7 @@
     width: 84px;
     height: 28px;
     border-radius: 100px;
-    border: 2px solid $border-color;
+    border: 2px solid $text-color-accent;
     display: flex;
     .popupButton {
       height: 28px;
@@ -172,12 +172,12 @@
       border-radius: 100px;
       border: 0;
       background-color: transparent;
-      color: $text-color-secondary;
+      color: $text-color-main;
       cursor: pointer;
       &.selected {
         font-weight: 700;
-        background-color: $border-color;
-        color: $text-color-main;
+        background-color: $text-color-accent;
+        color: $background-color-main;
       }
     }
   }

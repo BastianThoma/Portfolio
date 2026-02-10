@@ -49,7 +49,9 @@
     "FEATURED_PROJECTS": "Meine Projekte",
     "EXPLORE_TEXT": "Entdecke hier eine Auswahl meiner Arbeit – Interagiere mit den Projekten, um meine Fähigkeiten in Aktion zu sehen.",
     "POKEDEX_ARIA_LABEL": "Pokedex-Projektdetails anzeigen",
+    "POKEDEX_ALT": "Pokedex-Webanwendung zeigt Pokemon-Karten und Suchoberfläche",
     "EL_POLLO_LOCO_ARIA_LABEL": "El Pollo Loco-Projektdetails anzeigen",
+    "EL_POLLO_LOCO_ALT": "El Pollo Loco Spiel zeigt springende Figur beim Sammeln von Gegenständen",
     "REWORK_BADGE": "Überarbeitung",
     "REWORK_TITLE": "Überarbeitung",
     "REWORK_DESCRIPTION": "Verbesserte Version in Entwicklung...",
@@ -113,7 +115,10 @@
     "DESCRIPTION1": "Ein interaktiver Pokedex, inspiriert vom Pokémon-Universum. Suche, entdecke und sieh dir Details zu Pokémon an, die mit Daten aus der PokéAPI abgerufen werden. Die App bietet eine flüssige Navigation, detaillierte Pokémon-Statistiken und visuelle Darstellungen, die ein nahtloses Erlebnis für Pokémon-Enthusiasten bieten.",
     "DESCRIPTION2": "Ein Aufgabenmanager, inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben mithilfe von Drag-and-Drop-Funktionen, weise Benutzern und Kategorien zu.",
     "DESCRIPTION3": "Ein Jump-, Run- und Wurfspiel, das auf einem objektorientierten Ansatz basiert. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen das verrückte Huhn zu kämpfen.",
-    "NEXT_PROJECT": "Nächstes Projekt"
+    "NEXT_PROJECT": "Nächstes Projekt",
+    "POKEDEX_IMG_ALT": "Pokedex-Anwendungsoberfläche zeigt Pokemon-Suche und Details",
+    "JOIN_IMG_ALT": "Join Aufgabenverwaltungs-Board mit Kanban-Spalten",
+    "EL_POLLO_LOCO_IMG_ALT": "El Pollo Loco Spiel zeigt Pepe beim Überspringen von Hindernissen"
   },
   "SCROLLING_BANNER": {
     "FRONTEND_DEVELOPER": "Frontend Entwickler",

@@ -47,7 +47,9 @@
     "FEATURED_PROJECTS": "Featured Projects",
     "EXPLORE_TEXT": "Explore a selection of my work here - Interact with projects to see my skills in action.",
     "POKEDEX_ARIA_LABEL": "View Pokedex project details",
+    "POKEDEX_ALT": "Pokedex web application displaying Pokemon cards and search interface",
     "EL_POLLO_LOCO_ARIA_LABEL": "View El Pollo Loco project details",
+    "EL_POLLO_LOCO_ALT": "El Pollo Loco game showing character jumping and collecting items",
     "REWORK_BADGE": "Rework",
     "REWORK_TITLE": "Rework",
     "REWORK_DESCRIPTION": "Enhanced version in development...",
@@ -111,7 +113,10 @@
     "DESCRIPTION1": "An interactive Pokedex inspired by the Pokémon universe. Search, explore, and view details about Pokémon using data from the PokéAPI. The app features smooth navigation, detailed Pokémon stats, and visuals, providing a seamless experience for Pokémon enthusiasts.",
     "DESCRIPTION2": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
     "DESCRIPTION3": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.",
-    "NEXT_PROJECT": "Next Project"
+    "NEXT_PROJECT": "Next Project",
+    "POKEDEX_IMG_ALT": "Pokedex application interface showing Pokemon search and details",
+    "JOIN_IMG_ALT": "Join task management board with Kanban columns",
+    "EL_POLLO_LOCO_IMG_ALT": "El Pollo Loco game showing Pepe jumping over obstacles"
   },
   "SCROLLING_BANNER": {
     "FRONTEND_DEVELOPER": "Frontend Developer",

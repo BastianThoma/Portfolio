@@ -24,7 +24,7 @@
       </div>
 
       <div class="menuLink fontFiraCode">
-        <a href="#aboutMeSection" [attr.aria-label]="'MENU.ABOUT_ME_ARIA_LABEL' | translate">{{ "MENU.ABOUT_ME" | translate }}</a>
+        <a [href]="getNavLink('#aboutMeSection')" [attr.aria-label]="'MENU.ABOUT_ME_ARIA_LABEL' | translate">{{ "MENU.ABOUT_ME" | translate }}</a>
         <img
           class="radioButton hidden"
           src="/assets/img/point.svg"
@@ -35,7 +35,7 @@
         />
       </div>
       <div class="menuLink fontFiraCode">
-        <a href="#skillsSection" [attr.aria-label]="'MENU.SKILLS_ARIA_LABEL' | translate">{{ "MENU.SKILLS" | translate }}</a>
+        <a [href]="getNavLink('#skillsSection')" [attr.aria-label]="'MENU.SKILLS_ARIA_LABEL' | translate">{{ "MENU.SKILLS" | translate }}</a>
         <img
           class="radioButton hidden"
           src="/assets/img/point.svg"
@@ -46,7 +46,7 @@
         />
       </div>
       <div class="menuLink fontFiraCode">
-        <a href="#projectsSection" [attr.aria-label]="'MENU.PROJECTS_ARIA_LABEL' | translate">{{ "MENU.PROJECTS" | translate }}</a>
+        <a [href]="getNavLink('#projectsSection')" [attr.aria-label]="'MENU.PROJECTS_ARIA_LABEL' | translate">{{ "MENU.PROJECTS" | translate }}</a>
         <img
           class="radioButton hidden"
           src="/assets/img/point.svg"
@@ -85,7 +85,7 @@
   <div class="popup" *ngIf="isPopupVisible" (click)="$event.stopPropagation()">
     <div class="popupMenu fontFiraCode">
       <div class="popupMenuLink">
-        <a href="#aboutMeSection" (click)="closePopup()" [attr.aria-label]="'MENU.ABOUT_ME_ARIA_LABEL' | translate">{{
+        <a [href]="getNavLink('#aboutMeSection')" (click)="closePopup()" [attr.aria-label]="'MENU.ABOUT_ME_ARIA_LABEL' | translate">{{
           "MENU.ABOUT_ME" | translate
         }}</a>
         <img
@@ -98,7 +98,7 @@
         />
       </div>
       <div class="popupMenuLink" (click)="closePopup()">
-        <a href="#skillsSection" [attr.aria-label]="'MENU.SKILLS_ARIA_LABEL' | translate">{{ "MENU.SKILLS" | translate }}</a>
+        <a [href]="getNavLink('#skillsSection')" [attr.aria-label]="'MENU.SKILLS_ARIA_LABEL' | translate">{{ "MENU.SKILLS" | translate }}</a>
         <img
           class="radioButton hidden"
           src="/assets/img/point.svg"
@@ -109,7 +109,7 @@
         />
       </div>
       <div class="popupMenuLink" (click)="closePopup()">
-        <a href="#projectsSection" [attr.aria-label]="'MENU.PROJECTS_ARIA_LABEL' | translate">{{ "MENU.PROJECTS" | translate }}</a>
+        <a [href]="getNavLink('#projectsSection')" [attr.aria-label]="'MENU.PROJECTS_ARIA_LABEL' | translate">{{ "MENU.PROJECTS" | translate }}</a>
         <img
           class="radioButton hidden"
           src="/assets/img/point.svg"

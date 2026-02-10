@@ -21,7 +21,7 @@
 
       <div id="techStack" class="techStack fontKarla">
         <div *ngFor="let tech of currentProject.techStack">
-          <img [src]="tech.icon" [alt]="tech.name" />
+          <img [src]="tech.icon" alt="" role="presentation" />
           <span>{{ tech.name }}</span>
         </div>
       </div>
@@ -29,11 +29,11 @@
       <div id="popupButtons" class="popupButtons">
         <button (click)="openLink(currentProject.githubLink)">
           <span>GitHub</span>
-          <img src="/assets/img/arrow_outward_colored.png" alt="Arrow Top Right" />
+          <img src="/assets/img/arrow_outward_colored.png" alt="" role="presentation" />
         </button>
         <button (click)="openLink(currentProject.liveTestLink)">
           <span>Live Test</span>
-          <img src="/assets/img/arrow_outward_colored.png" alt="Arrow Top Right" />
+          <img src="/assets/img/arrow_outward_colored.png" alt="" role="presentation" />
         </button>
       </div>
     </div>
@@ -43,7 +43,7 @@
       (click)="nextProject()"
     >
       <span>{{ "POPUP.NEXT_PROJECT" | translate }}</span>
-      <img src="/assets/img/arrow_forward_colored.png" alt="Next Project Button" />
+      <img src="/assets/img/arrow_forward_colored.png" alt="" role="presentation" />
     </div>
 
     <div id="imageBox" class="imageBox">
@@ -54,14 +54,14 @@
       <img
         class="projectPreviewImg"
         [src]="currentProject.projectImage"
-        alt="Project Preview Image"
+        [attr.alt]="currentProject.projectImageAlt | translate"
       />
       <div
         class="nextButtonBox fontKarla"
         (click)="nextProject()"
       >
         <span>{{ "POPUP.NEXT_PROJECT" | translate }}</span>
-        <img src="/assets/img/arrow_forward_colored.png" alt="Next Project Button" />
+        <img src="/assets/img/arrow_forward_colored.png" alt="" role="presentation" />
       </div>
     </div>
   </div>

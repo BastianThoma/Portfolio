@@ -20,6 +20,7 @@ export class PopupComponent {
       projectDescriptionTitle: 'POPUP.DESCRIPTION_TITLE',
       projectDescription: 'POPUP.DESCRIPTION1',
       projectImage: '/assets/img/pokedex.png',
+      projectImageAlt: 'POPUP.POKEDEX_IMG_ALT',
       githubLink: 'https://github.com/BastianThoma/PokeDex',
       liveTestLink: '/projects/pokedex',
       techStack: [
@@ -38,6 +39,7 @@ export class PopupComponent {
       projectDescriptionTitle: 'POPUP.DESCRIPTION_TITLE',
       projectDescription: 'POPUP.DESCRIPTION2',
       projectImage: '/assets/img/join.png',
+      projectImageAlt: 'POPUP.JOIN_IMG_ALT',
       githubLink: 'https://github.com/BastianThoma/join',
       liveTestLink: '/projects/join/Login.html',
       techStack: [
@@ -55,6 +57,7 @@ export class PopupComponent {
       projectDescriptionTitle: 'POPUP.DESCRIPTION_TITLE',
       projectDescription: 'POPUP.DESCRIPTION3',
       projectImage: '/assets/img/el_pollo_loco.png',
+      projectImageAlt: 'POPUP.EL_POLLO_LOCO_IMG_ALT',
       githubLink: 'https://github.com/BastianThoma/El-Pollo-Loco',
       liveTestLink: '/projects/el-pollo-loco',
       techStack: [

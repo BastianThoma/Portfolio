@@ -65,4 +65,8 @@ export class NavbarComponent {
       this.router.navigate(['/']);
     }
   }
+
+  getNavLink(anchor: string): string {
+    return this.router.url === '/' ? anchor : '/' + anchor;
+  }
 }
