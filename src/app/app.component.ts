@@ -4,6 +4,7 @@ import { RouterOutlet } from '@angular/router';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { Meta, Title } from '@angular/platform-browser';
 import Aos from 'aos';
 
 @Component({
@@ -20,7 +21,11 @@ import Aos from 'aos';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit, AfterViewInit {
-  constructor(private translate: TranslateService) {
+  constructor(
+    private translate: TranslateService,
+    private meta: Meta,
+    private titleService: Title
+  ) {
     this.translate.addLangs(['en', 'de']);
     
     let browserLang = navigator.language.split('-')[0];
@@ -31,6 +36,10 @@ export class AppComponent implements OnInit, AfterViewInit {
     this.translate.setDefaultLang(currentLang);
     this.translate.use(currentLang);
     document.documentElement.lang = currentLang;
+
+    this.translate.onLangChange.subscribe(() => {
+      this.updateMetaTags();
+    });
   }
 
   title = 'Portfolio';
@@ -38,6 +47,30 @@ export class AppComponent implements OnInit, AfterViewInit {
   ngOnInit(): void {
     Aos.init({
       easing: 'ease-in-out',
+    });
+    this.updateMetaTags();
+  }
+
+  updateMetaTags(): void {
+    this.translate.get([
+      'SEO.TITLE',
+      'SEO.DESCRIPTION',
+      'SEO.KEYWORDS',
+      'SEO.OG_TITLE',
+      'SEO.OG_DESCRIPTION'
+    ]).subscribe(translations => {
+      this.titleService.setTitle(translations['SEO.TITLE']);
+
+      this.meta.updateTag({ name: 'title', content: translations['SEO.TITLE'] });
+      this.meta.updateTag({ name: 'description', content: translations['SEO.DESCRIPTION'] });
+      this.meta.updateTag({ name: 'keywords', content: translations['SEO.KEYWORDS'] });
+
+      this.meta.updateTag({ property: 'og:title', content: translations['SEO.OG_TITLE'] });
+      this.meta.updateTag({ property: 'og:description', content: translations['SEO.OG_DESCRIPTION'] });
+      this.meta.updateTag({ property: 'og:locale', content: this.translate.currentLang === 'de' ? 'de_DE' : 'en_US' });
+
+      this.meta.updateTag({ property: 'twitter:title', content: translations['SEO.OG_TITLE'] });
+      this.meta.updateTag({ property: 'twitter:description', content: translations['SEO.OG_DESCRIPTION'] });
     });
   }
 

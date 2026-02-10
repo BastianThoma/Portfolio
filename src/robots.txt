@@ -1,0 +1,11 @@
+# robots.txt for bastian-thoma.de
+# Allow all crawlers to index the site
+
+User-agent: *
+Allow: /
+
+# Disallow admin or internal pages if any
+# Disallow: /admin/
+
+# Sitemap location
+Sitemap: https://bastian-thoma.de/sitemap.xml

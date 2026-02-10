@@ -194,5 +194,12 @@
     "DATA_PROCESSING_LEGAL_BASIS": "The processing of this data is based on Art. 6 para. 1 lit. b GDPR, if your inquiry is related to the fulfillment of a contract or is necessary for the implementation of pre-contractual measures. In all other cases, the processing is based on our legitimate interest in the effective processing of the inquiries addressed to us (Art. 6 para. 1 lit. f GDPR) or on your consent (Art. 6 para. 1 lit. a GDPR) if this has been requested; the consent can be revoked at any time.",
     "DATA_RETENTION": "The data you send to us via contact inquiries will remain with us until you request us to delete it, revoke your consent to storage, or the purpose for data storage no longer applies (e.g., after your request has been processed). Mandatory legal provisions – especially legal retention periods – remain unaffected.",
     "SOURCE": "Source: "
+  },
+  "SEO": {
+    "TITLE": "Bastian Thoma - Frontend Developer | Angular, TypeScript, JavaScript",
+    "DESCRIPTION": "Frontend Developer from Bispingen, Germany. Specialized in Angular, TypeScript, and modern web development. Creating visually captivating and intuitive websites and applications.",
+    "KEYWORDS": "Frontend Developer, Angular Developer, TypeScript, JavaScript, Web Developer, Bispingen, Germany, Portfolio, Software Engineer",
+    "OG_TITLE": "Bastian Thoma - Frontend Developer | Angular, TypeScript, JavaScript",
+    "OG_DESCRIPTION": "Frontend Developer from Bispingen, Germany. Specialized in Angular, TypeScript, and modern web development."
   }
 }
