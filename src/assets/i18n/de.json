@@ -202,6 +202,10 @@
     "DESCRIPTION": "Frontend Entwickler aus Bispingen, Deutschland. Spezialisiert auf Angular, TypeScript und moderne Webentwicklung. Ich erstelle visuell ansprechende und intuitive Websites und Anwendungen.",
     "KEYWORDS": "Frontend Entwickler, Angular Entwickler, TypeScript, JavaScript, Webentwickler, Bispingen, Deutschland, Portfolio, Software Entwickler",
     "OG_TITLE": "Bastian Thoma - Frontend Entwickler | Angular, TypeScript, JavaScript",
-    "OG_DESCRIPTION": "Frontend Entwickler aus Bispingen, Deutschland. Spezialisiert auf Angular, TypeScript und moderne Webentwicklung."
+    "OG_DESCRIPTION": "Frontend Entwickler aus Bispingen, Deutschland. Spezialisiert auf Angular, TypeScript und moderne Webentwicklung.",
+    "IMPRINT_TITLE": "Impressum - Bastian Thoma",
+    "IMPRINT_DESCRIPTION": "Rechtliche Informationen und Kontaktdaten für Bastian Thoma, Frontend Entwickler aus Bispingen, Deutschland.",
+    "PRIVACY_TITLE": "Datenschutzerklärung - Bastian Thoma",
+    "PRIVACY_DESCRIPTION": "Datenschutzerklärung und Informationen zum Datenschutz für die Portfolio-Website bastian-thoma.de."
   }
 }
