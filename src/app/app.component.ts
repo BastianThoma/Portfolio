@@ -71,6 +71,32 @@ export class AppComponent implements OnInit, AfterViewInit {
 
       this.meta.updateTag({ property: 'twitter:title', content: translations['SEO.OG_TITLE'] });
       this.meta.updateTag({ property: 'twitter:description', content: translations['SEO.OG_DESCRIPTION'] });
+
+      // Hreflang Tags
+      this.updateHreflangTags('/');
+    });
+  }
+
+  updateHreflangTags(path: string): void {
+    const baseUrl = 'https://bastian-thoma.de';
+    
+    // Remove existing hreflang tags
+    const existingTags = document.querySelectorAll('link[hreflang]');
+    existingTags.forEach(tag => tag.remove());
+
+    // Add new hreflang tags
+    const hreflangTags = [
+      { hreflang: 'de', href: `${baseUrl}${path}` },
+      { hreflang: 'en', href: `${baseUrl}${path}` },
+      { hreflang: 'x-default', href: `${baseUrl}${path}` }
+    ];
+
+    hreflangTags.forEach(tag => {
+      const link = document.createElement('link');
+      link.setAttribute('rel', 'alternate');
+      link.setAttribute('hreflang', tag.hreflang);
+      link.setAttribute('href', tag.href);
+      document.head.appendChild(link);
     });
   }
 

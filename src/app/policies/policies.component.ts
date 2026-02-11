@@ -32,6 +32,7 @@ export class PoliciesComponent implements OnInit {
     const isImprint = this.router.url.includes('imprint');
     const titleKey = isImprint ? 'SEO.IMPRINT_TITLE' : 'SEO.PRIVACY_TITLE';
     const descKey = isImprint ? 'SEO.IMPRINT_DESCRIPTION' : 'SEO.PRIVACY_DESCRIPTION';
+    const path = isImprint ? '/imprint' : '/privacy-policy';
 
     this.translate.get([titleKey, descKey]).subscribe(translations => {
       this.titleService.setTitle(translations[titleKey]);
@@ -43,8 +44,34 @@ export class PoliciesComponent implements OnInit {
       this.meta.updateTag({ property: 'twitter:description', content: translations[descKey] });
       
       // Update canonical URL
-      const canonicalUrl = `https://bastian-thoma.de${this.router.url.split('?')[0]}`;
+      const canonicalUrl = `https://bastian-thoma.de${path}`;
       this.meta.updateTag({ rel: 'canonical', href: canonicalUrl });
+
+      // Update hreflang tags
+      this.updateHreflangTags(path);
+    });
+  }
+
+  updateHreflangTags(path: string): void {
+    const baseUrl = 'https://bastian-thoma.de';
+    
+    // Remove existing hreflang tags
+    const existingTags = document.querySelectorAll('link[hreflang]');
+    existingTags.forEach(tag => tag.remove());
+
+    // Add new hreflang tags
+    const hreflangTags = [
+      { hreflang: 'de', href: `${baseUrl}${path}` },
+      { hreflang: 'en', href: `${baseUrl}${path}` },
+      { hreflang: 'x-default', href: `${baseUrl}${path}` }
+    ];
+
+    hreflangTags.forEach(tag => {
+      const link = document.createElement('link');
+      link.setAttribute('rel', 'alternate');
+      link.setAttribute('hreflang', tag.hreflang);
+      link.setAttribute('href', tag.href);
+      document.head.appendChild(link);
     });
   }
 }
