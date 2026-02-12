@@ -1,0 +1,20 @@
+{
+  "name": "Bastian Thoma - Frontend Developer Portfolio",
+  "short_name": "Bastian Thoma",
+  "description": "Frontend Developer Portfolio showcasing Angular, TypeScript and JavaScript projects",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f1419",
+  "theme_color": "#1a1f2e",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    }
+  ],
+  "lang": "en",
+  "dir": "ltr",
+  "categories": ["portfolio", "developer", "technology"]
+}
