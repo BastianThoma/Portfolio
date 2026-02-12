@@ -81,21 +81,16 @@
       font-size: 18px;
       font-weight: 400;
       overflow: hidden;
-      a {
-        text-decoration: none;
-        color: $text-color-main;
-        span {
-          display: inline-block;
-          white-space: nowrap;
-          transform: translateX(0);
-          opacity: 1;
-          transition: none;
-        }
+      color: $text-color-main;
+      span {
+        display: inline-block;
+        white-space: nowrap;
+        transform: translateX(0);
+        opacity: 1;
+        transition: none;
       }
       &:hover {
-        a {
-          color: $hover-color;
-        }
+        color: $hover-color;
         border: solid 2px $hover-color;
         cursor: pointer;
         span {
