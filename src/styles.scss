@@ -50,10 +50,17 @@ select:focus {
   outline-offset: 2px;
 }
 
+html {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
 body {
   margin: 0;
   background-color: $background-color-main;
   overflow-x: hidden;
+  max-width: 100vw;
+  position: relative;
   --sb-track-color: #2c3e50;
   --sb-thumb-color: #4a90e2;
   --sb-size: 10px;
