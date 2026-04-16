@@ -29,19 +29,19 @@
     "WHO_I_AM": "Wer ich bin",
     "ABOUT_ME": "Über mich",
     "PORTRAIT_ALT": "Portraitfoto von Bastian Thoma, Frontend Entwickler",
-    "MAIN_TEXT": "Hallo, ich bin ein deutschsprachiger Frontend Entwickler aus Bispingen. Motiviert von den grenzenlosen Möglichkeiten in der IT freue ich mich darauf, visuell ansprechende und intuitive Websites und Anwendungen zu erstellen.",
-    "FLEXIBLE_WORK": "Flexibel in Bezug auf Arbeitsumgebungen kann ich sowohl vor Ort in Bispingen als auch remote effektiv arbeiten.",
-    "OPEN_MINDED": "Ich bin aufgeschlossen und stets auf der Suche nach persönlichen Herausforderungen, um mein Wissen und meine Fähigkeiten kontinuierlich zu verbessern.",
-    "PROBLEM_SOLVING": "In meinem Beruf geht es beim Programmieren nicht nur um das Schreiben von Code; es ist eine kreative Form der Problemlösung. Ich bin stolz darauf, komplexe technische Herausforderungen in einfache, benutzerfreundliche Lösungen zu übersetzen. So helfe ich Ihnen, Ihre Ziele zu erreichen und Ihre Visionen zum Leben zu erwecken."
+    "MAIN_TEXT": "Hi, ich bin Bastian – Frontend Developer aus Bispingen mit Sinn für Details und Anspruch an Qualität. Ich entwickle Webanwendungen mit Angular und TypeScript, bei denen Performance, Accessibility und User Experience keine Kompromisse sind.",
+    "FLEXIBLE_WORK": "Remote oder vor Ort – ich bin flexibel, solange die Zusammenarbeit stimmt und die Ergebnisse überzeugen.",
+    "OPEN_MINDED": "Ich bin wissbegierig und lösungsorientiert. Neue Herausforderungen sehe ich als Gelegenheit zu lernen – sei es eine neue Library, ein komplexes Accessibility-Feature oder ein Performance-Problem.",
+    "PROBLEM_SOLVING": "Für mich ist Development kreative Problemlösung: Ich nehme komplexe Anforderungen und forme daraus intuitive, wartbare und technisch saubere Lösungen. Mit Liebe zum Detail und dem Anspruch, dass jeder Nutzer profitiert."
   },
   "SKILLS": {
     "TECHNOLOGIES": "Technologien",
     "SKILL_SET": "Fähigkeiten",
-    "MAIN_TEXT": "Meine Reise hat mich dazu gebracht, an verschiedenen Projekten zu arbeiten und eine Vielzahl von Frontend-Technologien und Konzepten einzusetzen. Ich bin offen dafür, neue Technologien und Methoden zu erlernen, um meine Fähigkeiten kontinuierlich zu verbessern und in der sich ständig weiterentwickelnden Welt der Webentwicklung auf dem neuesten Stand zu bleiben.",
-    "YOU_NEED": "Sie benötigen",
+    "MAIN_TEXT": "Diese Technologien beherrsche ich heute. Morgen vielleicht eine mehr – denn in der Webentwicklung stillzustehen bedeutet zurückzufallen. Ich lerne kontinuierlich, bleibe neugierig und setze nur ein, was ich wirklich verstehe.",
+    "YOU_NEED": "Du brauchst",
     "ANOTHER_SKILL": " eine andere Fähigkeit?",
-    "REACHOUT_TEXT": "Zögern Sie nicht, mich zu kontaktieren. Ich freue mich darauf, mein Wissen zu erweitern.",
-    "LETS_TALK": "Reden wir",
+    "REACHOUT_TEXT": "Sprich mich an – neue Technologien zu lernen ist für mich selbstverständlich.",
+    "LETS_TALK": "Melde dich",
     "SPECIAL_INTEREST": "Ich habe ein besonderes Interesse daran, Neues zu lernen"
   },
   "PROJECTS": {
@@ -66,12 +66,12 @@
     "TEXT3": "Ich bewundere deine strukturierte Herangehensweise an Aufgaben und wie geduldig du anderen komplexe Themen erklärst."
   },
   "CONTACT": {
-    "TITLE": "Kontaktiere mich",
-    "HEADER": "Arbeiten wir zusammen",
-    "SUBHEADER": "Haben Sie ein Problem zu lösen?",
-    "TEXT": "Kontaktieren Sie mich über dieses Formular. Ich freue mich darauf, von Ihnen zu hören, Ihre Ideen kennenzulernen und mit meiner Arbeit zu Ihren Projekten beizutragen.",
-    "NEED_DEV": "Benötigen Sie einen Frontend Entwickler?",
-    "TALK": "Lass uns reden!"
+    "TITLE": "Kontakt",
+    "HEADER": "Lass uns starten",
+    "SUBHEADER": "Du möchtest ein Projekt umsetzen?",
+    "TEXT": "Schreib mir eine Nachricht. Ich bin gespannt auf deine Ideen und freue mich darauf, gemeinsam technisch überzeugende Lösungen zu entwickeln.",
+    "NEED_DEV": "Du suchst einen Frontend Developer?",
+    "TALK": "Schreib mir!"
   },
   "ACCESSIBILITY": {
     "SKIP_TO_MAIN_CONTENT": "Zum Hauptinhalt springen"

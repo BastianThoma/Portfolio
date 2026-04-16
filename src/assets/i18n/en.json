@@ -27,18 +27,18 @@
   },
   "ABOUT_ME": {
     "WHO_I_AM": "Who I am",
-    "ABOUT_ME": "About me",    "PORTRAIT_ALT": "Portrait photo of Bastian Thoma, Frontend Developer",    "MAIN_TEXT": "Hi, I’m a German-speaking Frontend Developer based in Bispingen. Motivated by the limitless opportunities within IT, I am excited about crafting visually captivating and intuitive websites and applications.",
-    "FLEXIBLE_WORK": "Flexible in terms of working environments, I can work effectively both on-site in Bispingen and remotely.",
-    "OPEN_MINDED": "I am open-minded and always looking for personal challenges to constantly improve my knowledge and skills.",
-    "PROBLEM_SOLVING": "In my profession, programming isn't just about writing code; it's a creative form of problem-solving. I take pride in my ability to distill complex technical challenges into simple, user-friendly solutions. This way, I help you achieve your goals and bring your visions to life."
+    "ABOUT_ME": "About me",    "PORTRAIT_ALT": "Portrait photo of Bastian Thoma, Frontend Developer",    "MAIN_TEXT": "Hi, I'm Bastian – Frontend Developer from Bispingen with an eye for detail and a commitment to quality. I develop web applications with Angular and TypeScript where performance, accessibility, and user experience are non-negotiable.",
+    "FLEXIBLE_WORK": "Remote or on-site – I'm flexible as long as the collaboration works and the results convince.",
+    "OPEN_MINDED": "I'm curious and solution-oriented. I see new challenges as opportunities to learn – whether it's a new library, a complex accessibility feature, or a performance problem.",
+    "PROBLEM_SOLVING": "For me, development is creative problem-solving: I take complex requirements and transform them into intuitive, maintainable, and technically clean solutions. With attention to detail and the goal that every user benefits."
   },
   "SKILLS": {
     "TECHNOLOGIES": "Technologies",
     "SKILL_SET": "Skill Set",
-    "MAIN_TEXT": "My journey has involved working on diverse projects, employing a range of frontend technologies and concepts. I am open to embracing new technologies and methodologies to Continously enhance my skills and stay ahead in the ever-evolving landscape of web development.",
+    "MAIN_TEXT": "These are the technologies I master today. Tomorrow maybe one more – because standing still in web development means falling behind. I learn continuously, stay curious, and only use what I truly understand.",
     "YOU_NEED": "You need",
-    "ANOTHER_SKILL": " another skill?",
-    "REACHOUT_TEXT": "Feel free to contact me. I look forward to expanding on my previous knowledge.",
+    "ANOTHER_SKILL": " a different skill?",
+    "REACHOUT_TEXT": "Reach out to me – learning new technologies is natural for me.",
     "LETS_TALK": "Let's Talk",
     "SPECIAL_INTEREST": "I have a special interest in learning"
   },
@@ -64,12 +64,12 @@
     "TEXT3": "I admire your structured approach to tasks and how patiently you explain complex topics to others."
   },
   "CONTACT": {
-    "TITLE": "Contact me",
-    "HEADER": "Let´s work together",
-    "SUBHEADER": "Got a problem to solve?",
-    "TEXT": "Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to your projects with my work.",
-    "NEED_DEV": "Need a Frontend developer?",
-    "TALK": "Let's talk!"
+    "TITLE": "Contact",
+    "HEADER": "Let's get started",
+    "SUBHEADER": "Want to build a project?",
+    "TEXT": "Send me a message. I'm curious about your ideas and excited to develop technically convincing solutions together.",
+    "NEED_DEV": "Looking for a Frontend Developer?",
+    "TALK": "Message me!"
   },
   "ACCESSIBILITY": {
     "SKIP_TO_MAIN_CONTENT": "Skip to main content"
